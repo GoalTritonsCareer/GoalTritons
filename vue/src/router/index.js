@@ -9,9 +9,9 @@ const routes = [
     redirect: "/home",
     children: [
       { path: 'home', name: 'Home', component: () => import("../views/Home.vue") },
-      { path: 'interview', name: 'Interview', component: () => import("../views/Interview.vue") },
-      { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
-    ],
+      { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") },
+      { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") }
+    ]
   },
   {
     path: '/login',
@@ -27,16 +27,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
-  scrollBehavior: function (to) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        // top: 60,
-        behavior: 'smooth',
-      }
-    }
-  },
+  routes
 })
 
 // activeRouter()
