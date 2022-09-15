@@ -4,66 +4,96 @@
     <h1>Networking</h1>
 
     <p class="normal">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</p>
-    <p id="opening">Networking is the process of making connections and building relationships for attain new information and opportunities.
-      It plays an essential part in your career-finding process. But many of you, who are introverts, can feel frustrated about it.
-      We will guide you through this process by providing you several convenient solutions to networking. Let’s start!</p>
 
     <h2>Why Networking?</h2>
 
     <div>
-      <img src="../assets/WhyNetWorking.svg" width="650px">
-      <p id="opening">Professional networking involves making connections to attain new career-development information, expertise, and opportunities.
-        It is critical to your career success. However, many of you who are introverts may feel frustrated about it and even avoid it. But don’t worry, we will walk you  you through the process by offering solutions to typical networking routes.
-        Let’s get started!</p>>
+      <img class="whyNetworkingImg" src="../assets/networking/whyNetworking.svg" >
+      <p id="opening">Networking is an important part of the career-finding process. To be brief, it is the process of
+        connecting with industry professionals, alumnis, or people around you to receive career-related information,
+        expert help, and more opportunities, which are all critical to your career success. However, many of you might
+        be intimidated by the concept of networking, or find it difficult to talk to people. Don’t worry, we will walk
+        you through the process by offering various networking routes. Let’s get started!</p>>
     </div>
 
     </div>
 
     <div>
-    <h2>Route One: Networking through Online Platforms</h2>
+      <h2>Route One: Networking through Online Platforms</h2>
 
-    <h3>Why use online platforms?</h3><img src="../assets/whyOnlinePlat.svg">
-      <p class="online">2022 Job Seeker Nation reported that 42% say they find out about job openings through social media platforms.</p>
-    </div>
+      <div>
 
+      <h3>Why use online platforms?</h3><img src="../assets/whyOnlinePlat.svg">
+        <p class="online">2022 Job Seeker Nation reported that 42% say they find out about job openings through social media platforms.</p>
 
-
-  <div>
-    <hr>
-    <h3>Common Online Platforms</h3>
-    <div>
-
-      <p class="Question">Question Types</p>
-
-      <span>Define Yourself</span>
-      <span>Behavioral</span>
-      <span>Technical</span>
-
-    </div>
-    <hr>
-  </div>
-
-
-
-
-  <div>
-  <h1>LinkedIn</h1>
-    <div>
-    <img src="../assets/Linkedinin.svg" align="left" >
-    </div>
-    <div>
-      <div class="one">
-      <p> LinkedIn is the world’s largest professional networking platform with over 300 million users and growing.
-        Employers, professors, alumnis, and job-seekers like you are all active on the platform. </p>
-
-      <p> On LinkedIn, you can:</p>
-      <ul>
-        <li>Build your professional presence</li>
-        <li>Form connections</li>
-        <li>Apply to jobs</li>
-        <li>Gather industry information</li>
-      </ul>
       </div>
+
+      <div>
+
+        <h3>Common Online Platforms</h3>
+        <div>
+
+          <p id="questionType">Question Types</p>
+
+          <div style="margin-bottom: 82px">
+            <p id="QTspan1">LinkedIn</p>
+            <p id="QTspan2">Tritons Connect</p>
+            <p id="QTspan3">Other Social Media</p>
+          </div>
+
+        </div>
+      </div>
+
+      <h3>LinkedIn</h3>
+
+      <div class="onlinePlatformDiv">
+
+        <img class="onlinePlatformImg" src="../assets/networking/linkedIn.svg" alt="linkedIn">
+
+        <div class="onlinePlatformDescription">
+          <p>LinkedIn is the world’s largest professional networking platform with over 300 million users and growing.
+            Employers, professors, alumnis, and job-seekers like you are all active on the platform. </p>
+
+          <p>On LinkedIn, you can:</p>
+          <ul>
+            <li>Build your professional presence.</li>
+            <li>Form connections & expand your professional network.</li>
+            <li>Search & apply to jobs.</li>
+            <li>Gather industry information.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div>
+        <div id="">
+        <p id="ITstep1" style="font-weight: 650; display: inline-block">Step 1</p>
+        <p style="display: inline-block">Build a Professional & Attracting Profile</p>
+        </div>
+
+        <div style=" display: inline-block;text-align: right; margin-top: 82px; margin-bottom: 50px">
+          <a href="//ucsd.joinhandshake.com/stu/appointments/new" target="_blank" style="text-decoration: none; color: #1E4460">
+            <p class ="link" style="display: inline; opacity: 80%">Click to Schedule an Interview Prep Appointment</p>
+            &nbsp;
+            <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  <div>
+
+    <div>
+
 
       <h4>Go Tritons will break down several important steps for you to network more easily on LinkedIn:</h4>
       <p id="step1">Step 1</p>
@@ -235,29 +265,7 @@ export default {
 
 
 <style scoped>
-.scrollbar-demo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 4px;
-  background: var(--el-color-primary-light-9);
-  color: var(--el-color-primary);
-}
-#downloadTemplate{
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #1E4460;
-  border: hidden;
-  color: white;
-}
-#downloadTemplate:hover{
-  background-color: #F4CE71;
-  color: darkblue;
-  border: hidden;
-}
+
 div{
   text-align: center;
 }
@@ -273,7 +281,7 @@ h3{
   font-style: normal;
 }
 h1{
-  margin-bottom: 100px;
+  margin-bottom: 2rem;
   color: #1E4460;
   font-weight: 700;
   font-size: 26px;
@@ -291,6 +299,10 @@ h2{
   border-bottom: 1px solid black;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.whyNetworkingImg{
+  width: 60vw;
 }
 #opening{
   font-family: Inter;
@@ -312,27 +324,117 @@ h2{
 
 }
 p.normal{
-  border: 2px solid red;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #D9EAEF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1E4460;
+  width: 65%;
+  margin: auto;
 
-  height:100px;
 }
 p.online{
-  border: 2px solid red;
-  border-radius: 20px;
+  background-color: #D9EAEF;
+  border-radius: 2rem;
   padding: 20px;
-  width:600px;
-  margin-left: 13vw;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
 }
-p.Question{
-  width:300px;
-  margin-left: 25vw;
-  border: 2px solid red;
-  border-radius: 50px;
-  padding: 20px;
+
+
+#questionType{
+  background-color: #1E4460;;
+
+  text-align: center;
+  color: #F4CE71;;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 30px;
+  border: 1px solid black;
+  width: 12vw;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+#QTspan1{
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  color: #1E4460;
+  border: 2px solid #1E4460;
+  padding: 2px 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+#QTspan2{
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  color: #1E4460;
+  border: 2px solid #1E4460;
+  padding: 2px 30px;
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+#QTspan3{
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  color: #1E4460;
+  border: 2px solid #1E4460;
+  padding: 2px 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.onlinePlatformDiv{
+  display: flex;
+  text-align: center;
+  margin-left: 10vw;
+
+}
+
+
+.onlinePlatformImg{
+  margin-right: 4vw;
+}
+
+
+
+.onlinePlatformDescription{
+  display: inline-block;
+  border-radius: 2rem;
+  border: 2px dashed #5F99B6;
+  text-align: left;
+  width: 50%;
+  padding: 1rem;
+}
+
+ul{
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
+}
+
 #step1{
   border-radius: 50px;
   background-color: #F4CE71;

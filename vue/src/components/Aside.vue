@@ -21,7 +21,7 @@
         <el-sub-menu index="3">
           <template #title>
 <!--            <el-icon><location /></el-icon>-->
-            <span @click="$router.push('/networking')">Networking</span>
+            <span @click="$router.push('/fakeNetworking')">Networking</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="3-1" class="sub1">Why Networking</el-menu-item>
@@ -67,7 +67,7 @@
         </el-sub-menu>
         <el-menu-item index="6">
 <!--          <el-icon><setting /></el-icon>-->
-          <span>Internship Prep</span>
+          <span @click="$router.push('/interview')">Interview Prep</span>
         </el-menu-item>
         <el-menu-item index="7">
 <!--          <el-icon><setting /></el-icon>-->
@@ -113,5 +113,12 @@ const handleClose = (key: string, keyPath: string[]) => {
 .el-col-12 {
   max-width: 100%;
   flex: 0 0 50%;
+}
+.menu {
+  font-size: 20px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #1E4460;
 }
 </style>

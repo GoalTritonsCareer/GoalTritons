@@ -308,7 +308,7 @@
 
     </div>
     <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
-      <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More Common Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">More Resources</i></p>
+      <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under </i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">More Resources</i></p>
     </div>
 
     <div id="more-resources">
