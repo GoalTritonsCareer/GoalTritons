@@ -13,7 +13,7 @@
           connecting with industry professionals, alumnis, or people around you to receive career-related information,
           expert help, and more opportunities, which are all critical to your career success. However, many of you might
           be intimidated by the concept of networking, or find it difficult to talk to people. Don’t worry, we will walk
-          you through the process by offering various networking routes. Let’s get started!</p>>
+          you through the process by offering various networking routes. Let’s get started!</p>
       </div>
 
     </div>
@@ -84,7 +84,7 @@
 
       <div>
 
-        <p>A professional profile not only attracts your peers for easier network expansion, but it also draws the
+        <p class="middleP">A professional profile not only attracts your peers for easier network expansion, but it also draws the
           attention of industry insiders, particularly recruiters. They will stay longer on your profile, to be more
           impressed with you, and learn more about your professional side, thus providing job opportunities for you.
           Go Tritons will walk you through each part in building an attracting LinkedIn Profile.</p>
@@ -94,9 +94,9 @@
         <img id="andyp2" src="../assets/networking/andyP2.png">
         <img id="andyp3" src="../assets/networking/andyP3.png">
 
-        <img src="../assets/networking/r1s1Tip.svg">
+        <img src="../assets/networking/r1s1Tip.svg" style="margin-top: 50px">
         <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
-          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More Common Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">More Resources</i></p>
+          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/interview')">More Resources</i></p>
         </div>
 
       </div>
@@ -105,7 +105,7 @@
         <img src="../assets/networking/r1Step2.svg">
         <img class="step2Img" src="../assets/networking/step2P1.png">
 
-        <p>
+        <p class="middleP">
           However, since recruiters evaluate your connections based on their quality & relevancy, your focus when expanding
           your network should be on the people that can add to your professional value.
         </p>
@@ -196,7 +196,7 @@
       <div>
 
         <h3>Other Social Media</h3>
-        <p>
+        <p class="middleP">
           In addition to LinkedIn and Tritons Connect, Go Triton Career recommends using some other social media
           platforms to network with people. There are a handful of useful ones, such as WeChat, Discord, Facebook,
           and Reddit, each with its ways to network.
@@ -318,7 +318,7 @@
 
         <div>
           <img src="../assets/networking/howToNetworkOnlineS2.svg">
-          <p>Informational interview allows you to learn more deeply about career-related topics, such as career path,
+          <p class="middleP">Informational interview allows you to learn more deeply about career-related topics, such as career path,
             industry, or a specific firm, by speaking directly with an experienced individual who has expertise and
             knowledge in your desired field.
           </p>
@@ -331,7 +331,7 @@
 
         <div>
           <img src="../assets/networking/howToNetworkOnlineS3.svg">
-          <p>You just had a terrific interview—the person was pleased to meet you, answered all your questions, and
+          <p class="middleP">You just had a terrific interview—the person was pleased to meet you, answered all your questions, and
             learned about you as a person. Now send a thank-you message to appreciate them for meeting with you and to
             leave a strong & positive impression so they'll consider you when future opportunities arise. You can also
             recap your abilities and expertise or share your highlighted work in this follow-up letter.</p>
@@ -340,12 +340,12 @@
 
         <div>
           <img src="../assets/networking/howToNetworkOnlineS4.svg">
-          <p>If you don't keep in touch with the person you asked for help online, you may lose this connection.
+          <p class="middleP">If you don't keep in touch with the person you asked for help online, you may lose this connection.
             Therefore, it is critical to maintain contact in order to forge a stable relationship that can lead to
             more opportunities. </p>
           <img src="../assets/networking/howToNetworkOnlineS41.svg">
           <div style="text-align: right; margin-bottom: 82px">
-            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See</i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">How to Maintain Networks</i></p>
+            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">How to Maintain Networks</i></p>
           </div>
         </div>
 
@@ -369,62 +369,342 @@
 
     <div>
       <h2>Route Two: Networking On Campus</h2>
-      <h3>Why networking on campus?</h3>
-      <p id="opening">As a UCSD student, there are many networking opportunities you can earn on campus.
-        Professional clubs, social sororities and fraternities, on-campus jobs, student media, etc, are all where you can interact with not only your peers, but also guest lecturers, faculty advisors, and mentors.
-      </p>
 
-      <h3 >Where to network on campus?</h3>
+      <div>
+        <h3>Why networking on campus?</h3>
+        <p class="middleP">College is where you may make lifetime friends and shape your early professional path. As a
+          UCSD student, you have access to a plethora of networking opportunities. Professional organizations, social
+          sororities & fraternities, on-campus jobs, and career events and many other opportunities allow you to
+          interact with not only your peers, but also guest speakers, faculty advisers, and mentors.</p>
+      </div>
+
 
       <div>
 
-        <p id="NetworkingOnCampus">Networking on Campus</p>
+        <h3 >Where to network on campus?</h3>
 
-        <div style="margin-bottom: 82px">
-          <p id="NCspan1">Student Organizations</p>
-          <p id="NCspan2">Mentorship Programs</p>
-          <p id="NCspan3">Career Fairs/Events</p>
-          <p id="NCspan4">Labs</p>
+        <div>
+
+          <p id="NetworkingOnCampus">Networking on Campus</p>
+
+          <div style="margin-bottom: 82px">
+            <p id="NCspan1">Student Organizations</p>
+            <p id="NCspan2">Mentorship Programs</p>
+            <p id="NCspan3">Career Fairs/Events</p>
+            <p id="NCspan4">Labs</p>
+          </div>
+
         </div>
 
       </div>
 
-      <h4 >Student Organizations</h4>
-      <img src="../assets/studentOrg1.svg" style="padding: 20px">
-      <img src="../assets/studentorg2.svg" style="padding: 20px">
-      <h4 style="padding: 50px">Mentorship Programs</h4>
+      <div>
+        <h3>Student Organizations</h3>
+        <div class="onlinePlatformDiv">
 
-      <img src="../assets/TalkWithYour.svg" style="padding-left: 100px">
+          <div class="otherMediaIcon">
+
+            <img class="NOCimg" src="../assets/networking/studentOrg1.svg" alt="Student Organization">
+          </div>
+
+
+
+          <div class="networkingOnCampusDescription">
+            <p>Student Organization provides the easiest access to campus’ communities. UCSD hosts a handful of student
+              orgs where you can not meet peers who share your interests, but also further your career path by joining
+              career-related organizations.</p>
+            <br>
+            <p>To join the orgs you are interested in, you can: </p>
+            <ul>
+              <li>Walk by the Library Walk’s Info tables at the start of the quarter.</li>
+              <li>Pay close attention to posters/pamplets around the campus.</li>
+            </ul>
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+        <div style="text-align: right; margin-top: 15px; margin-bottom: 50px">
+          <a href="//ucsd.joinhandshake.com/stu/appointments/new" target="_blank" style="text-decoration: none; color: #1E4460">
+            <p class ="link" style="display: inline; opacity: 80%">See Full List of Student Orgs</p>
+            &nbsp;
+            <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Mentorship Programs</h3>
+        <div class="onlinePlatformDiv">
+
+          <div class="otherMediaIcon">
+
+            <img class="NOCimg" src="../assets/networking/mentorshipProgram.svg" alt="Student Organization">
+          </div>
+
+
+
+          <div class="networkingOnCampusDescription">
+            <p>UCSD offers a variety of mentorship programs to assist students with different needs, including
+              development. Having a mentor is essential for your career development because they can help you clarify
+              concerns you may have that they have already dealt with.</p>
+            <br>
+            <p>You can find your mentor here:</p>
+            <ul>
+              <li>Mentor Collective: a professional mentorship organization that partners with UCSD.</li>
+              <li>International Peer Coaching Program: a 1-1 mentorship program that pairs international
+                students with international peer coaches.</li>
+
+              <li>Faculty Mentor Program (FMP): an open-to-all-majors program that assists students in developing
+                valuable relationships with faculty mentors while taking an independent study course (99 or 199) for
+                building their research skills and post-graduate career paths.</li>
+            </ul>
+
+            <br>
+            <p>You can also:</p>
+            <ul>
+              <li>Ask your course professors to be your mentor.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div style="text-align: right; margin-top: 15px; margin-bottom: 50px">
+          <a href="//ucsd.joinhandshake.com/stu/appointments/new" target="_blank" style="text-decoration: none; color: #1E4460">
+            <p class ="link" style="display: inline; opacity: 80%">See All Mentorship Programs at UCSD</p>
+            &nbsp;
+            <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Career Fairs/Events</h3>
+        <div class="onlinePlatformDiv">
+
+          <div class="otherMediaIcon">
+
+            <img class="NOCimg" src="../assets/networking/careerFair.svg" alt="Student Organization">
+          </div>
+
+
+
+          <div class="networkingOnCampusDescription">
+            <p>UCSD offers a variety of networking events for career development, such as Career Fairs and virtual
+              workshops. By interacting with industry professionals and upperclassmen in the same field, they allow
+              students to broaden their career expertise and industry knowledge, practice presentation and interpersonal
+              skills, and increase their chances of being hired by their desired company.</p>
+            <br>
+            <p>To attend events in your field, you can: </p>
+            <ul>
+              <li>View Events at Handshake</li>
+              <li>Walk by the info tables on Library Walk</li>
+              <li>*View our mini calendar on the header for the most up-to-date information about UCSD career events!</li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h3>Labs</h3>
+        <div class="onlinePlatformDiv">
+
+          <div class="otherMediaIcon">
+
+            <img class="NOCimg" src="../assets/networking/labs.svg" alt="Student Organization">
+          </div>
+
+
+
+          <div class="networkingOnCampusDescription">
+            <p>Labs are great resources for in-depth exploration of your professional fields by interacting with
+              professors, Ph.D. students, and peers in the same field. You can often find research assitant internship
+              opportunities.</p>
+            <br>
+            <p>To join your interested labs, you can:</p>
+            <ul>
+              <li>Search for and join your interested research labs using the REAL Portal.</li>
+              <li>View labs exclusive to your deparment, such as:
+                <ul>
+                  <li>Cog Sci Research Labs</li>
+                  <li>The Design Lab UCSD</li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <img src="../assets/networking/r2tips.svg">
+
+
+
+
+
+
 
     </div>
 
 
     <div>
       <h2>Route Three: Networking in Everyday Routine</h2>
-      <h3>Who can you network with everyday?</h3>
-      <hr>
-      <h3 style="padding:50px">Faculty</h3>
-      <p style="width:912px">UCSD’s faculty, particiularly the Professors, usually have the expertise, experience, and k
-        nowledge in one field to provide you with not only professional but also personal advice that can empower your
-        career-approaching experience. They should be your most inspiring & authentic resources, when feeling lost with your career path,
-        especially if you are aiming for the academic realm.</p>
-      <p>Networking with faculty and peers in your field allows you to learn about important news and upcoming changes in your field. Furthermore,
-        communicating with others can help you feel more confident about your career path.</p>
-      <h4>Why networking with the faculty?</h4>
+
+      <div>
+        <h3>Who can you network with everyday?</h3>
+
+        <div>
+
+          <p id="NetworkingOnCampus">Everyday Networking</p>
+
+          <div style="margin-bottom: 82px">
+            <p id="NCspan1">Faculty</p>
+            <p id="NCspan2">Peers</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+        <h3>Faculty</h3>
+        <div>
+          <h4>Why Networking with the Faculty?</h4>
+          <img src="../assets/networking/whyNetworkingWithTheFaculty.svg">
+        </div>
+
+        <div>
+          <h4>How to Network with the Faculty?</h4>
+
+
+          <div style="text-align: left">
+            <img style="margin-left: 5vw; margin-top: 5vh; margin-bottom: 3vh" src="../assets/networking/HTNWTFs1.svg">
+
+            <p style="margin-left: 7vw; font-weight: 600; margin-bottom: 1vh">Methods:</p>
+            <div class="HTNWFdiv">
+              <div class="HTNWFsubdiv">
+                <img src="../assets/networking/ptag1.svg" style="vertical-align: middle">
+                <p>Direct search on your department’s website</p>
+                <ul style="margin-left: 7rem; padding-left: 2rem"><li>e.g. department >> Faculty >> interested professors </li></ul>
+              </div>
+
+              <div class="HTNWFsubdiv">
+                <img src="../assets/networking/ptag2.svg" style="vertical-align: middle">
+                <p>Deep exploration through:</p>
+                <ul style="padding-left: 4rem">
+                  <li>UCSD’s faculty profile</li>
+                  <li>professors’ personal website</li>
+                </ul>
+              </div>
+
+            </div>
+            <img src="../assets/networking/HTNWTFs11.jpg" width="20%" style="margin-left: 9vw; margin-top: 0">
+          </div>
+
+          <div style="text-align: left">
+            <img style="margin-left: 5vw; margin-top: 5vh; margin-bottom: 3vh" src="../assets/networking/HTNWTFs2.svg">
+
+            <p style="margin-left: 7vw; font-weight: 600; margin-bottom: 1vh">Methods:</p>
+            <div class="HTNWFdiv">
+              <div class="HTNWFsubdiv" style="margin-left: 6.5rem; margin-right: 11rem">
+                <img src="../assets/networking/ptag1.svg" style="vertical-align: middle">
+                <p>Bring specific qestions to office </p>
+                <p style="display: block; text-align: left; margin-left: 1.8rem">hour or afterclass</p>
+              </div>
+
+              <div class="HTNWFsubdiv">
+                <img src="../assets/networking/ptag2.svg" style="vertical-align: middle">
+                <p>Send an email to introduce </p>
+                <p style="display: block;text-align: left; margin-left: 4.3rem">yourself & ask for info. interview</p>
+              </div>
+
+            </div>
+            <img src="../assets/networking/HTNWTFs21.svg" width="60%" style="margin-left: 9vw; margin-top: 40px">
+            <img src="../assets/networking/HTNWTFs22.svg" width="40%" style="display: block;margin-left: 17vw">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Peers</h3>
+        <p class="middleP">Networking with peers might seem absurd to some. However, amongst all people, your peers are the most
+          accessible contacts that can potentially become your academic & career buddies to accompany your career
+          development.
+        </p>
+
+        <img src="../assets/networking/peers.svg" width="50%">
+      </div>
+
+
     </div>
 
     <div>
       <h2>How to Maintain Networks?</h2>
-      <p id="Maintain">How to Maintain Networks</p>
+      <img src="../assets/networking/HTMN1.svg">
+      <img src="../assets/networking/HTMN2.svg">
     </div>
 
     <div>
       <h2>Networking platforms Summary</h2>
+
+      <div style="margin-bottom: 20px">
+        <img src="../assets/networking/NRS1.svg" width="11%">
+      </div>
+
+      <div>
+        <img src="../assets/networking/NRS2.svg">
+      </div>
+
+
     </div>
 
-    <div>
+    <div id="more-resources">
       <h2>More Resources</h2>
-      <p style="display: inline-block">"Define Yourself" Q&A</p><a href="url" >10 Common Job Interview Questions And How To Answer Them</a>
+
+
+      <p><span style="font-weight: 600">LinkedIn:	</span></p>
+      <ul>
+        <li>Summary Examples: 17 Best LinkedIn Summary & Bio Examples</li>
+        <li>“Branding” yourself:
+          <ul>
+            <li>How to Build Your Personal Brand on LinkedIn</li>
+            <li>How To Create An Impressive LinkedIn Personal Brand</li>
+          </ul>
+        </li>
+        <li>Connect Template: LinkedIn Connect Template</li>
+      </ul>
+
+      <br>
+
+
+
+      <p><span style="font-weight: 600">Networking Online:</span></p>
+      <ul>
+        <li>Info. Interview: Qs to Ask through Info Interview</li>
+        </ul>
+
+      <br>
+
+      <p><span style="font-weight: 600">Maintain Networks:</span> Networking Follow-Up Email Templates</p>
+      <br>
+
+      <p style="font-weight: 600">More articles for successful networking:</p>
+      <ul>
+        <li>Learn to Love Networking</li>
+      </ul>
+
     </div>
 
 
@@ -759,6 +1039,70 @@ ul{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.NOCimg{
+  width: 10vw;
+  margin-right: 4vw;
+}
+
+.networkingOnCampusDescription{
+  display: inline-block;
+  border-radius: 2rem;
+  border: 3.5px dashed #F4CE71;
+  text-align: left;
+  width: 65%;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+.HTNWFdiv{
+  display: flex;
+  margin-left: 2vw;
+
+
+
+}
+.HTNWFsubdiv p{
+  display: inline-block;
+  margin-left: 0.5rem;
+
+}
+#more-resources{
+  text-align: left;
+}
+#more-resources p{
+  margin-left: 13vw;
+
+}
+
+#more-resources > ul{
+  text-align: left;
+  margin-right: 12vw;
+  margin-left: 15vw;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
+}
+
+.middleP{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 141%;
+  text-align: left;
+  margin-right: 11vw;
+  margin-left: 11vw;
+  margin-bottom: 20px;
+}
+
+.moreResLink {
+  color: #B27224;
+  font-weight: 500;
+}
+.moreResLink:hover {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 </style>
