@@ -5,6 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.el-menu-item-group__title {
+  padding: 0;
+}
+.el-calendar-table .el-calendar-day{
+  width: 54px;
+  height: 58px;
+}
+.el-calendar__body {
+  padding: 5px 5px 5px;
+}
+
+.prev {
+  width: 50px;
+}
 
 /*#app {*/
 /*  max-width: 1280px;*/

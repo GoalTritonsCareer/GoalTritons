@@ -1,16 +1,32 @@
 # career-path
 
-This template should help get you started developing with Vue 3 in Vite.
+Highly accessible & integrated informational website for career-finding among international students at UCSD.
 
-## Recommended IDE Setup
+## Development Note
+此项目通过Vue和Springboot实现前后端分离:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+  - 后端方面
+    - controller  实现登入和注册时的检查
+    - mapper      实现数据库自动查询
+    - common      实现结果类型自定义
+    - entity      实现用户构造
+    
+  - 前端方面
+    - router      实现路由逻辑
+    - layout      实现整个页面的布局
+    - views       实现内容区域的页面
+    - components  实现header, aside等其他区域的页面
+    - utils       实现页面请求的数据传输
+    - assets      实现css及特殊自定义资源
+
 
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
+
+package.json: /career-path/vue/package.json
 
 ```sh
 npm install
