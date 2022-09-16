@@ -9,7 +9,7 @@
       <h2>Why Networking?</h2>
 
       <div>
-        <img class="whyNetworkingImg" src="../assets/networking/whyNetworking.svg" >
+        <img class="whyNetworkingImg" src="../assets/networking/whyNetworking.svg" alt="Why Networking">
         <p id="opening">Networking is an important part of the career-finding process. To be brief, it is the process of
           connecting with industry professionals, alumnis, or people around you to receive career-related information,
           expert help, and more opportunities, which are all critical to your career success. However, many of you might
@@ -27,7 +27,7 @@
 
       <div>
 
-        <h3>Why use online platforms?</h3><img src="../assets/networking/whyOnlinePlatforms.svg">
+        <h3>Why use online platforms?</h3><img src="../assets/networking/whyOnlinePlatforms.svg" alt="why Online Platform">
         <p class="online">2022 Job Seeker Nation reported that 42% say they find out about job openings through social media platforms.</p>
 
       </div>
