@@ -11,7 +11,7 @@ const routes = [
       { path: 'home', name: 'Home', component: () => import("../views/Home.vue") },
       { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") },
       { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
-      { path: 'fakeNetworking', name: 'fakeNetworking', component: () => import("../views/fakeNetworking.vue") },
+      { path: 'fakeNetworking', name: 'FakeNetworking', component: () => import("../views/FakeNetworking.vue") },
       { path: 'interview', name: 'Interview', component: () => import("../views/Interview.vue") }
     ]
   },

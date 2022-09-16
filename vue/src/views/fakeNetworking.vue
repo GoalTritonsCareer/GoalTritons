@@ -1,10 +1,11 @@
-<template >
-  <div>
+<template>
+  <div id="fakeNetworkingTop">
+
     <div>
       <h1>Networking</h1>
 
       <p class="normal">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</p>
-
+      <a id="whyNetworking"></a>
       <h2>Why Networking?</h2>
 
       <div>
@@ -17,13 +18,16 @@
       </div>
 
     </div>
-
+    <a id="onlinePlatform"></a>
     <div>
-      <h2>Route One: Networking through Online Platforms</h2>
+      <div>
+        <h2 style="display: block">Route One: Networking through Online Platforms <a id="whyPlatform" style="display: inline"></a></h2>
+
+      </div>
 
       <div>
 
-        <h3>Why use online platforms?</h3><img src="../assets/whyOnlinePlat.svg">
+        <h3>Why use online platforms?</h3><img src="../assets/networking/whyOnlinePlatforms.svg">
         <p class="online">2022 Job Seeker Nation reported that 42% say they find out about job openings through social media platforms.</p>
 
       </div>
@@ -39,12 +43,15 @@
             <p id="QTspan1">LinkedIn</p>
             <p id="QTspan2">Tritons Connect</p>
             <p id="QTspan3">Other Social Media</p>
+            <a id="linkedIn"></a>
           </div>
 
         </div>
+
       </div>
 
-      <div>
+      <div >
+
         <h3>LinkedIn</h3>
 
         <div class="onlinePlatformDiv">
@@ -96,7 +103,7 @@
 
         <img src="../assets/networking/r1s1Tip.svg" style="margin-top: 50px">
         <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
-          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/interview')">More Resources</i></p>
+          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i></p>
         </div>
 
       </div>
@@ -148,7 +155,8 @@
         </div>
 
         <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
-          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">More Resources</i></p>
+          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i></p>
+          <a id="tritonConnect"></a>
         </div>
 
 
@@ -189,6 +197,7 @@
             &nbsp;
             <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
           </a>
+          <a id="otherSocialMedia"></a>
         </div>
 
       </div>
@@ -294,8 +303,9 @@
               <li>Joining interested communities to ask questions, have discussions, see & send posts (e.g. r/UCSD,
                 r/humanresources).</li>
               <li>Following “hot” and “new” posts to receive most updated answers.</li>
-              <li>Filtering by flair (e.g. “Career development”) to receive more relevant posts.</li>
+              <li>Filtering by flair (e.g. “Career development”) to receive more relevant posts. <a id="HowToNetworkOnline"></a></li>
               <li>Following individuals and messaging them.     </li>
+
             </ul>
 
           </div>
@@ -325,7 +335,7 @@
           <img src="../assets/networking/howToNetworkOnlineS21.svg">
 
           <div style="text-align: right; margin-bottom: 82px">
-            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/interview#more-resources')">More Resources</i></p>
+            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i></p>
           </div>
         </div>
 
@@ -345,11 +355,14 @@
             more opportunities. </p>
           <img src="../assets/networking/howToNetworkOnlineS41.svg">
           <div style="text-align: right; margin-bottom: 82px">
-            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">How to Maintain Networks</i></p>
+            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">See</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#maintainNetwork')">How to Maintain Networks</i></p>
+            <a id="networkOnCampus"></a>
           </div>
         </div>
 
       </div>
+
+
     </div>
 
 
@@ -368,11 +381,11 @@
 
 
     <div>
-      <h2>Route Two: Networking On Campus</h2>
+      <h2>Route Two: Networking On Campus <a id="whyNetworkOnCampus"></a></h2>
 
       <div>
         <h3>Why networking on campus?</h3>
-        <p class="middleP">College is where you may make lifetime friends and shape your early professional path. As a
+        <p class="middleP" style="margin-bottom: 60px">College is where you may make lifetime friends and shape your early professional path. As a
           UCSD student, you have access to a plethora of networking opportunities. Professional organizations, social
           sororities & fraternities, on-campus jobs, and career events and many other opportunities allow you to
           interact with not only your peers, but also guest speakers, faculty advisers, and mentors.</p>
@@ -392,6 +405,7 @@
             <p id="NCspan2">Mentorship Programs</p>
             <p id="NCspan3">Career Fairs/Events</p>
             <p id="NCspan4">Labs</p>
+            <a id="studentOrganization"></a>
           </div>
 
         </div>
@@ -435,8 +449,10 @@
             &nbsp;
             <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
           </a>
+          <a id="mentorshipPrograms"></a>
         </div>
       </div>
+
 
       <div>
         <h3>Mentorship Programs</h3>
@@ -480,7 +496,9 @@
             &nbsp;
             <img src="../assets/arrow.png" width=22px style="vertical-align: middle">
           </a>
+          <a id="careerFair"></a>
         </div>
+
       </div>
 
       <div>
@@ -504,7 +522,8 @@
             <ul>
               <li>View Events at Handshake</li>
               <li>Walk by the info tables on Library Walk</li>
-              <li>*View our mini calendar on the header for the most up-to-date information about UCSD career events!</li>
+              <li>*View our mini calendar on the header for the most up-to-date information about UCSD career events! <a id="labs"></a></li>
+
             </ul>
 
 
@@ -558,9 +577,10 @@
 
     </div>
 
-
+    <a id="everydayRoutine"></a>
     <div>
-      <h2>Route Three: Networking in Everyday Routine</h2>
+      <h2>Route Three: Networking in Everyday Routine <a id="whoToNetworkWith"></a></h2>
+
 
       <div>
         <h3>Who can you network with everyday?</h3>
@@ -572,6 +592,7 @@
           <div style="margin-bottom: 82px">
             <p id="NCspan1">Faculty</p>
             <p id="NCspan2">Peers</p>
+            <a id="faculty"></a>
           </div>
 
         </div>
@@ -632,9 +653,14 @@
 
             </div>
             <img src="../assets/networking/HTNWTFs21.svg" width="60%" style="margin-left: 9vw; margin-top: 40px">
-            <img src="../assets/networking/HTNWTFs22.svg" width="40%" style="display: block;margin-left: 17vw">
+
+            <img id="peers" src="../assets/networking/HTNWTFs22.svg" width="40%" style="display: block;margin-left: 17vw;margin-bottom: 50px">
+
+
           </div>
+
         </div>
+
       </div>
 
       <div>
@@ -647,15 +673,16 @@
         <img src="../assets/networking/peers.svg" width="50%">
       </div>
 
-
+      <a id="maintainNetwork" style="display: inline"></a>
     </div>
 
     <div>
+
       <h2>How to Maintain Networks?</h2>
       <img src="../assets/networking/HTMN1.svg">
       <img src="../assets/networking/HTMN2.svg">
     </div>
-
+    <a id="networkingRouteSummary"></a>
     <div>
       <h2>Networking platforms Summary</h2>
 
@@ -667,45 +694,54 @@
         <img src="../assets/networking/NRS2.svg">
       </div>
 
-
+    <a id="something"></a>
     </div>
-
+    <a id="moreResources"></a>
     <div id="more-resources">
       <h2>More Resources</h2>
 
-
-      <p><span style="font-weight: 600">LinkedIn:	</span></p>
+      <p class="moreResTitle">LinkedIn:</p >
       <ul>
-        <li>Summary Examples: 17 Best LinkedIn Summary & Bio Examples</li>
+        <li>Summary Examples: <a href=" " target="_blank">
+          <p class="moreRes" style="display: inline">17 Best LinkedIn Summary & Bio Examples</p ></a>
+        </li>
         <li>“Branding” yourself:
           <ul>
-            <li>How to Build Your Personal Brand on LinkedIn</li>
-            <li>How To Create An Impressive LinkedIn Personal Brand</li>
+            <li><a href="https://www.linkedin.com/business/marketing/blog/content-marketing/5-free-ways-to-build-your-personal-brand-on-linkedin" target="_blank"><p class="moreRes">
+              How to Build Your Personal Brand on LinkedIn</p ></a></li>
+            <li><a href="https://www.forbes.com/sites/robinryan/2021/09/14/how-to-create-an-impressive-linkedin-personal-brand/?sh=545765ed73e5" target="_blank"><p class="moreRes">
+              How To Create An Impressive LinkedIn Personal Brand</p ></a></li>
           </ul>
         </li>
-        <li>Connect Template: LinkedIn Connect Template</li>
+        <li>Connect Template: <a href="https://www.themuse.com/advice/want-people-to-accept-your-linkedin-requests-use-these-10-templates" target="_blank">
+          <p class="moreRes" style="display: inline">LinkedIn Connect Template</p ></a>
+        </li>
       </ul>
 
-      <br>
-
-
-
-      <p><span style="font-weight: 600">Networking Online:</span></p>
+      <p class="moreResTitle" style="margin-top: 20px">Networking Online:</p >
       <ul>
-        <li>Info. Interview: Qs to Ask through Info Interview</li>
-        </ul>
-
-      <br>
-
-      <p><span style="font-weight: 600">Maintain Networks:</span> Networking Follow-Up Email Templates</p>
-      <br>
-
-      <p style="font-weight: 600">More articles for successful networking:</p>
-      <ul>
-        <li>Learn to Love Networking</li>
+        <li>Info. Interview: <a href="https://career.berkeley.edu/Info/InfoQuestions" target="_blank">
+          <p class="moreRes" style="display: inline">Qs to Ask through Info Interview</p ></a>
+        </li>
       </ul>
 
+      <p class="moreResTitle" style="margin-top: 20px">Maintain Networks:</p >
+      <ul>
+        <li><a href="https://www.themuse.com/advice/finally-5-email-templates-that-make-following-up-with-anyone-way-less-awkward" target="_blank">
+          <p class="moreRes" style="display: inline">Networking Follow-Up Email Templates</p ></a>
+        </li>
+      </ul>
+
+      <p class="moreResTitle" style="margin-top: 20px">More articles for successful networking:</p >
+      <ul>
+        <li><a href="https://hbr.org/2016/05/learn-to-love-networking" target="_blank">
+          <p class="moreRes" style="display: inline">Learn to Love Networking </p ></a>
+        </li>
+      </ul>
     </div>
+
+
+
 
 
   </div>
@@ -718,7 +754,7 @@
 
 <script>
 export default {
-  name: "Networking"
+  name: "FakeNetworking"
 }
 </script>
 
@@ -1070,21 +1106,19 @@ ul{
 #more-resources{
   text-align: left;
 }
-#more-resources p{
-  margin-left: 13vw;
-
-}
 
 #more-resources > ul{
   text-align: left;
   margin-right: 12vw;
-  margin-left: 15vw;
+  margin-left: 11.5vw;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 141%;    /* list里的行间宽度为141%，其他为default */
 }
-
+#more-resources a{
+  text-decoration: none;
+}
 .middleP{
   font-size: 16px;
   font-style: normal;
@@ -1105,4 +1139,46 @@ ul{
   text-decoration: underline;
 }
 
+.moreRes{
+  background-image: linear-gradient(
+      to right,
+      #0467B0,
+      #0467B0
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 2px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+.moreRes::before {
+  content: '';
+  background: #0467B0;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.moreRes:hover {
+  background-position: 0;
+  font-weight: 600;
+}
+.moreRes:hover::before {
+  width: 100%;
+}
+.moreResTitle{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  margin-left: 10vw;
+  margin-bottom: 0;
+}
 </style>
