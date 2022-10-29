@@ -1,15 +1,15 @@
 <template>
-  <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex">
-    <div style="flex: 2; padding-left: 11%; display: flex; flex-direction: row">
+  <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
+    <div style="flex: 2; padding-left: 2%; display: flex; flex-direction: row">
       <a href="/" style="margin-top: 5px">
         <img src="../../public/logo.svg" alt="logo" style="width: 40px"/>
       </a>
       <a href="http://goaltritonscareer.com" style="margin-top: 10px; text-decoration: none">
-        <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="opacity: 50%">al</span> Tritons</h1><br>
+        <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1><br>
       </a>
     </div>
-    <div style="width: 500px; display: flex; flex-direction: row; align-items: center;">
-      <el-autocomplete placeholder="Search The Site" style="margin-top: -5px;
+    <div style="width: 470px; display: flex; flex-direction: row; align-items: center;">
+      <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
       margin-right:
        15px; width: 260px" v-model="state1"
         :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
@@ -20,13 +20,16 @@
           width="415px"
       >
         <template #reference>
-          <div style="position: relative; display: inline-block">
-            <p style="font-size: 16px; font-weight: 600; color: black; z-index: 2; position: relative; margin-left: 7px; padding-top: 5px">
-              {{ getDate() }}
+          <div style="position: relative; display: inline-block; margin-left: 30px;">
+            <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 7px; padding-top: 5px">
+              {{ getDay() }}
             </p>
 <!--            <el-avatar :size="30" style="position: absolute; top: 10px; left: 10px; z-index: 1; display: inline;-->
 <!--              background-color: transparent; margin-right: 17px" shape="square">-->
             <img src="/calendar.svg" alt="calendar" style="position: absolute; top: 21px; left: 0px; z-index: 1; width: 32px; display: inline;">
+            <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -9.5px; left: 7.5px">
+              {{ getMonth() }}
+            </p>
 <!--            </el-avatar>-->
           </div>
         </template>
@@ -35,7 +38,7 @@
         </template>
       </el-popover>
 
-      <h2 style="margin-left: 45px">About Us</h2>
+      <h2 style="margin-left: 30px">About Us</h2>
 
 <!--      <el-button text @click="showDialogForm(true)" style="background-color: #F4CE71; font-family: work-sans; font-size: 14px">Subscribe</el-button>-->
 
@@ -115,9 +118,15 @@ export default {
     }
   },
   methods: {
-    getDate() {
+    getDay() {
       const today = new Date();
-      return today.getDate().toString();
+      const output = today.getDate().toString();
+      return output.length == 1 ? "0"+output : output;
+    },
+    getMonth() {
+      const today = new Date();
+      const output = today.toLocaleString('en-US', { month: 'short' })
+      return output.toUpperCase();
     },
     loadAll() {
       console.log("loading");
@@ -177,7 +186,7 @@ export default {
   src: url('../../public/WorkSans/WorkSans-Semibold.woff');
 }
 h1{
-  color: white;
+  color: black;
   font-weight: 700;
   font-size: 26px;
   font-family: work-sans;
@@ -185,10 +194,10 @@ h1{
 }
 
 h2 {
-  color: white;
+  color: #1e4460;
   font-weight: 600;
   font-size: 20px;
-  font-family: work-sans-semi;
+  font-family: work-sans;
   line-height: 141%;
 }
 

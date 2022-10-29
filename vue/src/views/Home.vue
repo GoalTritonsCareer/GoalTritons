@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <Header style="position: fixed; width: 100vw; z-index: 20; background-color: #1E4460"/>
+    <Header style="position: fixed; width: 100vw; z-index: 20"/>
     <!--    主体-->
     <Aside class="wrapper__aside"/>
     <el-container style="display: flex" class="wrapper">
@@ -255,9 +255,9 @@ h2 {
   width: 438px;
   height: 369px;
   left: -165px;
-  top: 3594px;
+  top: 3694px;
   z-index: -1;
-  background: rgba(244, 206, 113, 0.2);
+  background: rgba(244, 206, 113, 0.4);
   filter: blur(150px);
 }
 .dot213 {
@@ -355,7 +355,6 @@ h2 {
 
 .wrapper {
   position: relative;
-  background-color: #F9F9F9;
 }
 
 .wrapper__body {

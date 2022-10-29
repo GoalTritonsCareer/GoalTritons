@@ -4,7 +4,7 @@
       <h5 class="menu">Path to Approach</h5>
       <h5 class="menu">Your Career</h5>
       <el-menu
-          style="width: 240px; min-height: calc(100vh - 50px)"
+          style="width: 240px; min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
@@ -13,7 +13,7 @@
 
         <el-sub-menu index="1">
           <template #title>
-            <span>Define your Career Goal</span>
+            <span class="mod">Define your Career Goal</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1" class="sub1">New to Career Planning</el-menu-item>
@@ -143,7 +143,7 @@ export default {
 <style scoped>
 .mod {
   font-size: 15px;
-  color: #1E4460;
+  color: #182B49;
 }
 .sub1{
   font-size: 13px;
@@ -151,7 +151,7 @@ export default {
 }
 .sub2{
   font-size: 12px;
-  color: #1E4460;
+  color: #636363;
 }
 /*.el-menu-item{*/
 /*  text-align: left;*/
