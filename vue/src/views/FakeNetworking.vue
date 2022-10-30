@@ -54,7 +54,9 @@
 
         <div class="onlinePlatformDiv">
           <div class="box">
+            <a href="https://www.linkedin.com/" target="_blank">
             <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
+            </a>
           </div>
 
 
@@ -312,7 +314,9 @@
 
         <div class="onlinePlatformDiv">
           <div class="box">
-          <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect">
+            <a href="https://tritonsconnect.com/" target="_blank">
+              <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect">
+            </a>
           </div>
           <div class="onlinePlatformDescription">
             <p>Tritons Connect is UCSD's equivalent of LinkedIn, but it offers a <span class="medium">smaller and more
@@ -364,7 +368,9 @@
             <p class="otherMediaTitle">WeChat</p>
 
             <div class="box">
-            <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat">
+              <a href="https://www.wechat.com/" target="_blank">
+                <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat">
+              </a>
             </div>
           </div>
 
@@ -392,7 +398,9 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Discord</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord">
+              <a href="https://discord.com/" target="_blank">
+                <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord">
+              </a>
             </div>
           </div>
 
@@ -418,7 +426,9 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Facebook</p>
             <div class="box">
+              <a href="https://www.facebook.com/" target="_blank">
             <img class="onlinePlatformImg" src="/networking/facebookIcon.svg" alt="FaceBook">
+              </a>
             </div>
           </div>
 
@@ -447,7 +457,9 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Reddit</p>
             <div class="box">
+              <a href="https://www.reddit.com/" target="_blank">
             <img class="onlinePlatformImg" src="/networking/redditIcon.svg" alt="Reddit">
+              </a>
             </div>
           </div>
 
@@ -1185,8 +1197,8 @@ p.online{
   height: 6vw;
   width: 6vw;
   margin-top: 5%;
-  max-width: 30%;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-right: 4vw;
 }
 
@@ -1196,6 +1208,7 @@ p.online{
   animation-name: example;
   animation-duration: 0.25s;
   border-left: 8px solid #5F99B6;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 
