@@ -4,7 +4,7 @@
       <h5 class="menu">Path to Approach</h5>
       <h5 class="menu">Your Career</h5>
       <el-menu
-          style="width: 240px; min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090"
+          style="width: 240px; min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
@@ -69,12 +69,12 @@
         </el-sub-menu>
 
         <el-menu-item index="3">
-          <span class="mod">Internship & Jobs</span>
+          <span class="mod menu-item-3">Internship & Jobs</span>
         </el-menu-item>
 
         <el-sub-menu index="4">
           <template #title>
-            <span class="mod" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
@@ -169,5 +169,8 @@ export default {
   margin-bottom: 3px;
   text-align: center;
   color: #1E4460;
+}
+.el-sub-menu:hover {
+  background-color: #FFC740;
 }
 </style>

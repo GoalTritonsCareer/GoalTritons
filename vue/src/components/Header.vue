@@ -27,7 +27,7 @@
 <!--            <el-avatar :size="30" style="position: absolute; top: 10px; left: 10px; z-index: 1; display: inline;-->
 <!--              background-color: transparent; margin-right: 17px" shape="square">-->
             <img src="/calendar.svg" alt="calendar" style="position: absolute; top: 21px; left: 0px; z-index: 1; width: 32px; display: inline;">
-            <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -9.5px; left: 7.5px">
+            <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -9.5px; left: 8.2px">
               {{ getMonth() }}
             </p>
 <!--            </el-avatar>-->
