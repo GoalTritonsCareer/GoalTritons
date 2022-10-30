@@ -53,8 +53,10 @@
         <h3>LinkedIn</h3>
 
         <div class="onlinePlatformDiv">
+          <div class="box">
+            <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
+          </div>
 
-          <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
 
           <div class="onlinePlatformDescription">
             <p>LinkedIn is the world’s largest professional networking platform with over 300 million users and growing.
@@ -309,9 +311,9 @@
         <h3>Tritons Connect</h3>
 
         <div class="onlinePlatformDiv">
-
-          <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="linkedIn">
-
+          <div class="box">
+          <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect">
+          </div>
           <div class="onlinePlatformDescription">
             <p>Tritons Connect is UCSD's equivalent of LinkedIn, but it offers a <span class="medium">smaller and more
               concentrated</span> network from which you could benefit directly as a UCSD student.  </p>
@@ -360,7 +362,10 @@
         <div class="onlinePlatformDiv">
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">WeChat</p>
-            <img class="onlinePlatformImg" src="/networking/wechatIcon.jpg" alt="linkedIn">
+
+            <div class="box">
+            <img class="onlinePlatformImg" src="/networking/wechatIcon.jpg" alt="WeChat">
+            </div>
           </div>
 
 
@@ -386,7 +391,9 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Discord</p>
-            <img class="onlinePlatformImg" src="/networking/disocrdIcon.jpg" alt="linkedIn">
+            <div class="box">
+            <img class="onlinePlatformImg" src="/networking/disocrdIcon.jpg" alt="Discord">
+            </div>
           </div>
 
 
@@ -410,7 +417,9 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Facebook</p>
-            <img class="onlinePlatformImg" src="/networking/facebookIcon.jpg" alt="linkedIn">
+            <div class="box">
+            <img class="onlinePlatformImg" src="/networking/facebookIcon.jpg" alt="FaceBook">
+            </div>
           </div>
 
 
@@ -437,7 +446,9 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Reddit</p>
-            <img class="onlinePlatformImg" src="/networking/redditIcon.jpg" alt="linkedIn">
+            <div class="box">
+            <img class="onlinePlatformImg" src="/networking/redditIcon.jpg" alt="Reddit">
+            </div>
           </div>
 
 
@@ -1159,9 +1170,33 @@ p.online{
 
 .onlinePlatformImg{
   width: 6vw;
+  height: 6vw;
+  background-color: #D9EAEF;
+  margin-right: 4vw;
+  border-radius: 10px;
+}
+
+.box {
+  text-align: center;
+  background-color: #D9EAEF;
+  border-radius: 10px;
+  border: none;
+  height: 6vw;
+  width: 6vw;
+  margin-top: 5%;
+  max-width: 30%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   margin-right: 4vw;
 }
 
+.box:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid #5F99B6;
+
+}
 
 
 .onlinePlatformDescription{

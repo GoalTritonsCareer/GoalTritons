@@ -141,6 +141,7 @@ export default {
 </script>
 
 <style scoped>
+
 .mod {
   font-size: 15px;
   color: #1E4460;
