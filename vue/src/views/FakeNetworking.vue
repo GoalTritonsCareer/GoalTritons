@@ -364,7 +364,7 @@
             <p class="otherMediaTitle">WeChat</p>
 
             <div class="box">
-            <img class="onlinePlatformImg svgicon" src="/networking/newWechatV3.jpg" alt="WeChat">
+            <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat">
             </div>
           </div>
 
@@ -392,7 +392,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Discord</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/newDiscord.jpg" alt="Discord">
+            <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord">
             </div>
           </div>
 
@@ -418,7 +418,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Facebook</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/newFacebookIcon.jpg" alt="FaceBook">
+            <img class="onlinePlatformImg" src="/networking/facebookIcon.svg" alt="FaceBook">
             </div>
           </div>
 
@@ -447,7 +447,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Reddit</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/newReddit.jpg" alt="Reddit">
+            <img class="onlinePlatformImg" src="/networking/redditIcon.svg" alt="Reddit">
             </div>
           </div>
 
