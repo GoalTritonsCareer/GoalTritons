@@ -364,7 +364,7 @@
             <p class="otherMediaTitle">WeChat</p>
 
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/wechatIcon.jpg" alt="WeChat">
+            <img class="onlinePlatformImg svgicon" src="/networking/newWechatV3.jpg" alt="WeChat">
             </div>
           </div>
 
@@ -392,7 +392,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Discord</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/disocrdIcon.jpg" alt="Discord">
+            <img class="onlinePlatformImg" src="/networking/newDiscord.jpg" alt="Discord">
             </div>
           </div>
 
@@ -418,7 +418,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Facebook</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/facebookIcon.jpg" alt="FaceBook">
+            <img class="onlinePlatformImg" src="/networking/newFacebookIcon.jpg" alt="FaceBook">
             </div>
           </div>
 
@@ -447,7 +447,7 @@
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Reddit</p>
             <div class="box">
-            <img class="onlinePlatformImg" src="/networking/redditIcon.jpg" alt="Reddit">
+            <img class="onlinePlatformImg" src="/networking/newReddit.jpg" alt="Reddit">
             </div>
           </div>
 
@@ -1175,6 +1175,7 @@ p.online{
   margin-right: 4vw;
   border-radius: 10px;
 }
+
 
 .box {
   text-align: center;
