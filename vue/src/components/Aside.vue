@@ -1,12 +1,15 @@
 <template>
-  <el-row class="tac">
     <el-col :span="12">
-      <h5 class="menu">Path to Approach</h5>
-      <h5 class="menu">Your Career</h5>
+      <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
+        <el-radio-button :label="false"> &gt; </el-radio-button>
+        <el-radio-button :label="true"> &lt; </el-radio-button>
+      </el-radio-group>
+      <h5 class="menu" v-if="isCollapse == false">Path to Approach <br>Your Career</h5>
       <el-menu
-          style="width: 240px; min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
+          style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
           class="el-menu-vertical-demo"
           default-active="0"
+          :collapse="isCollapse"
           @open="handleOpen"
           @close="handleClose"
       >
@@ -118,7 +121,6 @@
         </el-sub-menu>
       </el-menu>
     </el-col>
-  </el-row>
 </template>
 
 <script lang="ts">
@@ -127,6 +129,7 @@ export default {
   name: "Aside",
   data() {
     return {
+      isCollapse: false,
     }
   },
   methods: {
@@ -141,17 +144,26 @@ export default {
 </script>
 
 <style scoped>
+.el-col:not(.el-menu--collapse) {
+  width: 250px;
+  min-height: 50px;
+  backgroud-color: red;
+}
+/*.wrapper__aside {*/
+/*  overflow-y: none;*/
+/*  backgroud-color: red;*/
+/*}*/
 .mod {
   font-size: 15px;
   color: #182B49;
 }
 .sub1{
   font-size: 13px;
-  color: #1E4460;
+  color: #636363;
 }
 .sub2{
   font-size: 12px;
-  color: #636363;
+  color: #5E8090;
 }
 /*.el-menu-item{*/
 /*  text-align: left;*/
@@ -170,7 +182,9 @@ export default {
   text-align: center;
   color: #1E4460;
 }
-.el-sub-menu:hover {
-  background-color: #FFC740;
+.el-menu-item.is-active {
+  background-color: #FFC740 !important;
+  font-weight: 500 !important;
 }
+
 </style>
