@@ -5,7 +5,7 @@
         <img src="../../public/logo.svg" alt="logo" style="width: 40px"/>
       </a>
       <a href="http://goaltritonscareer.com" style="margin-top: 10px; text-decoration: none">
-        <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1><br>
+        <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1>
       </a>
     </div>
     <div style="width: 470px; display: flex; flex-direction: row; align-items: center;">

@@ -1,15 +1,10 @@
 <template>
     <el-col :span="12">
-      <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-        <el-radio-button :label="false"> &gt; </el-radio-button>
-        <el-radio-button :label="true"> &lt; </el-radio-button>
-      </el-radio-group>
-      <h5 class="menu" v-if="isCollapse == false">Path to Approach <br>Your Career</h5>
+      <h5 class="menu">Path to Approach <br>Your Career</h5>
       <el-menu
           style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
           class="el-menu-vertical-demo"
           default-active="0"
-          :collapse="isCollapse"
           @open="handleOpen"
           @close="handleClose"
       >
@@ -116,7 +111,7 @@
             <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview#interviewSteps')">Interview Steps</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5git push -u origin Interview-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
+            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
       </el-menu>
@@ -144,15 +139,7 @@ export default {
 </script>
 
 <style scoped>
-.el-col:not(.el-menu--collapse) {
-  width: 250px;
-  min-height: 50px;
-  backgroud-color: red;
-}
-/*.wrapper__aside {*/
-/*  overflow-y: none;*/
-/*  backgroud-color: red;*/
-/*}*/
+
 .mod {
   font-size: 15px;
   color: #182B49;
@@ -186,5 +173,6 @@ export default {
   background-color: #FFC740 !important;
   font-weight: 500 !important;
 }
+
 
 </style>

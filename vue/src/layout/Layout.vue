@@ -39,6 +39,7 @@ export default {
 .wrapper {
   position: relative;
 }
+
 .wrapper__aside {
   position: fixed;
   width: 240px;
