@@ -1,31 +1,17 @@
 <template>
-  <el-row class="tac">
     <el-col :span="12">
-      <h5 class="menu">Path to Approach</h5>
-      <h5 class="menu">Your Career</h5>
+      <h5 class="menu">Path to Approach <br>Your Career</h5>
       <el-menu
-          style="width: 240px; min-height: calc(100vh - 50px)"
+          style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
           @close="handleClose"
       >
-<!--        <el-sub-menu index="1">-->
-<!--          <template #title>-->
-<!--            &lt;!&ndash;            <el-icon><location /></el-icon>&ndash;&gt;-->
-<!--            <span class="mod">Being F-1 Student</span>-->
-<!--          </template>-->
-<!--          <el-menu-item-group>-->
-<!--            <el-menu-item index="1-1" class="sub1">F-1 Visa Limitation</el-menu-item>-->
-<!--          </el-menu-item-group>-->
-<!--          <el-menu-item-group>-->
-<!--            <el-menu-item index="1-2" class="sub1">After Graduation</el-menu-item>-->
-<!--          </el-menu-item-group>-->
-<!--        </el-sub-menu>-->
+
         <el-sub-menu index="1">
           <template #title>
-            <!--            <el-icon><location /></el-icon>-->
-            <span class="mod">Learn about Careers</span>
+            <span class="mod">Define your Career Goal</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1" class="sub1">New to Career Planning</el-menu-item>
@@ -33,33 +19,60 @@
           <el-menu-item-group>
             <el-menu-item index="1-2" class="sub1">Learn about Your Career</el-menu-item>
           </el-menu-item-group>
+          <el-sub-menu index="1-3">
+            <template #title style="margin-bottom: fill"><span class="sub1">Being F-1 Students</span></template>
+            <el-menu-item index="1-3-1" class="sub2">CPT/OPT</el-menu-item>
+          </el-sub-menu>
         </el-sub-menu>
+
         <el-sub-menu index="2">
           <template #title>
-<!--            <el-icon><location /></el-icon>-->
-            <span class="mod">Networking</span>
+            <!--            <el-icon><location /></el-icon>-->
+            <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="2-1" class="sub1">Why Networking</el-menu-item>
+            <el-menu-item index="2-1" class="sub1" @click="$router.push('/fakeNetworking#whyNetworking')">Why Networking</el-menu-item>
           </el-menu-item-group>
           <el-sub-menu index="2-2">
-            <template #title>Networking Methods</template>
-            <el-menu-item index="2-2-1" class="sub2">everyday routing</el-menu-item>
-            <el-menu-item index="2-2-2" class="sub2">online platforms</el-menu-item>
-            <el-menu-item index="2-2-3" class="sub2">on-campus orgs</el-menu-item>
+            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>
+            <el-menu-item index="2-2-1" class="sub2" @click="$router.push('/fakeNetworking#whyPlatform')">Why & What</el-menu-item>
+            <el-menu-item index="2-2-2" class="sub2" @click="$router.push('/fakeNetworking#linkedIn')">Linkedin</el-menu-item>
+            <el-menu-item index="2-2-3" class="sub2" @click="$router.push('/fakeNetworking#tritonConnect')">Tritons Connect</el-menu-item>
+            <el-menu-item index="2-2-4" class="sub2" @click="$router.push('/fakeNetworking#otherSocialMedia')">Other Social Media</el-menu-item>
+            <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/fakeNetworking#HowToNetworkOnline')">How to Network Online</el-menu-item>
+          </el-sub-menu>
+          <el-sub-menu index="2-3">
+            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</span></template>
+            <el-menu-item index="2-3-1" class="sub2" @click="$router.push('/fakeNetworking#whyNetworkOnCampus')">Why & Where</el-menu-item>
+            <el-menu-item index="2-3-2" class="sub2" @click="$router.push('/fakeNetworking#studentOrganization')">Student Orgs</el-menu-item>
+            <el-menu-item index="2-3-3" class="sub2" @click="$router.push('/fakeNetworking#mentorshipPrograms')">Mentoring Programs</el-menu-item>
+            <el-menu-item index="2-3-4" class="sub2" @click="$router.push('/fakeNetworking#careerFair')">Career Fairs/Events</el-menu-item>
+            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>
+          </el-sub-menu>
+          <el-sub-menu index="2-4">
+            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>
+            <el-menu-item index="2-4-1" class="sub2" @click="$router.push('/fakeNetworking#whoToNetworkWith')">Who to Network with</el-menu-item>
+            <el-menu-item index="2-4-2" class="sub2" @click="$router.push('/fakeNetworking#faculty')">Faculty</el-menu-item>
+            <el-menu-item index="2-4-3" class="sub2" @click="$router.push('/fakeNetworking#peers')">Peers</el-menu-item>
           </el-sub-menu>
           <el-menu-item-group>
-            <el-menu-item index="2-3" class="sub1">Maintain Networks</el-menu-item>
+            <el-menu-item index="2-5" class="sub1" @click="$router.push('/fakeNetworking#maintainNetwork')">Maintain Networks</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group>
+            <el-menu-item index="2-6" class="sub1" @click="$router.push('/fakeNetworking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group>
+            <el-menu-item index="2-7" class="sub1" @click="$router.push('/fakeNetworking#moreResources')">More Resources</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
+
         <el-menu-item index="3">
-<!--          <el-icon><setting /></el-icon>-->
-          <span class="mod">Internship & Jobs</span>
+          <span class="mod menu-item-3">Internship & Jobs</span>
         </el-menu-item>
+
         <el-sub-menu index="4">
           <template #title>
-            <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
@@ -83,28 +96,26 @@
         </el-sub-menu>
         <el-sub-menu index="5">
           <template #title>
-            <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/interview')">Interview Prep</span>
+            <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="5-1" class="sub1">Why Interview</el-menu-item>
+            <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview#whyInterview')" >Why Interview</el-menu-item>
           </el-menu-item-group>
           <el-sub-menu index="5-2">
-            <template #title><span class="sub1">Interview Questions</span></template>
-            <el-menu-item index="5-2-1" class="sub2">Define Yourself</el-menu-item>
-            <el-menu-item index="5-2-2" class="sub2">Behavioral</el-menu-item>
-            <el-menu-item index="5-2-3" class="sub2">Technical</el-menu-item>
+            <template #title><span class="sub1" @click="$router.push('/interview#interviewQuestions')">Interview Questions</span></template>
+            <el-menu-item index="5-2-1" class="sub2" @click="$router.push('/interview#defineYourself')">Define Yourself</el-menu-item>
+            <el-menu-item index="5-2-2" class="sub2" @click="$router.push('/interview#BehavioralQuestions')">Behavioral</el-menu-item>
+            <el-menu-item index="5-2-3" class="sub2" @click="$router.push('/interview#TechnicalQuestions')">Technical</el-menu-item>
           </el-sub-menu>
           <el-menu-item-group>
-            <el-menu-item index="5-3" class="sub1">Interview Steps</el-menu-item>
+            <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview#interviewSteps')">Interview Steps</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5-4" class="sub1">How to Master</el-menu-item>
+            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
       </el-menu>
     </el-col>
-  </el-row>
 </template>
 
 <script lang="ts">
@@ -113,33 +124,37 @@ export default {
   name: "Aside",
   data() {
     return {
+      isCollapse: false,
     }
-  }
-}
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
-const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
+  },
+  methods: {
+    handleOpen (key: string, keyPath: string[]) {
+      console.log(key, keyPath)
+    },
+    handleClose (key: string, keyPath: string[]) {
+      console.log(key, keyPath)
+    }
+  },
 }
 </script>
 
 <style scoped>
+
 .mod {
   font-size: 15px;
-  color: #1E4460;
+  color: #182B49;
 }
 .sub1{
   font-size: 13px;
-  color: #1E4460;
+  color: #636363;
 }
 .sub2{
   font-size: 12px;
-  color: #1E4460;
+  color: #5E8090;
 }
-.el-menu-item{
-  text-align: left;
-}
+/*.el-menu-item{*/
+/*  text-align: left;*/
+/*}*/
 .el-sub-menu__title{
   text-size: 12px;
 }
@@ -154,4 +169,10 @@ const handleClose = (key: string, keyPath: string[]) => {
   text-align: center;
   color: #1E4460;
 }
+.el-menu-item.is-active {
+  background-color: #FFC740 !important;
+  font-weight: 500 !important;
+}
+
+
 </style>

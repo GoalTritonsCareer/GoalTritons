@@ -4,25 +4,29 @@ import Layout from "../layout/Layout.vue";
 const routes = [
   {
     path: '/',
+    name: 'Home',
+    component: () => import('../views/Home.vue')
+  },
+  {
+    path: '/',
     name: 'Layout',
     component: Layout,
-    redirect: "/home",
     children: [
-      { path: 'home', name: 'Home', component: () => import("../views/Home.vue") },
       { path: 'interview', name: 'Interview', component: () => import("../views/Interview.vue") },
+      { path: 'fakeNetworking', name: 'FakeNetworking', component: () => import("../views/FakeNetworking.vue") },
       { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
     ],
   },
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import('../views/Login.vue')
-  },
-  {
-    path: '/register',
-    name: 'Register',
-    component: () => import('../views/Register.vue')
-  },
+  // {
+  //   path: '/login',
+  //   name: 'Login',
+  //   component: () => import('../views/Login.vue')
+  // },
+  // {
+  //   path: '/register',
+  //   name: 'Register',
+  //   component: () => import('../views/Register.vue')
+  // },
 ]
 
 const router = createRouter({
@@ -32,8 +36,6 @@ const router = createRouter({
     if (to.hash) {
       return {
         el: to.hash,
-        // top: 60,
-        behavior: 'smooth',
       }
     }
   },

@@ -1,6 +1,6 @@
 # career-path
 
-Highly accessible & integrated information website for career-finding among international students at UCSD.
+Highly accessible & integrated informational website for career-finding among international students at UCSD.
 
 ## Development Note
 此项目通过Vue和Springboot实现前后端分离:

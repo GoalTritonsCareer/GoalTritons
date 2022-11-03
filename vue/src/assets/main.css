@@ -5,7 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.el-footer {
+  --el-footer-padding: 0 0px;
+}
+.el-menu-item-group__title {
+  padding: 0;
+}
 .el-calendar-table .el-calendar-day{
   width: 54px;
   height: 58px;
