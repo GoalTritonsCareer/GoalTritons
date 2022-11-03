@@ -1,6 +1,6 @@
 <template>
   <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
-    <div style="flex: 2; padding-left: 2%; display: flex; flex-direction: row">
+    <div style="flex: 2; padding-left: 1.8%; display: flex; flex-direction: row">
       <a href="/" style="margin-top: 5px">
         <img src="../../public/logo.svg" alt="logo" style="width: 40px"/>
       </a>

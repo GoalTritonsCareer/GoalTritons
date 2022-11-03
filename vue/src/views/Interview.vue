@@ -242,7 +242,7 @@
               <li>Have a list of common qs & answer them by yourself.
                 <ul>
                   <li>Use the S.A.R. answer structure when needed.</li>
-                  <li>Keep the answers short & releveant.</li>
+                  <li>Keep the answers short & relevant.</li>
                   <li>MEMORIZE your stories/answers</li>
                 </ul>
               </li>

@@ -409,7 +409,6 @@ h2 {
   margin-left: 0.2%;
   padding-top: 6%;
   overflow-y: hidden;
-
   max-height: 100vh;
   overflow-x: hidden;
   z-index: 3;

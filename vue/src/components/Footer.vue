@@ -23,11 +23,11 @@
     </div>
     <div style="height: 75px; border-top: 1px solid #ccc;">
       <div style="display: flex">
-        <div style="display: flex; flex: 2; flex-direction: row; text-align: left; padding-top: 24px; margin-left: 6%">
+        <div style="display: flex; flex: 2; flex-direction: row; text-align: left; padding-top: 24px; margin-left: 4%">
           <h2>About Us</h2>
           <h2 style="margin-left: 36px">Contact Us</h2>
         </div>
-        <div style="display: flex; flex-direction: row; text-align: right; margin-right: 6%">
+        <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2.8%">
           <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1><br>
           <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
         </div>
@@ -55,6 +55,10 @@ export default {
         })
         return
       }
+      this.$message({
+        type: "error",
+        message: "Sorry, subscription function is still in progress :("
+      })
 
       // this.$refs['form'].validate((valid) => {
       //   if (valid) {
