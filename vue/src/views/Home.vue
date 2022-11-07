@@ -1,49 +1,15 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <Header style="position: fixed; width: 100vw; z-index: 20"/>
+    <homeHeader style="position: fixed; width: 100vw; z-index: 20"/>
+
     <!--    主体-->
-    <el-aside class="wrapper__aside">
-      <el-col :span="12">
-        <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-          <el-radio-button :label="false"> &gt; </el-radio-button>
-          <el-radio-button :label="true"> &lt; </el-radio-button>
-        </el-radio-group>
-        <h5 class="menu" v-if="isCollapse == false">Path to Approach <br>Your Career</h5>
-        <el-menu
-            style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090; background-color: transparent; border: none"
-            class="el-menu-vertical-demo"
-            default-active="0"
-            :collapse="isCollapse"
-            @open="handleOpen"
-            @close="handleClose"
-            v-if="isCollapse == false"
-        >
-          <el-menu-item index="1">
-              <span class="mod">Define your Career Goal</span>
-          </el-menu-item>
-
-          <el-menu-item index="2">
-              <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
-          </el-menu-item>
-
-          <el-menu-item index="3">
-            <span class="mod menu-item-3">Internship & Jobs</span>
-          </el-menu-item>
-
-          <el-menu-item index="4">
-              <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
-          </el-menu-item>
-
-          <el-menu-item index="5">
-              <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
-          </el-menu-item>
-        </el-menu>
-      </el-col>
-    </el-aside>
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
         <el-main class="wrapper__body">
+          <div v-if="isGoodBrowser == false" style="text-align: center">
+            <b> For best user experience, please browse this website using a laptop or desktop! </b>
+          </div>
           <div>
             <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
             <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
@@ -158,7 +124,7 @@
 </template>
 
 <script lang="ts">
-import Header from "../components/Header.vue";
+import HomeHeader from "../components/HomeHeader.vue";
 import Footer from "../components/Footer.vue";
 import Calendar from "../views/Calendar.vue";
 
@@ -166,12 +132,12 @@ export default {
   name: "Home",
   components: {
     Footer,
-    Header,
+    HomeHeader,
     Calendar
   },
   data() {
     return {
-      isCollapse: true,
+      isGoodBrowser: false,
     }
   },
   methods: {
@@ -180,8 +146,22 @@ export default {
     },
     handleClose (key: string, keyPath: string[]) {
       console.log(key, keyPath)
+    },
+    checkBrowser() {
+      console.log(navigator.userAgent);
+      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        return false;
+      } else if (/micromessenger/.test(navigator.userAgent.toLocaleLowerCase())) {
+        return false;
+      } else {
+        return true;
+      }
     }
   },
+  mounted() {
+    this.isGoodBrowser = this.checkBrowser();
+    console.log("Using a desktop or laptop: ", this.isGoodBrowser);
+  }
 }
 </script>
 
@@ -491,37 +471,4 @@ h2 {
   margin-top: -60px;
 }
 
-.mod {
-  font-size: 15px;
-  color: #182B49;
-}
-.sub1{
-  font-size: 13px;
-  color: #636363;
-}
-.sub2{
-  font-size: 12px;
-  color: #5E8090;
-}
-/*.el-menu-item{*/
-/*  text-align: left;*/
-/*}*/
-.el-sub-menu__title{
-  text-size: 12px;
-}
-.el-col {
-  max-width: 87%;
-  flex: 0 0 50%;
-}
-.menu {
-  font-size: 20px;
-  margin-left: 3px;
-  margin-bottom: 3px;
-  text-align: center;
-  color: #1E4460;
-}
-/*.el-menu-item.is-active {*/
-/*  background-color: #FFC740 !important;*/
-/*  font-weight: 500 !important;*/
-/*}*/
 </style>

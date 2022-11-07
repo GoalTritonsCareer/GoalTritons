@@ -28,8 +28,12 @@
           <h2 style="margin-left: 36px">Contact Us</h2>
         </div>
         <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2.8%">
-          <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1><br>
-          <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
+          <a href="http://goaltritonscareer.com" style="text-decoration: none">
+            <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
+          </a>
+          <a href="http://goaltritonscareer.com" >
+            <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
+          </a>
         </div>
       </div>
     </div>

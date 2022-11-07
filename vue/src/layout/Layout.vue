@@ -42,7 +42,7 @@ export default {
 
 .wrapper__aside {
   position: fixed;
-  width: 240px;
+  width: 250px;
   margin-left: 0.5%;
   padding-top: 6%;
   overflow-y: auto;

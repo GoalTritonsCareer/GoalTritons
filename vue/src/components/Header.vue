@@ -1,7 +1,7 @@
 <template>
   <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
     <div style="flex: 2; padding-left: 1.8%; display: flex; flex-direction: row">
-      <a href="/" style="margin-top: 5px">
+      <a href="http://goaltritonscareer.com" style="margin-top: 5px">
         <img src="../../public/logo.svg" alt="logo" style="width: 40px"/>
       </a>
       <a href="http://goaltritonscareer.com" style="margin-top: 10px; text-decoration: none">
@@ -21,7 +21,7 @@
       >
         <template #reference>
           <div style="position: relative; display: inline-block; margin-left: 30px;">
-            <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 7px; padding-top: 5px">
+            <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 6px; padding-top: 5px">
               {{ getDay() }}
             </p>
 <!--            <el-avatar :size="30" style="position: absolute; top: 10px; left: 10px; z-index: 1; display: inline;-->
