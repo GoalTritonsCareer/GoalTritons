@@ -130,7 +130,7 @@
           the real workplace so that they can anticipate your performance. These are usually about <strong>soft skills</strong>
           (<em>e.g. leadership</em>) and <strong>personal attributes</strong> (<em>e.g. persistency</em>).</p>
 
-        <img src="/interview/behaviorQuetion.svg" style="margin-bottom: 50px">
+        <img src="/interview/behaviorQuetion.svg" style="margin-bottom: 50px; width: 50vw">
 
         <div style="text-align: right; margin-bottom: 82px">
             <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">See More Behavioral Sample Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
@@ -231,7 +231,7 @@
         </a>
       </div>
 
-      <div id="HTMAIdiv">
+      <div id="HTMAIdiv" style="width: 50vw;text-align: center;margin-left: 5vw">
         <div>
           <img src="/interview/beforeTheInterview.svg" class="HTMAIimg" style="margin-bottom: 20px">
 
