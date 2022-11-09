@@ -231,7 +231,7 @@
         </a>
       </div>
 
-      <div id="HTMAIdiv" style="width: 50vw;text-align: center;margin-left: 5vw">
+      <div id="HTMAIdiv" style="width: 50vw; margin-left: 20px">
         <div>
           <img src="/interview/beforeTheInterview.svg" class="HTMAIimg" style="margin-bottom: 20px">
 
