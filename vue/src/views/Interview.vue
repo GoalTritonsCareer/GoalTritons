@@ -59,7 +59,7 @@
 
             <div class="DYdiv">
               <div>
-                <img class="DYimg" src="/interview/researchEmoji.png">
+                <img class="DYimg" src="/interview/researchEmoji.svg">
               </div>
 
               <div >
@@ -87,7 +87,7 @@
 
             <div  class="DYdiv"  style="align-items: center">
               <div>
-                <img class="DYimg" src="/interview/speechEmoji.png" style="vertical-align: middle">
+                <img class="DYimg" src="/interview/speechEmoji.svg" style="vertical-align: middle">
               </div>
 
 
@@ -270,7 +270,7 @@
             <p>Be open, polite, and honest</p>
             <ul>
               <li>Make a good first impression by providing big smile, handshake, and proper greetings, etc.</li>
-              <li>Click to see common questions.</li>
+              
             </ul>
 
             <img src="/interview/clothesEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
@@ -317,7 +317,7 @@
 
 
     </div>
-    <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
+    <div style="text-align: right; margin-bottom: 20px; margin-top: 50px">
       <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">See More Common Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
       <a id="moreResources"></a>
     </div>
