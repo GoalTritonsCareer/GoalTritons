@@ -2,7 +2,7 @@
     <el-col :span="12">
       <h5 class="menu">Path to Approach <br>Your Career</h5>
       <el-menu
-          style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
+          style="min-height: calc(100vh - 160px); --el-menu-active-color: #5E8090"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
@@ -148,37 +148,44 @@ export default {
 .mod {
   font-size: 15px;
   color: #182B49;
-  /*height: 36px;*/
   font-weight: 400;
 }
 .sub1{
   font-size: 13px;
   color: #636363;
-  /*height: 36px;*/
 }
 .sub2{
   font-size: 12px;
   color: #5E8090;
 }
-/*.el-menu-item{*/
-/*  text-align: left;*/
-/*}*/
-.el-sub-menu__title{
-  text-size: 12px;
+.el-sub-menu ul{
+  height: 35px !important;
 }
+.el-sub-menu .el-menu-item {
+  height: 35px !important;
+}
+
 .el-col {
   max-width: 100%;
   flex: 0 0 50%;
 }
 .menu {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   text-align: center;
   color: #1E4460;
+  line-height: 30px;
 }
 .el-menu-item.is-active {
   background-color: #FFC740 !important;
   font-weight: 500 !important;
+}
+</style>
+
+<style>
+.el-sub-menu__title {
+  height: 35px !important;
+  text-size: 12px;
 }
 </style>

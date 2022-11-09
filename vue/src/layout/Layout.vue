@@ -9,7 +9,7 @@
         <!--      内容区域-->
         <el-container>
           <router-view class="wrapper__body"/>
-          <el-footer class="wrapper__footer" style="margin-left: 240px">
+          <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
             <Footer/>
           </el-footer>
         </el-container>

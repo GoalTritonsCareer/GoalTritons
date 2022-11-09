@@ -1329,10 +1329,10 @@ ul{
   text-decoration: underline;
   font-weight: 600;
 }
+
 #more-resources{
   text-align: left;
 }
-
 #more-resources > ul{
   text-align: left;
   margin-right: 12vw;
@@ -1340,7 +1340,7 @@ ul{
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
+  line-height: 141%;
 }
 #more-resources a{
   text-decoration: none;

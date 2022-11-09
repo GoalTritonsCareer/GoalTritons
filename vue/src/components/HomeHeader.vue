@@ -15,7 +15,7 @@
           @open="handleOpen"
           @close="handleClose"
       >
-        <el-sub-menu index="1" popper-offset="0">
+        <el-sub-menu index="1" popper-offset="9">
           <template #title>
             <span class="mod">Define your Career Goal</span>
           </template>
@@ -25,13 +25,13 @@
           <el-menu-item-group divided>
             <el-menu-item index="1-2" class="sub1">Learn about Your Career</el-menu-item>
           </el-menu-item-group>
-          <el-sub-menu index="1-3">
+          <el-sub-menu index="1-3" style="margin-top: 0">
             <template #title style="margin-bottom: fill"><span class="sub1">Being F-1 Students</span></template>
             <el-menu-item index="1-3-1" class="sub2">CPT/OPT</el-menu-item>
           </el-sub-menu>
         </el-sub-menu>
 
-        <el-sub-menu index="2" popper-offset="0">
+        <el-sub-menu index="2" popper-offset="9">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
             <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
@@ -39,7 +39,7 @@
           <el-menu-item-group>
             <el-menu-item index="2-1" class="sub1" @click="$router.push('/fakeNetworking#whyNetworking')">Why Networking</el-menu-item>
           </el-menu-item-group>
-          <el-sub-menu index="2-2">
+          <el-sub-menu index="2-2" style="margin-top: 0">
             <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>
             <el-menu-item index="2-2-1" class="sub2" @click="$router.push('/fakeNetworking#whyPlatform')">Why & What</el-menu-item>
             <el-menu-item index="2-2-2" class="sub2" @click="$router.push('/fakeNetworking#linkedIn')">Linkedin</el-menu-item>
@@ -47,7 +47,7 @@
             <el-menu-item index="2-2-4" class="sub2" @click="$router.push('/fakeNetworking#otherSocialMedia')">Other Social Media</el-menu-item>
             <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/fakeNetworking#HowToNetworkOnline')">How to Network Online</el-menu-item>
           </el-sub-menu>
-          <el-sub-menu index="2-3">
+          <el-sub-menu index="2-3" style="margin-top: 0">
             <template #title><span class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</span></template>
             <el-menu-item index="2-3-1" class="sub2" @click="$router.push('/fakeNetworking#whyNetworkOnCampus')">Why & Where</el-menu-item>
             <el-menu-item index="2-3-2" class="sub2" @click="$router.push('/fakeNetworking#studentOrganization')">Student Orgs</el-menu-item>
@@ -55,7 +55,7 @@
             <el-menu-item index="2-3-4" class="sub2" @click="$router.push('/fakeNetworking#careerFair')">Career Fairs/Events</el-menu-item>
             <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>
           </el-sub-menu>
-          <el-sub-menu index="2-4">
+          <el-sub-menu index="2-4" style="margin-top: 0">
             <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>
             <el-menu-item index="2-4-1" class="sub2" @click="$router.push('/fakeNetworking#whoToNetworkWith')">Who to Network with</el-menu-item>
             <el-menu-item index="2-4-2" class="sub2" @click="$router.push('/fakeNetworking#faculty')">Faculty</el-menu-item>
@@ -72,7 +72,7 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="3" popper-offset="0">
+        <el-sub-menu index="3" popper-offset="9">
           <template #title>
             <span class="mod menu-item-3">Internship & Jobs</span>
           </template>
@@ -81,14 +81,14 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="4" popper-offset="0">
+        <el-sub-menu index="4" popper-offset="9">
           <template #title>
             <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
           </el-menu-item-group>
-          <el-sub-menu index="4-2">
+          <el-sub-menu index="4-2" style="margin-top: 0">
             <template #title ><span class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</span></template>
             <el-menu-item index="4-2-1" class="sub2" @click="$router.push('/resume#resume-components')">Resume Components</el-menu-item>
             <el-menu-item index="4-2-2" class="sub2" @click="$router.push('/resume#resume-essentials')">Resume Essentials</el-menu-item>
@@ -106,14 +106,14 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="5" popper-offset="0">
+        <el-sub-menu index="5" popper-offset="9">
           <template #title>
             <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview#whyInterview')" >Why Interview</el-menu-item>
           </el-menu-item-group>
-          <el-sub-menu index="5-2">
+          <el-sub-menu index="5-2" style="margin-top: 0">
             <template #title><span class="sub1" @click="$router.push('/interview#interviewQuestions')">Interview Questions</span></template>
             <el-menu-item index="5-2-1" class="sub2" @click="$router.push('/interview#defineYourself')">Define Yourself</el-menu-item>
             <el-menu-item index="5-2-2" class="sub2" @click="$router.push('/interview#BehavioralQuestions')">Behavioral</el-menu-item>
@@ -263,7 +263,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
@@ -305,24 +305,25 @@ h2 {
 .day {
   position: absolute;
 }
-.el-input--small .el-input__wrapper {
-  border-radius: 12px;
-}
+/*.el-input--small .el-input__wrapper {*/
+/*  border-radius: 12px;*/
+/*}*/
 .el-input--small {
   height: 35px;
   font-size: 12px;
 }
 .el-sub-menu {
-  margin: 0 7px;
+  padding: 0 8px;
+  margin-top: 15px;
 }
 
-.el-menu--horizontal>.el-sub-menu .el-sub-menu__icon-arrow {
-  display: none;
-}
 .el-menu-item.is-active {
   background-color: #FFC740 !important;
   font-weight: 500 !important;
 }
 
+/*.el-menu--horizontal>.el-sub-menu .el-sub-menu__title {*/
+/*  height: 59px !important;*/
+/*}*/
 
 </style>

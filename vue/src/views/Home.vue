@@ -116,7 +116,7 @@
             </div>
           </div>
         </el-main>
-        <el-footer style="z-index: 2">
+        <el-footer style="z-index: 2; border-top: 1px solid #ccc">
           <Footer/>
         </el-footer>
     </el-container>
@@ -383,16 +383,6 @@ h2 {
 .wrapper {
   position: relative;
 }
-.wrapper__aside {
-  position: fixed;
-  width: 240px;
-  margin-left: 0.2%;
-  padding-top: 6%;
-  overflow-y: hidden;
-  max-height: 100vh;
-  overflow-x: hidden;
-  z-index: 3;
-}
 
 .wrapper__body {
   flex: 1;
@@ -416,11 +406,6 @@ h2 {
   /*transition: 4s;*/
 }
 
-/*#student:hover {*/
-/*  margin-top: -75px;*/
-/*  left: -100px;*/
-/*  filter: brightness(200%);*/
-/*}*/
 .timeline {
   margin-left: calc((100vw - 988px) / 2);
   margin-top: 80px;

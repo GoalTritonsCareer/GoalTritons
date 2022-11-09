@@ -8,10 +8,9 @@
         <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1>
       </a>
     </div>
-    <div style="width: 470px; display: flex; flex-direction: row; align-items: center;">
+    <div style="width: 460px; display: flex; flex-direction: row; align-items: center;">
       <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
-      margin-right:
-       15px; width: 260px" v-model="state1"
+      width: 260px" v-model="state1"
         :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
         @select="handleSelect" />
       <el-popover
@@ -208,5 +207,8 @@ h2 {
 .el-input--small {
   height: 30px;
   font-size: 5px;
+}
+.el-input--small .el-input__wrapper {
+  border-radius: 12px;
 }
 </style>
