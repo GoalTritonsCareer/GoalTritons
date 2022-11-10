@@ -246,17 +246,17 @@
                   <li>MEMORIZE your stories/answers</li>
                 </ul>
               </li>
-              <li>Click to see <a class="moreRes" href="/interview/commonInterviewQuestions.pdf" download="" style="color: #0467B0; ">common questions</a>.</li>
+              <li>Click to see <a class="intextLink" href="/interview/commonInterviewQuestions.pdf" download="" style="color: #0467B0; ">common questions</a>.</li>
             </ul>
 
             <img src="/interview/speakerEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
             <p>Prepare a brief self-introduction</p>
-            <ul><li>Click to see <a class="moreRes" href="//leverageedu.com/blog/self-introduction-in-interview/#:~:text=First%2C%20greet%20the%20interviewer%20with,and%20nod%20at%20appropriate%20times"
+            <ul><li>Click to see <a class="intextLink" href="//leverageedu.com/blog/self-introduction-in-interview/#:~:text=First%2C%20greet%20the%20interviewer%20with,and%20nod%20at%20appropriate%20times"
                                     target="_blank" style="color: #0467B0; ">tips</a>.</li></ul>
 
             <img src="/interview/arrowEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
             <p>Practice, practice, and practice!</p>
-            <ul><li>Find peers to do mock interviews using the <a class="moreRes" href="//ucsd.biginterview.com/" target="_blank" style="color: #0467B0; ">Big Interview</a>.</li></ul>
+            <ul><li>Find peers to do mock interviews using the <a class="intextLink" href="//ucsd.biginterview.com/" target="_blank" style="color: #0467B0; ">Big Interview</a>.</li></ul>
           </div>
 
 
@@ -298,7 +298,7 @@
           <p>Ask questions at the end</p>
           <ul>
             <li>Click to see
-              <a class="moreRes" id="longMoreRes"  href="//www.betterup.com/blog/questions-to-ask-hiring-manager" target="_blank">
+              <a class="intextLink" id="longMoreRes"  href="//www.betterup.com/blog/questions-to-ask-hiring-manager" target="_blank">
                 sample questions</a> to ask employers or hiring managers.
             </li>
           </ul>
@@ -306,7 +306,7 @@
           <img src="/interview/emailEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
           <p>Send a thank you note/email within 24 hours.</p>
           <ul>
-            <li>Click to see <a class="moreRes" href="//www.themuse.com/advice/how-to-write-an-interview-thankyou-note-an-email-template"
+            <li>Click to see <a class="intextLink" href="//www.themuse.com/advice/how-to-write-an-interview-thankyou-note-an-email-template"
                                 target="_blank" style="color: #0467B0;">sample thank you emails</a>.</li>
           </ul>
         </div>
@@ -773,4 +773,16 @@ export default {
   #longMoreRes{
     display: inline;
   }
+
+  .intextLink {
+    color: #0467B0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .intextLink:hover {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
 </style>
