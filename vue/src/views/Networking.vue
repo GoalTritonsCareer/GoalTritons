@@ -1505,8 +1505,8 @@ ul{
   gap: 0;
   height: fit-content;
   width: min-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -10px;
+  /*margin-right: 3vw;*/
 }
 .one1 {
   grid-column: 1;
