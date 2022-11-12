@@ -1,5 +1,5 @@
 <template>
-  <div id="fakeNetworkingTop">
+  <div id="NetworkingTop">
 
     <div>
       <h1>Networking</h1>
@@ -178,7 +178,7 @@
               </ul>
               <div style="text-align: left; padding-left: 12px">
                 <i>See LinkedIn summary examples under </i>
-                <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>.
+                <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>.
               </div>
 
             </div>
@@ -241,7 +241,7 @@
         </div>
 
         <div style="text-align: right; margin-bottom: 42px; margin-top: 42px">
-          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i></p>
+          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i></p>
         </div>
 
       </div>
@@ -293,14 +293,14 @@
         <div class="s2Tips">
           <p class="DYp">Point 3</p>
           <span>Pay attention to people you should develop further relationships with, learn
-            <span class="moreResLink" @click="$router.push('/fakeNetworking#maintainNetwork')">
+            <span class="moreResLink" @click="$router.push('/Networking#maintainNetwork')">
               How to Maintain Networks</span>.
           </span>
 
         </div>
 
         <div style="text-align: right; margin-bottom: 50px; margin-top: 40px">
-          <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>
+          <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>
           <a id="tritonConnect"></a>
         </div>
 
@@ -516,7 +516,7 @@
           <img src="/networking/howToNetworkOnlineS21.svg" alt="sampleQs" width="830">
 
           <div style="text-align: right; margin-top: 40px">
-            <i>See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>
+            <i>See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>
           </div>
         </div>
 
@@ -544,7 +544,7 @@
           <img src="/networking/howToNetworkOnlineS41.svg" alt="reminder" width="570">
 
           <div style="text-align: right; margin-top: 40px">
-            <i>See</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#maintainNetwork')">How to Maintain Networks</i>
+            <i>See</i> <i class="moreResLink" @click="$router.push('/Networking#maintainNetwork')">How to Maintain Networks</i>
             <a id="networkOnCampus"></a>
           </div>
         </div>
@@ -936,7 +936,7 @@
 <script>
 import Calendar from "./Calendar.vue"
 export default {
-  name: "FakeNetworking",
+  name: "Networking",
   components: {
     Calendar
   }
