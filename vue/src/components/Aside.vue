@@ -1,10 +1,8 @@
 <template>
-  <el-row class="tac">
     <el-col :span="12">
-      <h5 class="menu">Path to Approach</h5>
-      <h5 class="menu">Your Career</h5>
+      <h5 class="menu">Path to Approach <br>Your Career</h5>
       <el-menu
-          style="width: 240px; min-height: calc(100vh - 50px)"
+          style="min-height: calc(100vh - 160px); --el-menu-active-color: #5E8090"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
@@ -13,7 +11,7 @@
 
         <el-sub-menu index="1">
           <template #title>
-            <span>Define your Career Goal</span>
+            <span class="mod">Define your Career Goal</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1" class="sub1">New to Career Planning</el-menu-item>
@@ -68,13 +66,18 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-menu-item index="3">
-          <span class="mod">Internship & Jobs</span>
-        </el-menu-item>
+        <el-sub-menu index="3">
+          <template #title>
+            <span class="mod menu-item-3">Internship & Jobs</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item index="3-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Random</el-menu-item>
+          </el-menu-item-group>
+        </el-sub-menu>
 
         <el-sub-menu index="4">
           <template #title>
-            <span class="mod" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
           </template>
           <el-menu-item-group>
             <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
@@ -113,12 +116,11 @@
             <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview#interviewSteps')">Interview Steps</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5git push -u origin Interview-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
+            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
       </el-menu>
     </el-col>
-  </el-row>
 </template>
 
 <script lang="ts">
@@ -127,6 +129,7 @@ export default {
   name: "Aside",
   data() {
     return {
+      isCollapse: false,
     }
   },
   methods: {
@@ -141,33 +144,48 @@ export default {
 </script>
 
 <style scoped>
+
 .mod {
   font-size: 15px;
-  color: #1E4460;
+  color: #182B49;
+  font-weight: 400;
 }
 .sub1{
   font-size: 13px;
-  color: #1E4460;
+  color: #636363;
 }
 .sub2{
   font-size: 12px;
-  color: #1E4460;
+  color: #5E8090;
 }
-/*.el-menu-item{*/
-/*  text-align: left;*/
-/*}*/
-.el-sub-menu__title{
-  text-size: 12px;
+.el-sub-menu ul{
+  height: 35px !important;
 }
+.el-sub-menu .el-menu-item {
+  height: 35px !important;
+}
+
 .el-col {
   max-width: 100%;
   flex: 0 0 50%;
 }
 .menu {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   text-align: center;
   color: #1E4460;
+  line-height: 30px;
+}
+.el-menu-item.is-active {
+  background-color: #FFC740 !important;
+  font-weight: 500 !important;
+}
+</style>
+
+<style>
+.el-sub-menu__title {
+  height: 35px !important;
+  text-size: 12px;
 }
 </style>

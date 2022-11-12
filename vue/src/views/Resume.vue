@@ -1,7 +1,8 @@
 <template xmlns="http://www.w3.org/1999/html">
   <div id="resumeTop">
     <h1>Resume / CV & Cover Letter</h1>
-    <p id="opening">In this page, Go Tritons will walk you through an important step of your job application process—Resume,
+    <p id="opening">In this page, Goal Tritons will walk you through an
+      important step of your job application process—Resume,
       CV, and Cover Letter building. For resume and the CV, we will explain the differences, and then we will break down
       the specific components for all of them. Let’s start!</p>
 
@@ -95,7 +96,8 @@
               Include school name/majors & minors/expected graduation date/awards or honors; include
               <strong class="medium"> GPA only if ≥ 3.5</strong>. </p>
             <p>
-              <br> <span class="semi">Activities (Optional):</span> only add if relevant to the position.
+              <br> <span class="semi">Activities <i>(Optional)</i>:</span> only
+              add if relevant to the position.
             </p>
           </div>
         </div>
@@ -159,7 +161,7 @@
                     font-size: 16px; margin-left: -3%">
           <p style="padding-top: 10px; color: #1E4460">Limit formatting of your resume to be
             <a class="link" href="https://www.topresume.com/career-advice/what-is-an-ats-resume" target="_blank" style="color: #0467B0">
-              ATS (Applicant Tracking System)
+              ATS <i>(Applicant Tracking System)</i>
             </a>
             friendly.
           </p>
@@ -187,7 +189,7 @@
         </div>
 
         <div class="resumeTemplate">
-          <p class="sampleResumeTitle">Info Tech (IT)</p>
+          <p class="sampleResumeTitle">Info Tech <i>(IT)</i></p>
           <a class="card" href="//www.indeed.com/career-advice/resume-samples/information-technology-resumes?from=careeradvice-US" target="_blank" style="margin-top: 5px">
             <img src="/resume/resumeTemplateView.png" class="img-bot" alt="resume template" height="255px">
             <img src="/resume/hoverImage.png" class="img-top" alt="click to view" height="255px">
@@ -224,7 +226,8 @@
         <h3 style="margin-top: 80px">Polish Your Resume</h3>
         <p class="inlinePara" style="text-align: left">Carefully select a
           <strong class="semi">strong Action Verb</strong> per bullet point to demonstrate your accomplishments & skills.
-          <br> &nbsp; &nbsp; <b style="font-weight: 900">•</b> e.g. <i class="semi">managed</i> the cross-functional team
+          <br> &nbsp; &nbsp; <b style="font-weight: 900">•</b> <i>e.g. <span
+              class="semi">managed</span> the cross-functional team</i>
         </p>
         <div id="polishVerbs">
           <dl>
@@ -463,6 +466,7 @@
             <dd>Transformed</dd>
           </dl>
         </div>
+        <a id="impactStatements"></a>
         <br>
 
         <p class="inlinePara" style="text-align: left">Make sure you have <strong class="semi">Impact Statements</strong>
@@ -564,7 +568,8 @@
           <div style="text-align: left; width: 545px">
             <span class="semi">Popular Articles or Publications</span>
             <p class="components">Include scholarly publications such as journals, articles, and book chapters, as well
-              as the status of their publication (e.g. in preparation, under review, forthcoming).</p>
+              as the status of their publication <i>(e.g. in preparation, under
+                review, forthcoming)</i>.</p>
           </div>
         </div>
 
@@ -609,14 +614,18 @@
           </div>
         </div>
 
-        <p class="ulTitle" style="margin-top: 50px">More Sections to Include (if you have one & relevant to your
-          respective field)</p>
+        <p class="ulTitle" style="margin-top: 50px">More Sections to Include
+          <i>(if you have one & relevant to your
+            respective field)</i></p>
         <br>
         <ul>
-          <li><span class="medium">Presentations</span>: include the author(s) and the title of presentation, the conference/symposium name,
+          <li><span class="medium">Presentations</span>: include the
+            author<i>(s)</i> and the title of presentation, the
+            conference/symposium name,
             the location and the date. </li>
           <li><span class="medium">Teaching Experience</span>: describe your role; include the name of the course and institution, the position
-            you held (e.g., Teaching Assistant, Instructor of Record), the location, and month-year range of the
+            you held <i>(e.g., Teaching Assistant, Instructor of Record)</i>,
+            the location, and month-year range of the
             teaching engagement.</li>
           <li class="medium">Professional Memberships or Affiliations</li>
           <li class="medium">Certifications & Licensure</li>
@@ -676,10 +685,12 @@
           </ul>
         </li>
         <li>Resume Summary Examples: <a href="//zety.com/blog/resume-summary#:~:text=Here's%20how%20to%20write%20a,can%20deliver%20results%20when%20hired" target="_blank">
-          <p class="moreRes" style="display: inline"> Professional Resume Summary Examples (25+ Statements)</p></a>
+          <p class="moreRes" style="display: inline"> Professional Resume
+            Summary Examples <i>(25+ Statements)</i></p></a>
         </li>
         <li>Resume Skills Examples: <a href="//resumegenius.com/blog/resume-help/skills-for-resume" target="_blank">
-          <p class="moreRes" style="display: inline">Best Skills for Your Resume (Examples + How to List)</p></a>
+          <p class="moreRes" style="display: inline">Best Skills for Your
+            Resume <i>(Examples + How to List)</i></p></a>
         </li>
         <li>Career Center: <a href="https://career.ucsd.edu/succeed-search/resume/index.html" target="_blank">
           <p class="moreRes" style="display: inline">Create a Resume</p></a>
@@ -689,7 +700,8 @@
       <p class="moreResTitle" style="margin-top: 20px">CV:</p>
       <ul>
         <li>More examples for CV formatting: <a href="//resumegenius.com/blog/cv-help/cv-format#conferences" target="_blank">
-          <p class="moreRes" style="display: inline">Curriculum Vitae (CV) Format: Samples & Formatting Tips</p></a>
+          <p class="moreRes" style="display: inline">Curriculum Vitae <i>(CV)
+          </i> Format: Samples & Formatting Tips</p></a>
         </li>
       </ul>
 

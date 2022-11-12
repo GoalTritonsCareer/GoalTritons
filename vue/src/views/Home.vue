@@ -1,38 +1,44 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <Header style="position: fixed; width: 100vw; z-index: 20; background-color: #1E4460"/>
+    <homeHeader style="position: fixed; width: 100vw; z-index: 20"/>
+
     <!--    主体-->
-    <Aside class="wrapper__aside"/>
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
         <el-main class="wrapper__body">
+          <div v-if="isGoodBrowser == false" style="text-align: center; font-size: 16px; color: red; margin-top: 10px">
+            <b> For best user experience, please browse this website using a laptop or desktop! </b>
+          </div>
           <div>
             <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
             <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
             <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
             <span class="dot220"></span><span class="dot221"></span>
-            <h1 style="font-size: 50px; color: #1E4460; width: 660px; margin-top: 18vh; line-height: 116%;margin-left: 14vw">Your
-              <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span>
-              professional future is what we strive for.
-            </h1>
+            <div>
+              <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: 14vw">Your
+                <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
+                professional future is <br>what we strive for.
+              </h1>
 
-            <div style="display: flex; flex-direction: row; margin-left: 14vw">
-              <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
-                explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
-                Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
-                next big challenge which hasn't been cemented? A hundred questions whirl in your head. <br>
-                <br>
-                But hey, we were once on the same page. As UCSD undergraduates, we have experienced the same struggles,
-                asked the same questions. But, with professional help, we now found and built solutions to all your
-                confusions.
-              </p>
-              <div style="position: relative; display: inline-block">
-                <span class="sun"></span>
-                <img src="/home/mountain.svg" alt="mountain" style="width: 95%; margin-top: -40px;">
-                <img id="student" src="/home/student.svg" alt="student">
+              <div style="display: flex; flex-direction: row; margin-left: 14vw">
+                <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
+                  explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
+                  Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
+                  next big challenge which hasn't been cemented? A hundred questions whirl in your head. <br>
+                  <br>
+                  But hey, we were once on the same page. As UCSD undergraduates, we have experienced the same struggles,
+                  asked the same questions. But, with professional help, we now found and built solutions to all your
+                  confusions.
+                </p>
+                <div style="position: relative; display: inline-block">
+                  <span class="sun"></span>
+                  <img src="/home/mountain.svg" alt="mountain" style="width: 95%; margin-top: -40px;">
+                  <img id="student" src="/home/student.svg" alt="student">
+                </div>
               </div>
             </div>
+
 
             <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: 14vw; z-index: 3">
               <el-popover
@@ -113,15 +119,15 @@
             </div>
           </div>
         </el-main>
-        <el-footer style="z-index: 2">
+        <el-footer style="z-index: 2; border-top: 1px solid #ccc">
           <Footer/>
         </el-footer>
     </el-container>
   </div>
 </template>
 
-<script>
-import Header from "../components/Header.vue";
+<script lang="ts">
+import HomeHeader from "../components/HomeHeader.vue";
 import Footer from "../components/Footer.vue";
 import Calendar from "../views/Calendar.vue";
 
@@ -129,11 +135,35 @@ export default {
   name: "Home",
   components: {
     Footer,
-    Header,
+    HomeHeader,
     Calendar
   },
   data() {
-    return {}
+    return {
+      isGoodBrowser: false,
+    }
+  },
+  methods: {
+    handleOpen (key: string, keyPath: string[]) {
+      console.log(key, keyPath)
+    },
+    handleClose (key: string, keyPath: string[]) {
+      console.log(key, keyPath)
+    },
+    checkBrowser() {
+      console.log(navigator.userAgent);
+      if (/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
+        return false;
+      } else if (/micromessenger/.test(navigator.userAgent.toLocaleLowerCase())) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  },
+  mounted() {
+    this.isGoodBrowser = this.checkBrowser();
+    console.log("Using a desktop or laptop: ", this.isGoodBrowser);
   }
 }
 </script>
@@ -255,9 +285,9 @@ h2 {
   width: 438px;
   height: 369px;
   left: -165px;
-  top: 3594px;
+  top: 3694px;
   z-index: -1;
-  background: rgba(244, 206, 113, 0.2);
+  background: rgba(244, 206, 113, 0.4);
   filter: blur(150px);
 }
 .dot213 {
@@ -355,7 +385,6 @@ h2 {
 
 .wrapper {
   position: relative;
-  background-color: #F9F9F9;
 }
 
 .wrapper__body {
@@ -380,13 +409,8 @@ h2 {
   /*transition: 4s;*/
 }
 
-/*#student:hover {*/
-/*  margin-top: -75px;*/
-/*  left: -100px;*/
-/*  filter: brightness(200%);*/
-/*}*/
 .timeline {
-  margin-left: calc((100vw - 976px) / 2);
+  margin-left: calc((100vw - 988px) / 2);
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -419,7 +443,7 @@ h2 {
   grid-row: 1/6;
   padding-top: 122px;
   margin-left: -2px;
-  margin-right: -4px;
+  margin-right: -25px;
 }
 .three2 {
   grid-column: 3;
@@ -434,6 +458,5 @@ h2 {
   height: min-content;
   margin-top: -60px;
 }
-
 
 </style>

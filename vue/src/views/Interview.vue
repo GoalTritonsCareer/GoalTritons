@@ -1,7 +1,8 @@
 <template>
   <div id="opening">
     <h1>Interview Prep</h1>
-    <p id="openingPara">In this page, Go Tritons will walk you through how to prepare for the interview—the most
+    <p id="openingPara">In this page, Goal Tritons will walk you through how
+      to prepare for the interview—the most
       nerve-racking part of job application. You will learn various interview questions, answer structures, and the
       entire interview process. You will also receive a wealth of advices and materials on how to master an interview.
       Let’s get started!</p>
@@ -93,13 +94,16 @@
               <div>
                 <p class="DYulTitle">What to pitch?</p>
                 <ul class="DYul">
-                  <li>Your background/accomplishments/interests/passion (refer to your Resume)</li>
+                  <li>Your background/accomplishments/interests/passion
+                    <i>(refer to your Resume)</i></li>
                 </ul>
                 <br>
                 <p class="DYulTitle">How to pitch? </p>
                 <ul class="DYul">
                   <li>Reflect on <span style="font-weight: 500">what</span> you are excel at and <span style="font-weight: 500">why</span> you want to apply for this position in this company.</li>
-                  <li>Design a <span style="font-weight: 500">cohesive story</span> of you in a past-present-future structure (your career trajectory & your career goal?)</li>
+                  <li>Design a <span style="font-weight: 500">cohesive
+                    story</span> of you in a past-present-future structure
+                    <i>(your career trajectory & your career goal?)</i></li>
                   <li>Connect your <span style="font-weight: 500">past experiences</span> with what the company is looking for in the position.</li>
                 </ul>
               </div>
@@ -238,7 +242,7 @@
               <li>Have a list of common qs & answer them by yourself.
                 <ul>
                   <li>Use the S.A.R. answer structure when needed.</li>
-                  <li>Keep the answers short & releveant.</li>
+                  <li>Keep the answers short & relevant.</li>
                   <li>MEMORIZE your stories/answers</li>
                 </ul>
               </li>
