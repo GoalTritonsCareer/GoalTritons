@@ -23,7 +23,7 @@
 
       <div>
 
-        <h3>Why use online platforms?</h3><img src="/networking/whyOnlinePlatforms.svg" alt="why Online Platform" width="800">
+        <h3>Why use online platforms?</h3><img src="/networking/whyOnlinePlatform.svg" alt="why Online Platform" width="800">
         <p class="online"><a class="intextLink" href="https://www.jobvite.com/wp-content/uploads/2020/05/FINAL-Jobvite-JobSeekerNation-Report1_5-11.pdf" target="_blank">
           2022 Job Seeker Nation</a> reported that 42% say they find out about job openings through social media platforms.
         </p>
@@ -258,7 +258,7 @@
           your focus when expanding your network should be on the people that can <span class="semi">add to your
           professional value</span>.
         </p>
-        <img class="step2Img" alt="connectWith" src="/networking/step2P2.svg" style="margin-top: 10px">
+        <img class="step2Img" alt="connectWith" src="/networking/connectWith.svg" style="margin-top: 10px">
       </div>
 
 
@@ -336,7 +336,7 @@
         </div>
         <p id="highlight">Highlight</p>
         <img src="/networking/tritonsConnect2.svg" alt="tritonsConnectHighlight" width="900" style="padding-left: 5%">
-        <img src="/networking/mentoringOptions.svg" alt="mentoringOptions" style="margin-top: 50px">
+        <img src="/networking/mentoringOption.svg" alt="mentoringOptions" style="margin-top: 50px">
 
 
         <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
@@ -773,7 +773,7 @@
         <h3>Faculty</h3>
         <div>
           <h4>Why Networking with the Faculty?</h4>
-          <img src="/networking/whyNetworkingWithTheFaculty.svg">
+          <img src="/networking/whyNetworkWithFaculty.svg" alt="Why Networking with the Faculty">
         </div>
 
         <div>
