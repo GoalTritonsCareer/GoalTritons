@@ -37,13 +37,13 @@
         <el-sub-menu index="2" popper-offset="11">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
+            <span class="mod" @click="$router.push('/Networking#fakeNetworkingTop')">Networking</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="2-1" class="sub1" @click="$router.push('/fakeNetworking#whyNetworking')">Why Networking</el-menu-item>
+            <el-menu-item index="2-1" class="sub1" @click="$router.push('/Networking#whyNetworking')">Why Networking</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-2" class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</el-menu-item>
+            <el-menu-item index="2-2" class="sub1" @click="$router.push('/Networking#onlinePlatform')">Online Platforms</el-menu-item>
           </el-menu-item-group>
 <!--          <el-sub-menu index="2-2" style="margin-top: 0">-->
 <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>-->
@@ -54,7 +54,7 @@
 <!--            <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/fakeNetworking#HowToNetworkOnline')">How to Network Online</el-menu-item>-->
 <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-3" class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</el-menu-item>
+            <el-menu-item index="2-3" class="sub1" @click="$router.push('/Networking#networkOnCampus')">Networking on Campus</el-menu-item>
           </el-menu-item-group>
 <!--          <el-sub-menu index="2-3" style="margin-top: 0">-->
 <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</span></template>-->
@@ -65,7 +65,7 @@
 <!--            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>-->
 <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-4" class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</el-menu-item>
+            <el-menu-item index="2-4" class="sub1" @click="$router.push('/Networking#everydayRoutine')">Everyday Routine</el-menu-item>
           </el-menu-item-group>
 <!--          <el-sub-menu index="2-4" style="margin-top: 0">-->
 <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>-->
@@ -74,13 +74,13 @@
 <!--            <el-menu-item index="2-4-3" class="sub2" @click="$router.push('/fakeNetworking#peers')">Peers</el-menu-item>-->
 <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-5" class="sub1" @click="$router.push('/fakeNetworking#maintainNetwork')">Maintain Networks</el-menu-item>
+            <el-menu-item index="2-5" class="sub1" @click="$router.push('/Networking#maintainNetwork')">Maintain Networks</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-6" class="sub1" @click="$router.push('/fakeNetworking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
+            <el-menu-item index="2-6" class="sub1" @click="$router.push('/Networking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-7" class="sub1" @click="$router.push('/fakeNetworking#moreResources')">More Resources</el-menu-item>
+            <el-menu-item index="2-7" class="sub1" @click="$router.push('/Networking#moreResources')">More Resources</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
 
@@ -155,7 +155,7 @@
       <el-popover
           placement="bottom"
           trigger="hover"
-          width="415px"
+          width="430px"
       >
         <template #reference>
           <div style="position: relative; display: inline-block; margin-left: 30px;">
