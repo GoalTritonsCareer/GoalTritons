@@ -45,7 +45,7 @@
                   placement="right"
                   offset="50"
                   trigger="hover"
-                  width="415px"
+                  width="432px"
               >
                 <template #reference>
                   <img src="/home/homeCalendar.svg" alt="calendar" width="420">

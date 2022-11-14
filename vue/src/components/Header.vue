@@ -16,7 +16,7 @@
       <el-popover
           placement="bottom"
           trigger="hover"
-          width="460px"
+          width="430px"
       >
         <template #reference>
           <div style="position: relative; display: inline-block; margin-left: 30px;">

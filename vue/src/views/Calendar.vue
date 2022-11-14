@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="width:430px; height: 450px">
+    <div style="width:405px; height: 450px">
       <el-calendar>
         <template #dateCell="{ data }">
           <p :class="data.isSelected ? 'is-selected' : ''" :style="hasEvent(data.day)">

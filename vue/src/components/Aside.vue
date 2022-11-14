@@ -176,6 +176,7 @@ export default {
   text-align: center;
   color: #1E4460;
   line-height: 30px;
+  margin-top: 13%;
 }
 .el-menu-item.is-active {
   background-color: #FFC740 !important;

@@ -694,7 +694,7 @@
                      placement="bottom"
                      offset="50"
                      trigger="hover"
-                     width="415px"
+                     width="432px"
                  >
                 <template #reference>
                   <span style="color: #b27224">mini calendar</span>
