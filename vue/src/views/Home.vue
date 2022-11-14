@@ -16,12 +16,12 @@
             <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
             <span class="dot220"></span><span class="dot221"></span>
             <div>
-              <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: 14vw">Your
+              <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: calc((100vw - 976px) / 2);">Your
                 <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
                 professional future is <br>what we strive for.
               </h1>
 
-              <div style="display: flex; flex-direction: row; margin-left: 14vw">
+              <div style="display: flex; flex-direction: row; margin-left: calc((100vw - 976px) / 2);">
                 <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
                   explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
                   Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
@@ -40,7 +40,7 @@
             </div>
 
 
-            <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: 14vw; z-index: 3">
+            <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: calc((100vw - 976px) / 2); z-index: 3">
               <el-popover
                   placement="right"
                   offset="50"
@@ -61,7 +61,7 @@
             </div>
 
             <div style="margin-top: 150px">
-              <h2 style="margin-left: 14vw">Enjoy this road map to your brand new future...</h2>
+              <h2 style="margin-left: calc((100vw - 1000px) / 2);">Enjoy this road map to your brand new future...</h2>
 
               <div class="timeline">
                 <div class="one1">
