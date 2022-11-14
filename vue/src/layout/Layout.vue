@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
       <!--    头部-->
-      <Header style="position: fixed; width: 100vw; z-index: 20; background-color: #1E4460"/>
+      <Header style="position: fixed; width: 100vw; z-index: 20"/>
       <!--    主体-->
       <el-container style="display: flex" class="wrapper">
         <!--      侧边栏-->
@@ -9,7 +9,7 @@
         <!--      内容区域-->
         <el-container>
           <router-view class="wrapper__body"/>
-          <el-footer style="margin-left: 240px">
+          <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
             <Footer/>
           </el-footer>
         </el-container>
@@ -38,11 +38,11 @@ export default {
 <style scoped>
 .wrapper {
   position: relative;
-  background-color: #F9F9F9;
 }
+
 .wrapper__aside {
   position: fixed;
-  width: 240px;
+  width: 250px;
   margin-left: 0.5%;
   margin-top: 4%;
   overflow-y: auto;
@@ -55,7 +55,7 @@ export default {
 .wrapper__body {
   flex: 1;
   margin-left: 19%;
-  padding-left: 1%;
+  padding-left: 2%;
   width: auto;
   /*margin-left: 275px;*/
   /*padding-left: 26px;*/
@@ -63,6 +63,8 @@ export default {
   padding-top: 6.3%;
   margin-bottom: 12%;
 }
+
+
 
 
 </style>

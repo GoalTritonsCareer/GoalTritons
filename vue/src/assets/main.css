@@ -20,10 +20,21 @@
 .el-calendar__body {
   padding: 5px 5px 5px;
 }
-
+.el-menu--horizontal>.el-sub-menu .el-sub-menu__icon-arrow {
+  display: none;      /* 取消navi bar中的箭头 */
+}
+.el-menu--horizontal {
+  border-bottom: hidden;  /* 取消navi bar中自带的下划线，因为与Aide.vue style的冲突，这是比较笨的方法 */
+}
 .prev {
   width: 50px;
 }
+/*.el-sub-menu__title {*/
+/*  height: 35px;*/
+/*  line-height: 35px;*/
+/*  text-size: 12px;*/
+/*}*/
+
 
 /*#app {*/
 /*  max-width: 1280px;*/

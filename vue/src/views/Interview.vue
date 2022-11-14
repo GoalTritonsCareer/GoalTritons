@@ -59,7 +59,7 @@
 
             <div class="DYdiv">
               <div>
-                <img class="DYimg" src="/interview/researchEmoji.png">
+                <img class="DYimg" src="/interview/researchEmoji.svg">
               </div>
 
               <div >
@@ -87,7 +87,7 @@
 
             <div  class="DYdiv"  style="align-items: center">
               <div>
-                <img class="DYimg" src="/interview/speechEmoji.png" style="vertical-align: middle">
+                <img class="DYimg" src="/interview/speechEmoji.svg" style="vertical-align: middle">
               </div>
 
 
@@ -130,7 +130,7 @@
           the real workplace so that they can anticipate your performance. These are usually about <strong>soft skills</strong>
           (<em>e.g. leadership</em>) and <strong>personal attributes</strong> (<em>e.g. persistency</em>).</p>
 
-        <img src="/interview/behaviorQuetion.svg" style="margin-bottom: 50px">
+        <img src="/interview/behaviorQuetion.svg" style="margin-bottom: 50px; width: 50vw">
 
         <div style="text-align: right; margin-bottom: 82px">
             <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">See More Behavioral Sample Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
@@ -231,7 +231,7 @@
         </a>
       </div>
 
-      <div id="HTMAIdiv">
+      <div id="HTMAIdiv" style="width: 50vw; margin-left: 20px">
         <div>
           <img src="/interview/beforeTheInterview.svg" class="HTMAIimg" style="margin-bottom: 20px">
 
@@ -242,21 +242,21 @@
               <li>Have a list of common qs & answer them by yourself.
                 <ul>
                   <li>Use the S.A.R. answer structure when needed.</li>
-                  <li>Keep the answers short & releveant.</li>
+                  <li>Keep the answers short & relevant.</li>
                   <li>MEMORIZE your stories/answers</li>
                 </ul>
               </li>
-              <li>Click to see <a class="moreRes" href="/interview/commonInterviewQuestions.pdf" download="" style="color: #0467B0; ">common questions</a>.</li>
+              <li>Click to see <a class="intextLink" href="/interview/commonInterviewQuestions.pdf" download="" style="color: #0467B0; ">common questions</a>.</li>
             </ul>
 
             <img src="/interview/speakerEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
             <p>Prepare a brief self-introduction</p>
-            <ul><li>Click to see <a class="moreRes" href="//leverageedu.com/blog/self-introduction-in-interview/#:~:text=First%2C%20greet%20the%20interviewer%20with,and%20nod%20at%20appropriate%20times"
+            <ul><li>Click to see <a class="intextLink" href="//leverageedu.com/blog/self-introduction-in-interview/#:~:text=First%2C%20greet%20the%20interviewer%20with,and%20nod%20at%20appropriate%20times"
                                     target="_blank" style="color: #0467B0; ">tips</a>.</li></ul>
 
             <img src="/interview/arrowEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
             <p>Practice, practice, and practice!</p>
-            <ul><li>Find peers to do mock interviews using the <a class="moreRes" href="//ucsd.biginterview.com/" target="_blank" style="color: #0467B0; ">Big Interview</a>.</li></ul>
+            <ul><li>Find peers to do mock interviews using the <a class="intextLink" href="//ucsd.biginterview.com/" target="_blank" style="color: #0467B0; ">Big Interview</a>.</li></ul>
           </div>
 
 
@@ -270,7 +270,7 @@
             <p>Be open, polite, and honest</p>
             <ul>
               <li>Make a good first impression by providing big smile, handshake, and proper greetings, etc.</li>
-              <li>Click to see common questions.</li>
+              
             </ul>
 
             <img src="/interview/clothesEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
@@ -298,7 +298,7 @@
           <p>Ask questions at the end</p>
           <ul>
             <li>Click to see
-              <a class="moreRes" id="longMoreRes"  href="//www.betterup.com/blog/questions-to-ask-hiring-manager" target="_blank">
+              <a class="intextLink" id="longMoreRes"  href="//www.betterup.com/blog/questions-to-ask-hiring-manager" target="_blank">
                 sample questions</a> to ask employers or hiring managers.
             </li>
           </ul>
@@ -306,7 +306,7 @@
           <img src="/interview/emailEmoji.svg" class="HTMAIemoji" style="margin-right: 0.5rem">
           <p>Send a thank you note/email within 24 hours.</p>
           <ul>
-            <li>Click to see <a class="moreRes" href="//www.themuse.com/advice/how-to-write-an-interview-thankyou-note-an-email-template"
+            <li>Click to see <a class="intextLink" href="//www.themuse.com/advice/how-to-write-an-interview-thankyou-note-an-email-template"
                                 target="_blank" style="color: #0467B0;">sample thank you emails</a>.</li>
           </ul>
         </div>
@@ -317,7 +317,7 @@
 
 
     </div>
-    <div style="text-align: right; margin-bottom: 82px; margin-top: 82px">
+    <div style="text-align: right; margin-bottom: 20px; margin-top: 50px">
       <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">See More Common Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
       <a id="moreResources"></a>
     </div>
@@ -773,4 +773,16 @@ export default {
   #longMoreRes{
     display: inline;
   }
+
+  .intextLink {
+    color: #0467B0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .intextLink:hover {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
 </style>
