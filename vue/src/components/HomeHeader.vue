@@ -148,10 +148,13 @@
     </div>
 
     <div style="width: 360px; display: flex; flex-direction: row; align-items: center;">
-      <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -3px;
-      width: 175px; font-size: 14px" v-model="state1"
-        :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
-        @select="handleSelect" />
+      <div style="position: relative; display: inline-block;">
+        <img src="/search-icon.svg" alt="icon" style="position: absolute; z-index: 2; display: inline; top: 29px; left: 10px">
+        <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
+        width: 175px; position: relative" v-model="state1"
+                         :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
+                         @select="handleSelect" />
+      </div>
       <el-popover
           placement="bottom"
           trigger="hover"
