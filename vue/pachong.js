@@ -13,9 +13,11 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
     res.on('end',function() {
         // console.log(html);
         const $ = cheerio.load(html);
+        const type = "Career";
         let allFairs = [];
         $('.row .panel-body').each(function () {
             // this循环时 指向当前这个career fair
+
             const title = $('h2', this).text();
             const info = $('p', this).text().split(" ");
             const year = info[1];
@@ -31,7 +33,7 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
             const link = "https://career.ucsd.edu/employers-recruiters/career-fairs/"+$('a', this).attr("href");
             // 存成一个json文件 fs
             allFairs.push({
-                title, date, link
+                type, title, date, link
             })
             // console.log(allFairs);
         })
