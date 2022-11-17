@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <homeHeader style="position: fixed; width: 100vw; z-index: 20"/>
+    <homeHeader style="position: fixed; width: 100vw; z-index: 20; height: 8vh"/>
 
     <!--    主体-->
     <el-container style="display: flex" class="wrapper">

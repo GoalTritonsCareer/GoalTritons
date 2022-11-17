@@ -176,7 +176,7 @@
         </template>
       </el-popover>
 
-      <h2 style="margin-left: 35px">About Us</h2>
+      <h2 style="margin-left: 2vw">About Us</h2>
 
     </div>
   </div>
@@ -290,7 +290,7 @@ export default {
   src: url('../../public/WorkSans/WorkSans-Semibold.woff');
 }
 .mod {
-  font-size: 15px;
+  font-size: 1vw;
   color: #636363;
   font-weight: 500;
   /*height: 36px;*/
@@ -299,7 +299,7 @@ export default {
   color: #1e4460;
 }
 .sub1{
-  font-size: 13px;
+  font-size: 0.8vw;
   color: #1e4460;
   text-align: center;
   /*height: 36px;*/
@@ -312,17 +312,19 @@ export default {
 h1{
   color: black;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.8vw;
   font-family: work-sans;
   line-height: 141%;
+  width: 11vw;
 }
 
 h2 {
   color: #1e4460;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1vw;
   font-family: work-sans;
   line-height: 141%;
+   width: 5vw;
 }
 
 .day {
