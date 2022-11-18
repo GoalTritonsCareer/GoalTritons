@@ -1,1 +1,8 @@
-[{"title":"Science and Technology","date":"2022-10-06","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/science--technology.html"},{"title":"All Majors","date":"2022-10-11","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/fall-2022-all-majors.html"}]
+[{"type":"Career","title":"Science and Technology","date":"2022-10-06","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/science--technology.html"},{"type":"Career","title":"All Majors","date":"2022-10-11","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/fall-2022-all-majors.html"},{"type":"Career","title":"Graduate & Professional Schools","date":"2022-10-13","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/Graduate and Professional Schools.html"},
+  {"type": "Holiday","title": "Veterans Day Holiday", "date": "2022-11-11","link":"https://blink.ucsd.edu/instructors/resources/academic/calendars/2022.html"},
+  {"type": "Holiday","title": "Thanksgiving Holiday", "date": "2022-11-24"},
+  {"type": "Holiday","title": "Thanksgiving Holiday", "date": "2022-11-25"},
+  {"type": "EDU","title": "Instruction Ends", "date": "2022-12-02"},
+  {"type": "EDU","title": "Final Exams", "date": "2022-12-03"},
+  {"type": "Holiday","title": "Winter Break", "date": "2022-12-23"},
+  {"type": "Holiday","title": "New Year Holiday", "date": "2022-12-30"}]

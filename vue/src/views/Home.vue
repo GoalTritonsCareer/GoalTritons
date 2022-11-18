@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <homeHeader style="position: fixed; width: 100vw; z-index: 20; height: 8vh"/>
+    <homeHeader style="position: fixed; width: 100vw; z-index: 20"/>
 
     <!--    主体-->
     <el-container style="display: flex" class="wrapper">
@@ -40,12 +40,12 @@
             </div>
 
 
-            <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: calc((100vw - 988px) / 2); z-index: 3">
+            <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: calc((100vw - 976px) / 2); z-index: 3">
               <el-popover
                   placement="right"
                   offset="50"
                   trigger="hover"
-                  width="415px"
+                  width="432px"
               >
                 <template #reference>
                   <img src="/home/homeCalendar.svg" alt="calendar" width="420">
@@ -100,7 +100,7 @@
                   <div style="position: relative; display: inline-block">
                     <img src="/home/startNetworking.svg" alt="frame">
                     <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
-                            @click="$router.push('/fakeNetworking#fakeNetworkingTop')">
+                            @click="$router.push('/Networking#NetworkingTop')">
                       Start Networking
                     </button>
                   </div>

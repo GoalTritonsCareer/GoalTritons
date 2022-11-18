@@ -9,14 +9,17 @@
       </a>
     </div>
     <div style="width: 460px; display: flex; flex-direction: row; align-items: center;">
-      <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
-      width: 260px" v-model="state1"
-        :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
-        @select="handleSelect" />
+      <div style="position: relative; display: inline-block;">
+        <img src="/search-icon.svg" alt="icon" style="position: absolute; z-index: 2; display: inline; top: 28px; left: 10px">
+        <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
+        width: 260px; position: relative" v-model="state1"
+                         :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
+                         @select="handleSelect" />
+      </div>
       <el-popover
           placement="bottom"
           trigger="hover"
-          width="415px"
+          width="430px"
       >
         <template #reference>
           <div style="position: relative; display: inline-block; margin-left: 30px;">
@@ -207,6 +210,9 @@ h2 {
 .el-input--small {
   height: 30px;
   font-size: 5px;
+}
+.el-input--small .el-input__inner {
+  padding-left: 23px;
 }
 .el-input--small .el-input__wrapper {
   border-radius: 12px;

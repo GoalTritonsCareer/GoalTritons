@@ -44,10 +44,10 @@ export default {
   position: fixed;
   width: 250px;
   margin-left: 0.5%;
-  padding-top: 6%;
+  margin-top: 4%;
   overflow-y: auto;
   height: auto;
-  max-height: 100vh;
+  max-height: 92%;
   background-color: white;
   overflow-x: hidden;
 }

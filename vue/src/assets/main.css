@@ -12,8 +12,10 @@
   padding: 0;
 }
 .el-calendar-table .el-calendar-day{
-  width: 54px;
+  width: 58px;
   height: 58px;
+  padding: 5px 0px 0px 5px;
+
 }
 .el-calendar__body {
   padding: 5px 5px 5px;
