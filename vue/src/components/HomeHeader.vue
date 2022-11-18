@@ -1,21 +1,21 @@
 <template>
   <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
-    <div style="padding-left: 1%; display: flex; flex-direction: row; margin-right: 15px">
-      <a href="http://goaltritonscareer.com" style="margin-top: 5px">
-        <img src="../../public/logo.svg" alt="logo" style="width: 40px"/>
+    <div style="width: 18vw; padding-left: 1%; display: flex; flex-direction: row; align-items: center">
+      <a href="http://goaltritonscareer.com" style="margin-top: -8px">
+        <img src="../../public/logo.svg" alt="logo" style="width: 40px; vertical-align: middle;"/>
       </a>
-      <a href="http://goaltritonscareer.com" style="margin-top: 10px; text-decoration: none">
+      <a href="http://goaltritonscareer.com" style="text-decoration: none;">
         <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1>
       </a>
     </div>
-    <div style="width: 57vw; align-items: center">
+    <div style="width: 56vw; place-self: center">
       <el-menu
           class="el-menu-demo"
           mode="horizontal"
           @open="handleOpen"
           @close="handleClose"
       >
-        <el-sub-menu index="1" popper-offset="11">
+        <el-sub-menu index="1" popper-offset="13">
           <template #title>
             <span class="mod">Define your Career Goal</span>
           </template>
@@ -34,7 +34,7 @@
 <!--          </el-sub-menu>-->
         </el-sub-menu>
 
-        <el-sub-menu index="2" popper-offset="11">
+        <el-sub-menu index="2" popper-offset="13">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
             <span class="mod" @click="$router.push('/Networking#fakeNetworkingTop')">Networking</span>
@@ -84,7 +84,7 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="3" popper-offset="11">
+        <el-sub-menu index="3" popper-offset="13">
           <template #title>
             <span class="mod menu-item-3">Internship & Jobs</span>
           </template>
@@ -93,7 +93,7 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="4" popper-offset="11">
+        <el-sub-menu index="4" popper-offset="13">
           <template #title>
             <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume</span>
           </template>
@@ -121,7 +121,7 @@
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-sub-menu index="5" popper-offset="11">
+        <el-sub-menu index="5" popper-offset="13">
           <template #title>
             <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
           </template>
@@ -147,11 +147,11 @@
       </el-menu>
     </div>
 
-    <div style="width: 360px; display: flex; flex-direction: row; align-items: center;">
+    <div style="width: 26vw; display: flex; flex-direction: row; align-items: center;">
       <div style="position: relative; display: inline-block;">
         <img src="/search-icon.svg" alt="icon" style="position: absolute; z-index: 2; display: inline; top: 29px; left: 10px">
         <el-autocomplete placeholder="Search info (e.g. resume)" style="margin-top: -5px;
-        width: 175px; position: relative" v-model="state1"
+        width: 12vw; position: relative" v-model="state1"
                          :fetch-suggestions="querySearch" :trigger-on-focus="false" clearable class="inline-input w-50"
                          @select="handleSelect" />
       </div>
@@ -179,7 +179,10 @@
         </template>
       </el-popover>
 
-      <h2 style="margin-left: 2vw">About Us</h2>
+      <div style="margin-left: 2vw; min-width: 100px; width: 11vw;">
+        <h2>About Us</h2>
+      </div>
+
 
     </div>
   </div>
@@ -324,10 +327,9 @@ h1{
 h2 {
   color: #1e4460;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 1.4vw;
   font-family: work-sans;
   line-height: 141%;
-   width: 5vw;
 }
 
 .day {
@@ -339,8 +341,7 @@ h2 {
   font-size: 12px;
 }
 .el-sub-menu {
-  padding: 0 8px;
-  margin-top: 13px;
+  padding: 0 1%;
 }
 /*.el-menu-item {*/
 /*  justify-content: center;  // 展开时会产生偏移*/
