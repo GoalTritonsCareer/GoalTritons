@@ -16,12 +16,12 @@
             <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
             <span class="dot220"></span><span class="dot221"></span>
             <div>
-              <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: calc((100vw - 976px) / 2);">Your
+              <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: calc((100vw - 988px) / 2);">Your
                 <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
                 professional future is <br>what we strive for.
               </h1>
 
-              <div style="display: flex; flex-direction: row; margin-left: calc((100vw - 976px) / 2);">
+              <div style="display: flex; flex-direction: row; margin-left: calc((100vw - 988px) / 2);">
                 <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
                   explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
                   Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
