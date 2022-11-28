@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <!--    头部-->
-    <homeHeader style="position: fixed; width: 100vw; z-index: 20"/>
+    <HomeHeader class="header"/>
 
     <!--    主体-->
     <el-container style="display: flex" class="wrapper">
@@ -171,6 +171,10 @@ export default {
 <style scoped>
 @font-face { font-family: work-sans-semi;
   src: url('/WorkSans/WorkSans-Semibold.woff');
+}
+.header {
+  position: fixed;
+  z-index: 20;
 }
 button {
   font-style: normal;
