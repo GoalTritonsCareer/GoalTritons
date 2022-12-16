@@ -404,8 +404,8 @@ export default {
     width: 57vw;
   }
   .top-right {
-      width: 27vw;
-    }
+    width: 27vw;
+  }
   .mod {
     font-size: 12px;
     color: #636363;
@@ -441,7 +441,37 @@ export default {
   }
 }
 /* 多数Pad */
+/* TODO: 完善对iPad屏幕的styling */
 @media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    width: 100vw;
+  }
+  .top-left {
+    width: 16vw;
+  }
+  .top-left-logo {
+    width: 31px;
+  }
+  .top-mid {
+    width: 58vw;
+  }
+  .top-right {
+    width: 25vw;
+  }
+  h1{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: work-sans;
+    line-height: 200%;
+  }
+  h2 {
+    color: #1e4460;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: work-sans;
+    line-height: 141%;
+  }
 
 }
 /* 手机 */

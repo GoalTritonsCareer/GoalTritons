@@ -41,6 +41,9 @@ export default {
 @media (min-width: 1440px) {
   .header {
     width: 1440px;
+  }
+  .common-layout {
+    width: 1440px;
     margin-left: calc((100vw - 1440px)/2);
   }
 }

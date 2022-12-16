@@ -1,4 +1,5 @@
 <template>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
     <!--    头部-->
     <HomeHeader class="header"/>
@@ -119,7 +120,7 @@
             </div>
           </div>
         </el-main>
-        <el-footer style="z-index: 2; border-top: 1px solid #ccc">
+        <el-footer class="footer">
           <Footer/>
         </el-footer>
     </el-container>
@@ -169,6 +170,38 @@ export default {
 </script>
 
 <style scoped>
+/* 大屏幕 ( > 13 in. ) */
+@media (min-width: 1440px) {
+  .footer {
+    width: 1440px !important;
+    margin-left: calc((100vw - 1440px)/2) !important;
+  }
+}
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .footer {
+    width: 100%;
+  }
+}
+/* 小电脑及大Pad */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  .footer {
+    width: 100%;
+  }
+}
+/*@media (min-width: 992px) and (max-width: 1279px) {*/
+/*  .wrapper__body {*/
+/*    width: 70vw;*/
+/*  }*/
+/*  .footer {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
 @font-face { font-family: work-sans-semi;
   src: url('/WorkSans/WorkSans-Semibold.woff');
 }
@@ -194,6 +227,10 @@ button:hover {
   background-color: #F4CE71;
   color: darkblue;
   border: hidden;
+}
+.footer {
+  z-index: 2;
+  border-top: 1px solid #ccc;
 }
 h1{
   font-family: work-sans-semi;
