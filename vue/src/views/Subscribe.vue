@@ -40,7 +40,9 @@ export default {
   },
   methods: {
     register() {
+      console.log("here1");
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.form.email)) {
+
         this.$message({
           type: "error",
           message: "Not a valid email address"

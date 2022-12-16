@@ -40,16 +40,27 @@
 
 <script>
 import request from "../utils/request";
+import subscribers from "./subscribers/subscribers.json";
 
 export default {
   name: "Footer",
   data() {
     return {
-      form: {}
+      form: {},
+      subscribersJson: subscribers
     }
   },
   methods: {
+    check_subscribed(email){
+      console.log("checking: ", email)
+      console.log(this.subscribersJson.subscribers)
+
+      const subscribed = this.subscribersJson.subscribers.some(subscriber => subscriber.email === email);
+      console.log("if subscribed: ", subscribed)
+      return subscribed
+    },
     subscribe() {
+      console.log("here33")
       if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.form.email))) {
         this.$message({
           type: "error",
@@ -57,8 +68,43 @@ export default {
         })
         return
       }
+
       this.$refs['form'].validate((valid) => {
         if (valid) {
+          var already_subscribed = this.check_subscribed(this.form.email);
+          /*
+          if (already_subscribed) {
+            this.$message({
+              type: "error",
+              message: "There exist a subscribed account associsated with this email"
+            })
+            return
+          } 
+          else {
+
+            let new_subscribers = [...this.subscribersJson.subscribers];
+
+            console.log(typeof this.subscribersJson.subscribers, new_subscribers, Array.isArray(new_subscribers));
+
+            let new_sub = {
+              email: this.form.email
+            };
+
+
+            new_subscribers.push(new_sub);
+
+            console.log(new_subscribers);
+
+            var newJson = JSON.stringify({subscribers: new_subscribers});
+            console.log(newJson);
+            var fs = require('fs');
+            console.log("here");
+            fs.writeFile("./subscribers/subscribers.json", newJson, 'utf8', callback);  
+            
+          }*/
+
+
+
           request.post("/user/subscribe", this.form).then(res => {
             if (res.code === '0') {
               this.$message({
