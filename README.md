@@ -1,4 +1,4 @@
-# career-path
+# Goal Tritons
 
 Highly accessible & integrated informational website for career-finding among international students at UCSD.
 
