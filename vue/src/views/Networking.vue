@@ -946,6 +946,13 @@ export default {
 
 
 <style scoped>
+/* 小电脑及大Pad */
+/*@media (min-width: 992px) and (max-width: 1279px) {*/
+/*  #NetworkingTop{*/
+/*    margin-left: 27%;*/
+/*  }*/
+/*}*/
+
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }

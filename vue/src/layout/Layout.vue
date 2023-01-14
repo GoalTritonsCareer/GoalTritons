@@ -58,8 +58,15 @@ export default {
 /* 小电脑及大Pad */
 @media (min-width: 992px) and (max-width: 1279px) {
   .header {
-    width: 992px;
-    margin-left: calc((100vw - 992px)/2);
+    width: 100vw;
+  }
+
+  .wrapper__body{
+    margin-left: calc(0.5vw + 250px) !important;
+  }
+
+  .wrapper__footer{
+    margin-left: calc(0.5vw + 250px) !important;
   }
 }
 /* 多数Pad */
