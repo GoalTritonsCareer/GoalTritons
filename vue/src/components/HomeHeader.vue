@@ -162,14 +162,14 @@
             width="430px"
         >
           <template #reference>
-            <div class="top-calendar" style="position: relative; display: inline-block; margin-left: 30px;">
-              <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 8.5px; padding-top: 5px">
+            <div class="top-calendar">
+              <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 7px; padding-top: 5px">
                 {{ getDay() }}
               </p>
               <!--            <el-avatar :size="30" style="position: absolute; top: 10px; left: 10px; z-index: 1; display: inline;-->
               <!--              background-color: transparent; margin-right: 17px" shape="square">-->
-              <img src="/calendar.svg" alt="calendar" style="position: absolute; top: 21px; left: 0px; z-index: 1; width: 32px; display: inline;">
-              <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -9.5px; left: 8.2px">
+              <img class="top-calendar-logo" src="/calendar.svg" alt="calendar">
+              <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -10px; left: 8.2px">
                 {{ getMonth() }}
               </p>
               <!--            </el-avatar>-->
@@ -316,7 +316,7 @@ export default {
   }
   .top-calendar {
     margin-right: 35px;
-    margin-left: 35px !important;
+    margin-left: 35px;
   }
   .mod {
     font-size: 15px;
@@ -358,6 +358,10 @@ export default {
   }
   .top-mid {
     width: 57vw;
+  }
+  .top-calendar {
+    margin-right: 2.8vw;
+    margin-left: 2.8vw;
   }
   .top-right {
     width: 27vw;
@@ -407,6 +411,14 @@ export default {
   .top-mid {
     width: 57vw;
   }
+  .top-calendar {
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  /* TODO: reduce its width more, but have to change the month and day styling meanwhile*/
+  .top-calendar-logo {
+    width: 30px !important;
+  }
   .top-right {
     width: 27vw;
   }
@@ -433,13 +445,13 @@ export default {
   h2 {
     color: #1e4460;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     font-family: work-sans;
     line-height: 141%;
   }
-  .inline-input w-50 {
-    /*width: 8vw !important;*/
-  }
+
+  /*TODO: reduce el-autocomplete width to 7vw*/
+
   .el-sub-menu {
     padding: 0 0 !important;
   }
@@ -518,7 +530,18 @@ export default {
 /*  font-family: work-sans;*/
 /*  line-height: 141%;*/
 /*}*/
-
+.top-calendar {
+  position: relative;
+  display: inline-block;
+}
+.top-calendar-logo {
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  z-index: 1;
+  width: 32px;
+  display: inline;
+}
 .top-left {
   /*width: 16vw;*/
   padding-left: 1%;
