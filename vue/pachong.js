@@ -37,10 +37,25 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
             })
             // console.log(allFairs);
         })
-        fs.writeFile('./career-fairs.json', JSON.stringify(allFairs),function(err){
-            if(!err){
-                console.log('Output complete!');
+        const path = './career-fairs.json';
+        try {
+            if (fs.existsSync(path)) {
+                //file exists
+                // TODO: bug: format error , i.e. 2 lists of dictionaries
+                fs.appendFile(path, JSON.stringify(allFairs), function (err) {
+                    if (!err) {
+                        console.log('Saved!');
+                    }
+                });
+            } else {
+                fs.writeFile(path, JSON.stringify(allFairs),function(err) {
+                    if(!err){
+                        console.log('Output complete!');
+                    }
+                });
             }
-        })
+        } catch(err) {
+            console.error(err);
+        }
     })
 })
