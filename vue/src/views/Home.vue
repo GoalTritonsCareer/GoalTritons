@@ -8,7 +8,7 @@
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
       <el-main class="wrapper__body">
-        <div v-if="isGoodBrowser == false" style="text-align: center; font-size: 16px; color: red; margin-top: 10px">
+        <div v-if="isGoodBrowser == false" style="text-align: center; font-size: 16px; color: red; margin-top: 10vh">
           <b> For best user experience, please browse this website using a laptop or desktop! </b>
         </div>
         <div>
