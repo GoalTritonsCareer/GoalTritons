@@ -1,3 +1,4 @@
+
 <template>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
@@ -22,7 +23,6 @@
 import Header from "../components/Header.vue";
 import Aside from "../components/Aside.vue";
 import Footer from "../components/Footer.vue";
-
 export default {
   name: "Layout",
   components: {
@@ -50,10 +50,8 @@ export default {
 /* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
 @media (min-width: 1280px) and (max-width: 1439px) {
   .header {
-    width: 1280px;
-    margin-left: calc((100vw - 1280px)/2);
+    width: 100vw;
   }
-
 }
 /* 小电脑及大Pad */
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -91,7 +89,6 @@ export default {
   position: relative;
   display: flex;
 }
-
 .wrapper__aside {
   position: fixed;
   width: 250px;
@@ -103,7 +100,6 @@ export default {
   background-color: white;
   overflow-x: hidden;
 }
-
 .wrapper__body {
   flex: 1;
   margin-left: 19%;
@@ -115,8 +111,4 @@ export default {
   padding-top: 6.3%;
   margin-bottom: 12%;
 }
-
-
-
-
 </style>
