@@ -176,7 +176,7 @@ export default {
     margin-left: calc((100vw - 1440px)/2) !important;
   }
 }
-/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */g
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
 @media (min-width: 1280px) and (max-width: 1439px) {
   .footer {
     width: 100%;
