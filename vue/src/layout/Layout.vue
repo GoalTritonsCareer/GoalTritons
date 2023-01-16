@@ -2,18 +2,19 @@
 <template>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
-    <!--    头部-->
-    <Header class="header"/>
-    <!--    主体-->
-    <el-container class="wrapper">
-      <!--      侧边栏-->
-      <Aside class="wrapper__aside"/>
-      <!--      内容区域-->
-      <el-container>
-        <router-view class="wrapper__body"/>
-        <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
-          <Footer/>
-        </el-footer>
+      <!--    头部-->
+      <Header class="header"/>
+      <!--    主体-->
+      <el-container class="wrapper">
+        <!--      侧边栏-->
+        <Aside class="wrapper__aside"/>
+        <!--      内容区域-->
+        <el-container>
+          <router-view class="wrapper__body"/>
+          <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
+            <Footer/>
+          </el-footer>
+        </el-container>
       </el-container>
     </el-container>
   </div>
@@ -56,14 +57,15 @@ export default {
 /* 小电脑及大Pad */
 @media (min-width: 992px) and (max-width: 1279px) {
   .header {
-    width: 992px;
-    margin-left: calc((100vw - 992px)/2);
+    width: 100vw;
   }
+
   .wrapper__body{
-    margin-left: calc(1vw + 350px) !important;
+    margin-left: calc(0.5vw + 250px) !important;
   }
+
   .wrapper__footer{
-    margin-left: calc(1vw + 350px) !important;
+    margin-left: calc(0.5vw + 250px) !important;
   }
 }
 /* 多数Pad */
