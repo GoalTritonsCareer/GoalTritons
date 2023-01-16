@@ -162,7 +162,7 @@
             width="430px"
         >
           <template #reference>
-            <div style="position: relative; display: inline-block; margin-left: 30px;">
+            <div class="top-calendar" style="position: relative; display: inline-block; margin-left: 30px;">
               <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 8.5px; padding-top: 5px">
                 {{ getDay() }}
               </p>
@@ -180,7 +180,7 @@
           </template>
         </el-popover>
 
-        <div style="margin-left: 2vw; min-width: 100px; width: 11vw;">
+        <div>
           <h2>About Us</h2>
         </div>
 
@@ -309,10 +309,14 @@ export default {
     width: 40px;
   }
   .top-mid {
-    width: 821px;
+    width: 841px;
   }
   .top-right {
-    width: 389px;
+    width: 369px;
+  }
+  .top-calendar {
+    margin-right: 35px;
+    margin-left: 35px !important;
   }
   .mod {
     font-size: 15px;
