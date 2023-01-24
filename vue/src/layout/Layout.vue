@@ -2,8 +2,11 @@
 <template>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
-      <!--    头部-->
-      <Header class="header"/>
+      <!--    头部     -->
+      <el-container class="header">
+        <Header />
+      </el-container>
+<!--  Bug: replace the container above with this line cause formatting issue  <Header class="header"/>-->
       <!--    主体-->
       <el-container class="wrapper">
         <!--      侧边栏-->
@@ -20,14 +23,14 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 import Aside from "../components/Aside.vue";
 import Footer from "../components/Footer.vue";
+import Header from "../components/Header.vue";
 export default {
   name: "Layout",
   components: {
-    Footer,
     Header,
+    Footer,
     Aside
   },
   data() {
@@ -41,6 +44,7 @@ export default {
 @media (min-width: 1440px) {
   .header {
     width: 1440px;
+    margin-left: calc((100vw - 1440px)/2);
   }
   .common-layout {
     width: 1440px;
@@ -70,15 +74,13 @@ export default {
 /* 多数Pad */
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
-    width: 768px;
-    margin-left: calc((100vw - 768px)/2);
+    width: 100%;
   }
 }
 /* 手机 */
 @media (min-width: 480px) and (max-width: 767px) {
   .header {
-    width: 480px;
-    margin-left: calc((100vw - 767px)/2);
+    width: 100%;
   }
 }
 .header {

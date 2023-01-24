@@ -2,13 +2,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
     <!--    头部-->
-    <HomeHeader class="header"/>
+    <Header class="header"/>
 
     <!--    主体-->
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
       <el-main class="wrapper__body">
-        <div v-if="isGoodBrowser == false" style="text-align: center; font-size: 16px; color: red; margin-top: 10vh">
+        <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 10vh">
           <b> For best user experience, please browse this website using a laptop or desktop! </b>
         </div>
         <div>
@@ -128,14 +128,14 @@
 </template>
 
 <script lang="ts">
-import HomeHeader from "../components/HomeHeader.vue";
+import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Calendar from "../views/Calendar.vue";
 export default {
   name: "Home",
   components: {
     Footer,
-    HomeHeader,
+    Header,
     Calendar
   },
   data() {
@@ -154,11 +154,7 @@ export default {
       console.log(navigator.userAgent);
       if (/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
         return false;
-      } else if (/micromessenger/.test(navigator.userAgent.toLocaleLowerCase())) {
-        return false;
-      } else {
-        return true;
-      }
+      } else return !/micromessenger/.test(navigator.userAgent.toLocaleLowerCase());
     }
   },
   mounted() {
