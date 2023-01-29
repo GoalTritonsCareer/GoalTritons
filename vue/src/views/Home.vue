@@ -1,60 +1,28 @@
 <template>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
     <!--    头部-->
-    <Header style="position: fixed; width: 100vw; z-index: 20"/>
+    <Header class="header"/>
+
     <!--    主体-->
-    <el-aside class="wrapper__aside">
-      <el-col :span="12">
-        <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-          <el-radio-button :label="false"> &gt; </el-radio-button>
-          <el-radio-button :label="true"> &lt; </el-radio-button>
-        </el-radio-group>
-        <h5 class="menu" v-if="isCollapse == false">Path to Approach <br>Your Career</h5>
-        <el-menu
-            style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090; background-color: transparent; border: none"
-            class="el-menu-vertical-demo"
-            default-active="0"
-            :collapse="isCollapse"
-            @open="handleOpen"
-            @close="handleClose"
-            v-if="isCollapse == false"
-        >
-          <el-menu-item index="1">
-              <span class="mod">Define your Career Goal</span>
-          </el-menu-item>
-
-          <el-menu-item index="2">
-              <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
-          </el-menu-item>
-
-          <el-menu-item index="3">
-            <span class="mod menu-item-3">Internship & Jobs</span>
-          </el-menu-item>
-
-          <el-menu-item index="4">
-              <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
-          </el-menu-item>
-
-          <el-menu-item index="5">
-              <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
-          </el-menu-item>
-        </el-menu>
-      </el-col>
-    </el-aside>
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
-        <el-main class="wrapper__body">
+      <el-main class="wrapper__body">
+        <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 10vh">
+          <b> For best user experience, please browse this website using a laptop or desktop! </b>
+        </div>
+        <div>
+          <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
+          <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
+          <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
+          <span class="dot220"></span><span class="dot221"></span>
           <div>
-            <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
-            <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
-            <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
-            <span class="dot220"></span><span class="dot221"></span>
-            <h1 style="font-size: 50px; color: #1E4460; width: 660px; margin-top: 18vh; line-height: 116%;margin-left: 14vw">Your
-              <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span>
-              professional future is what we strive for.
+            <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: calc((100vw - 988px) / 2);">Your
+              <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
+              professional future is <br>what we strive for.
             </h1>
 
-            <div style="display: flex; flex-direction: row; margin-left: 14vw">
+            <div style="display: flex; flex-direction: row; margin-left: calc((100vw - 988px) / 2);">
               <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
                 explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
                 Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
@@ -70,89 +38,91 @@
                 <img id="student" src="/home/student.svg" alt="student">
               </div>
             </div>
+          </div>
 
-            <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: 14vw; z-index: 3">
-              <el-popover
-                  placement="right"
-                  offset="50"
-                  trigger="hover"
-                  width="415px"
-              >
-                <template #reference>
-                  <img src="/home/homeCalendar.svg" alt="calendar" width="420">
-                </template>
-                <template #default>
-                  <span style="font-weight: 600; color: #1e4460">UCSD Career and Networking Fairs</span>
-                  <Calendar />
-                </template>
-              </el-popover>
-              <h2 style="margin-left: 125px; width: 400px; margin-top:72px">Check out our calendar
-                <i style="color: #5F99B6">(in the header)</i>
-                to &nbsp;&nbsp;&nbsp;&nbsp; see updated career events.</h2>
-            </div>
 
-            <div style="margin-top: 150px">
-              <h2 style="margin-left: 14vw">Enjoy this road map to your brand new future...</h2>
+          <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: calc((100vw - 976px) / 2); z-index: 3">
+            <el-popover
+                placement="right"
+                offset="50"
+                trigger="hover"
+                width="432px"
+            >
+              <template #reference>
+                <img src="/home/homeCalendar.svg" alt="calendar" width="420">
+              </template>
+              <template #default>
+                <span style="font-weight: 600; color: #1e4460">UCSD Career and Networking Fairs</span>
+                <Calendar />
+              </template>
+            </el-popover>
+            <h2 style="margin-left: 125px; width: 400px; margin-top:72px">Check out our calendar
+              <i style="color: #5F99B6">(in the header)</i>
+              to &nbsp;&nbsp;&nbsp;&nbsp; see updated career events.</h2>
+          </div>
 
-              <div class="timeline">
-                <div class="one1">
-                  <div style="position: relative; display: inline-block">
-                    <img src="/home/exploreCareer.svg" alt="frame">
-                    <button style="position: absolute; top: 180px; left: 112px; z-index: 2; display: inline">
-                      In Progress
-                    </button>
-                  </div>
+          <div style="margin-top: 150px">
+            <h2 style="margin-left: calc((100vw - 1000px) / 2);">Enjoy this road map to your brand new future...</h2>
+
+            <div class="timeline">
+              <div class="one1">
+                <div style="position: relative; display: inline-block">
+                  <img src="/home/exploreCareer.svg" alt="frame">
+                  <button style="position: absolute; top: 180px; left: 112px; z-index: 2; display: inline">
+                    In Progress
+                  </button>
+                </div>
+              </div>
+
+              <div class="one3">
+                <div style="position: relative; display: inline-block">
+                  <img src="/home/startApplying.svg" alt="frame">
+                  <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline">
+                    In Progress
+                  </button>
+                </div>
+              </div>
+
+              <div class="one5">
+                <div style="position: relative; display: inline-block">
+                  <img src="/home/startPreparing.svg" alt="frame" >
+                  <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
+                          @click="$router.push('/interview#opening')">
+                    Start Preparing
+                  </button>
+                </div>
+              </div>
+
+              <div class="two">
+                <img src="/home/midline.svg" alt="line" style="height: 98%">
+              </div>
+
+              <div class="three2">
+                <div style="position: relative; display: inline-block">
+                  <img src="/home/startNetworking.svg" alt="frame">
+                  <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
+                          @click="$router.push('/Networking#NetworkingTop')">
+                    Start Networking
+                  </button>
                 </div>
 
-                <div class="one3">
-                  <div style="position: relative; display: inline-block">
-                    <img src="/home/startApplying.svg" alt="frame">
-                    <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline">
-                      In Progress
-                    </button>
-                  </div>
-                </div>
-
-                <div class="one5">
-                  <div style="position: relative; display: inline-block">
-                    <img src="/home/startPreparing.svg" alt="frame" >
-                    <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
-                            @click="$router.push('/interview#opening')">
-                      Start Preparing
-                    </button>
-                  </div>
-                </div>
-
-                <div class="two">
-                  <img src="/home/midline.svg" alt="line" style="height: 98%">
-                </div>
-
-                <div class="three2">
-                  <div style="position: relative; display: inline-block">
-                    <img src="/home/startNetworking.svg" alt="frame">
-                    <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
-                            @click="$router.push('/fakeNetworking#fakeNetworkingTop')">
-                      Start Networking
-                    </button>
-                  </div>
-
-                </div>
-                <div class="three4">
-                  <div style="position: relative; display: inline-block">
-                    <img src="/home/startWriting.svg" alt="frame" >
-                    <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
-                            @click="$router.push('/resume#resumeTop')">
-                      Start Writing
-                    </button>
-                  </div>
+              </div>
+              <div class="three4">
+                <div style="position: relative; display: inline-block">
+                  <img src="/home/startWriting.svg" alt="frame" >
+                  <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
+                          @click="$router.push('/resume#resumeTop')">
+                    Start Writing
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </el-main>
-        <el-footer style="z-index: 2">
-          <Footer/>
-        </el-footer>
+        </div>
+      </el-main>
+      <el-footer class="footer">
+        <Footer/>
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -161,7 +131,6 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Calendar from "../views/Calendar.vue";
-
 export default {
   name: "Home",
   components: {
@@ -171,7 +140,7 @@ export default {
   },
   data() {
     return {
-      isCollapse: true,
+      isGoodBrowser: false,
     }
   },
   methods: {
@@ -180,14 +149,60 @@ export default {
     },
     handleClose (key: string, keyPath: string[]) {
       console.log(key, keyPath)
+    },
+    checkBrowser() {
+      console.log(navigator.userAgent);
+      if (/Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent)) {
+        return false;
+      } else return !/micromessenger/.test(navigator.userAgent.toLocaleLowerCase());
     }
   },
+  mounted() {
+    this.isGoodBrowser = this.checkBrowser();
+    console.log("Using a desktop or laptop: ", this.isGoodBrowser);
+  }
 }
 </script>
 
 <style scoped>
+/* 大屏幕 ( > 13 in. ) */
+@media (min-width: 1440px) {
+  .footer {
+    width: 1440px !important;
+    margin-left: calc((100vw - 1440px)/2) !important;
+  }
+}
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .footer {
+    width: 100%;
+  }
+}
+/* 小电脑及大Pad */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  .footer {
+    width: 100%;
+  }
+}
+/*@media (min-width: 992px) and (max-width: 1279px) {*/
+/*  .wrapper__body {*/
+/*    width: 70vw;*/
+/*  }*/
+/*  .footer {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
 @font-face { font-family: work-sans-semi;
   src: url('/WorkSans/WorkSans-Semibold.woff');
+}
+.header {
+  position: fixed;
+  z-index: 20;
 }
 button {
   font-style: normal;
@@ -208,6 +223,10 @@ button:hover {
   color: darkblue;
   border: hidden;
 }
+.footer {
+  z-index: 2;
+  border-top: 1px solid #ccc;
+}
 h1{
   font-family: work-sans-semi;
   font-style: normal;
@@ -227,7 +246,6 @@ h2 {
   left: 27px;
   top: 90px;
   z-index: -1;
-
   background: rgba(244, 206, 113, 0.45);
   filter: blur(150px);
 }
@@ -238,7 +256,6 @@ h2 {
   left: 857px;
   top: 380px;
   z-index: -1;
-
   background: #F4CE71;
   filter: blur(150px);
 }
@@ -249,7 +266,6 @@ h2 {
   left: 1290px;
   top: 1486px;
   z-index: -1;
-
   background: rgba(244, 206, 113, 0.2);
   filter: blur(150px);
 }
@@ -260,7 +276,6 @@ h2 {
   left: -192px;
   top: 743px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.35);
   filter: blur(150px);
 }
@@ -271,7 +286,6 @@ h2 {
   left: 58px;
   top: 1394px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.15);
   filter: blur(150px);
 }
@@ -282,7 +296,6 @@ h2 {
   left: 900px;
   top: 923px;
   z-index: -1;
-
   background: rgba(244, 206, 113, 0.2);
   filter: blur(150px);
 }
@@ -293,7 +306,6 @@ h2 {
   left: 1208px;
   top: 666px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.15);
   filter: blur(150px);
 }
@@ -314,7 +326,6 @@ h2 {
   left: 750px;
   top: 1805px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.2);
   filter: blur(150px);
 }
@@ -325,7 +336,6 @@ h2 {
   left: 382px;
   top: 1138px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.35);
   filter: blur(150px);
 }
@@ -336,7 +346,6 @@ h2 {
   left: 480px;
   top: 2117px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.1);
   filter: blur(150px);
 }
@@ -347,7 +356,6 @@ h2 {
   left: 477px;
   top: 613px;
   z-index: -1;
-
   background: rgba(244, 206, 113, 0.2);
   filter: blur(150px);
 }
@@ -358,7 +366,6 @@ h2 {
   left: 742px;
   top: 425px;
   z-index: -1;
-
   background: rgba(95, 153, 182, 0.2);
   filter: blur(150px);
 }
@@ -369,7 +376,6 @@ h2 {
   left: 800px;
   top: 430px;
   z-index: -1;
-
   background: #F4CE71;
   filter: blur(150px);
 }
@@ -381,8 +387,8 @@ h2 {
   top: -32px;
   transition: 2s;
   background:
-    radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F4CE71 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%),
-    radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F8CE67 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%);
+      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F4CE71 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%),
+      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F8CE67 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%);
 }
 .sun:hover {
   filter: brightness(112%);
@@ -391,7 +397,6 @@ h2 {
   width: 90px;
   height: 90px;
 }
-
 .opening {
   font-size: 16px;
   font-weight: 400;
@@ -399,21 +404,9 @@ h2 {
   width: 555px;
   margin-top: 62px;
 }
-
 .wrapper {
   position: relative;
 }
-.wrapper__aside {
-  position: fixed;
-  width: 240px;
-  margin-left: 0.2%;
-  padding-top: 6%;
-  overflow-y: hidden;
-  max-height: 100vh;
-  overflow-x: hidden;
-  z-index: 3;
-}
-
 .wrapper__body {
   flex: 1;
   position: relative;
@@ -424,7 +417,6 @@ h2 {
   /*margin-bottom: 12%;*/
   z-index: 2;
 }
-
 #student {
   position: absolute;
   top: 100px;
@@ -435,12 +427,6 @@ h2 {
   width: 200px;
   /*transition: 4s;*/
 }
-
-/*#student:hover {*/
-/*  margin-top: -75px;*/
-/*  left: -100px;*/
-/*  filter: brightness(200%);*/
-/*}*/
 .timeline {
   margin-left: calc((100vw - 988px) / 2);
   margin-top: 80px;
@@ -490,38 +476,4 @@ h2 {
   height: min-content;
   margin-top: -60px;
 }
-
-.mod {
-  font-size: 15px;
-  color: #182B49;
-}
-.sub1{
-  font-size: 13px;
-  color: #636363;
-}
-.sub2{
-  font-size: 12px;
-  color: #5E8090;
-}
-/*.el-menu-item{*/
-/*  text-align: left;*/
-/*}*/
-.el-sub-menu__title{
-  text-size: 12px;
-}
-.el-col {
-  max-width: 87%;
-  flex: 0 0 50%;
-}
-.menu {
-  font-size: 20px;
-  margin-left: 3px;
-  margin-bottom: 3px;
-  text-align: center;
-  color: #1E4460;
-}
-/*.el-menu-item.is-active {*/
-/*  background-color: #FFC740 !important;*/
-/*  font-weight: 500 !important;*/
-/*}*/
 </style>

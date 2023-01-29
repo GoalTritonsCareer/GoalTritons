@@ -1,1 +1,12 @@
-[{"title":"Science and Technology","date":"2022-10-06","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/science--technology.html"},{"title":"All Majors","date":"2022-10-11","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/fall-2022-all-majors.html"}]
+[{"type":"Career","title":"Science and Technology","date":"2022-10-06","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/science--technology.html"},{"type":"Career","title":"All Majors","date":"2022-10-11","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/fall-2022-all-majors.html"},{"type":"Career","title":"Graduate & Professional Schools","date":"2022-10-13","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/Graduate and Professional Schools.html"},
+  {"type": "Holiday","title": "Veterans Day Holiday", "date": "2022-11-11","link":"https://blink.ucsd.edu/instructors/resources/academic/calendars/2022.html"},
+  {"type": "Holiday","title": "Thanksgiving Holiday", "date": "2022-11-24"},
+  {"type": "Holiday","title": "Thanksgiving Holiday", "date": "2022-11-25"},
+  {"type": "EDU","title": "Instruction Ends", "date": "2022-12-02"},
+  {"type": "EDU","title": "Final Exams", "date": "2022-12-03"},
+  {"type": "Holiday","title": "Winter Break", "date": "2022-12-23"},
+  {"type": "Holiday","title": "New Year Holiday", "date": "2022-12-30"},
+  {"type":"Career","title":"Science and Technology","date":"2023-01-12","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/science--technology.html"},
+  {"type":"Career","title":"Health, Biotech, and Life Science","date":"2023-01-25","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/health-biotech-life-science.html"},
+  {"type":"Career","title":"Finance, Banking, and Consulting","date":"2023-01-26","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/finance-banking-consulting.html"},
+  {"type":"Career","title":"Non-Profit, Government, and Education","date":"2023-02-02","link":"https://career.ucsd.edu/employers-recruiters/career-fairs/non-profit-government-education.html"}]

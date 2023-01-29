@@ -1,5 +1,5 @@
 <template>
-  <div id="fakeNetworkingTop">
+  <div id="NetworkingTop">
 
     <div>
       <h1>Networking</h1>
@@ -23,7 +23,7 @@
 
       <div>
 
-        <h3>Why use online platforms?</h3><img src="/networking/whyOnlinePlatforms.svg" alt="why Online Platform" width="800">
+        <h3>Why use online platforms?</h3><img src="/networking/whyOnlinePlatform.svg" alt="why Online Platform" width="800">
         <p class="online"><a class="intextLink" href="https://www.jobvite.com/wp-content/uploads/2020/05/FINAL-Jobvite-JobSeekerNation-Report1_5-11.pdf" target="_blank">
           2022 Job Seeker Nation</a> reported that 42% say they find out about job openings through social media platforms.
         </p>
@@ -53,8 +53,12 @@
         <h3>LinkedIn</h3>
 
         <div class="onlinePlatformDiv">
+          <div class="box">
+            <a href="https://www.linkedin.com/" target="_blank">
+            <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
+            </a>
+          </div>
 
-          <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
 
           <div class="onlinePlatformDescription">
             <p>LinkedIn is the world’s largest professional networking platform with over 300 million users and growing.
@@ -174,7 +178,7 @@
               </ul>
               <div style="text-align: left; padding-left: 12px">
                 <i>See LinkedIn summary examples under </i>
-                <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>.
+                <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>.
               </div>
 
             </div>
@@ -237,7 +241,7 @@
         </div>
 
         <div style="text-align: right; margin-bottom: 42px; margin-top: 42px">
-          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i></p>
+          <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i></p>
         </div>
 
       </div>
@@ -254,7 +258,7 @@
           your focus when expanding your network should be on the people that can <span class="semi">add to your
           professional value</span>.
         </p>
-        <img class="step2Img" alt="connectWith" src="/networking/step2P2.svg" style="margin-top: 10px">
+        <img class="step2Img" alt="connectWith" src="/networking/connectWith.svg" style="margin-top: 10px">
       </div>
 
 
@@ -289,14 +293,14 @@
         <div class="s2Tips">
           <p class="DYp">Point 3</p>
           <span>Pay attention to people you should develop further relationships with, learn
-            <span class="moreResLink" @click="$router.push('/fakeNetworking#maintainNetwork')">
+            <span class="moreResLink" @click="$router.push('/Networking#maintainNetwork')">
               How to Maintain Networks</span>.
           </span>
 
         </div>
 
         <div style="text-align: right; margin-bottom: 50px; margin-top: 40px">
-          <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>
+          <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>
           <a id="tritonConnect"></a>
         </div>
 
@@ -309,9 +313,11 @@
         <h3>Tritons Connect</h3>
 
         <div class="onlinePlatformDiv">
-
-          <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="linkedIn">
-
+          <div class="box">
+            <a href="https://tritonsconnect.com/" target="_blank">
+              <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect">
+            </a>
+          </div>
           <div class="onlinePlatformDescription">
             <p>Tritons Connect is UCSD's equivalent of LinkedIn, but it offers a <span class="medium">smaller and more
               concentrated</span> network from which you could benefit directly as a UCSD student.  </p>
@@ -330,7 +336,7 @@
         </div>
         <p id="highlight">Highlight</p>
         <img src="/networking/tritonsConnect2.svg" alt="tritonsConnectHighlight" width="900" style="padding-left: 5%">
-        <img src="/networking/mentoringOptions.svg" alt="mentoringOptions" style="margin-top: 50px">
+        <img src="/networking/mentoringOption.svg" alt="mentoringOptions" style="margin-top: 50px">
 
 
         <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
@@ -360,7 +366,12 @@
         <div class="onlinePlatformDiv">
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">WeChat</p>
-            <img class="onlinePlatformImg" src="/networking/wechatIcon.jpg" alt="linkedIn">
+
+            <div class="box">
+              <a href="https://www.wechat.com/" target="_blank">
+                <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat">
+              </a>
+            </div>
           </div>
 
 
@@ -386,7 +397,11 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Discord</p>
-            <img class="onlinePlatformImg" src="/networking/disocrdIcon.jpg" alt="linkedIn">
+            <div class="box">
+              <a href="https://discord.com/" target="_blank">
+                <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord">
+              </a>
+            </div>
           </div>
 
 
@@ -410,7 +425,11 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Facebook</p>
-            <img class="onlinePlatformImg" src="/networking/facebookIcon.jpg" alt="linkedIn">
+            <div class="box">
+              <a href="https://www.facebook.com/" target="_blank">
+            <img class="onlinePlatformImg" src="/networking/facebookIcon.svg" alt="FaceBook">
+              </a>
+            </div>
           </div>
 
 
@@ -437,7 +456,11 @@
 
           <div class="otherMediaIcon">
             <p class="otherMediaTitle">Reddit</p>
-            <img class="onlinePlatformImg" src="/networking/redditIcon.jpg" alt="linkedIn">
+            <div class="box">
+              <a href="https://www.reddit.com/" target="_blank">
+            <img class="onlinePlatformImg" src="/networking/redditIcon.svg" alt="Reddit">
+              </a>
+            </div>
           </div>
 
 
@@ -493,7 +516,7 @@
           <img src="/networking/howToNetworkOnlineS21.svg" alt="sampleQs" width="830">
 
           <div style="text-align: right; margin-top: 40px">
-            <i>See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#moreResources')">More Resources</i>
+            <i>See More Qs to Ask through Info Interview under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>
           </div>
         </div>
 
@@ -521,7 +544,7 @@
           <img src="/networking/howToNetworkOnlineS41.svg" alt="reminder" width="570">
 
           <div style="text-align: right; margin-top: 40px">
-            <i>See</i> <i class="moreResLink" @click="$router.push('/fakeNetworking#maintainNetwork')">How to Maintain Networks</i>
+            <i>See</i> <i class="moreResLink" @click="$router.push('/Networking#maintainNetwork')">How to Maintain Networks</i>
             <a id="networkOnCampus"></a>
           </div>
         </div>
@@ -671,7 +694,7 @@
                      placement="bottom"
                      offset="50"
                      trigger="hover"
-                     width="415px"
+                     width="432px"
                  >
                 <template #reference>
                   <span style="color: #b27224">mini calendar</span>
@@ -750,7 +773,7 @@
         <h3>Faculty</h3>
         <div>
           <h4>Why Networking with the Faculty?</h4>
-          <img src="/networking/whyNetworkingWithTheFaculty.svg">
+          <img src="/networking/whyNetworkWithFaculty.svg" alt="Why Networking with the Faculty">
         </div>
 
         <div>
@@ -913,7 +936,7 @@
 <script>
 import Calendar from "./Calendar.vue"
 export default {
-  name: "FakeNetworking",
+  name: "Networking",
   components: {
     Calendar
   }
@@ -923,6 +946,13 @@ export default {
 
 
 <style scoped>
+/* 小电脑及大Pad */
+/*@media (min-width: 992px) and (max-width: 1279px) {*/
+/*  #NetworkingTop{*/
+/*    margin-left: 27%;*/
+/*  }*/
+/*}*/
+
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
@@ -1159,9 +1189,35 @@ p.online{
 
 .onlinePlatformImg{
   width: 6vw;
+  height: 6vw;
+  background-color: #D9EAEF;
+  margin-right: 4vw;
+  border-radius: 10px;
+}
+
+
+.box {
+  text-align: center;
+  background-color: #D9EAEF;
+  border-radius: 10px;
+  border: none;
+  height: 6vw;
+  width: 6vw;
+  margin-top: 5%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-right: 4vw;
 }
 
+.box:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid #5F99B6;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
 
 
 .onlinePlatformDescription{
@@ -1329,10 +1385,10 @@ ul{
   text-decoration: underline;
   font-weight: 600;
 }
+
 #more-resources{
   text-align: left;
 }
-
 #more-resources > ul{
   text-align: left;
   margin-right: 12vw;
@@ -1340,7 +1396,7 @@ ul{
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
+  line-height: 141%;
 }
 #more-resources a{
   text-decoration: none;
@@ -1456,8 +1512,8 @@ ul{
   gap: 0;
   height: fit-content;
   width: min-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -10px;
+  /*margin-right: 3vw;*/
 }
 .one1 {
   grid-column: 1;
