@@ -10,10 +10,10 @@
       <!--    主体-->
       <el-container class="wrapper">
         <!--      侧边栏-->
-        <Aside class="wrapper__aside"/>
+        <router-view name="nav" class="wrapper__aside"/>
         <!--      内容区域-->
         <el-container>
-          <router-view class="wrapper__body"/>
+          <router-view name="con" class="wrapper__body"/>
           <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
             <Footer/>
           </el-footer>
