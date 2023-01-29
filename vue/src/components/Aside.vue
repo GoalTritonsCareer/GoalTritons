@@ -77,10 +77,10 @@
 
         <el-sub-menu index="4">
           <template #title>
-            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume/CV & Cover Letter</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume')">Resume/CV & Cover Letter</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
+            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume/resume-vs-cv')">Resume vs. CV</el-menu-item>
           </el-menu-item-group>
           <el-sub-menu index="4-2">
             <template #title ><span class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</span></template>

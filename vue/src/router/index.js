@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
-
+import ResumeAside from "../components/ResumeAside.vue";
+import Resume from "../views/Resume.vue"
+import ResumeVsCV from "../views/ResumeVsCV.vue"
 const routes = [
   {
     path: '/',
@@ -8,15 +10,24 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
+    path: '/resume',
+    name: 'resume-page',
+    component: Layout,
+    children: [
+      { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
+      { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
+    ],
+  },
+  //  TODO: apply the layout above to the pages below
+  {
     path: '/',
-    name: 'Layout',
+    name: 'Other',
     component: Layout,
     children: [
       { path: 'interview', name: 'Interview', component: () => import("../views/Interview.vue") },
       { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
-      { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
-    ],
-  },
+    ]
+  }
   // {
   //   path: '/login',
   //   name: 'Login',
