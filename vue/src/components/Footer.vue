@@ -1,5 +1,6 @@
 <template class="el-footer">
-  <div style="color: #1e4460; height: 380px; width: 100%">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <div style="color: #1e4460; height: 380px">
     <div style="padding-top: 3%; height: 320px; text-align: center">
       <h1 style="font-size: 26px">Your <span style="color: #E2983A">bright</span> and <span style="color: #E2983A">successful</span>
         professional future is what we strive for.</h1>
@@ -27,9 +28,13 @@
           <h2>About Us</h2>
           <h2 style="margin-left: 36px">Contact Us</h2>
         </div>
-        <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2.8%">
-          <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1><br>
-          <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
+        <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2%">
+          <a href="http://goaltritonscareer.com" style="text-decoration: none">
+            <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
+          </a>
+          <a href="http://goaltritonscareer.com" >
+            <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
+          </a>
         </div>
       </div>
     </div>
@@ -83,6 +88,29 @@ export default {
 </script>
 
 <style scoped>
+/* 大屏幕 ( > 13 in. ) */
+@media (min-width: 1440px) {
+  .header {
+    width: 1440px;
+    margin-left: calc((100vw - 1440px)/2);
+  }
+}
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+}
+/* 小电脑及大Pad */
+@media (min-width: 992px) and (max-width: 1279px) {
+
+}
+/* 多数Pad */
+@media (min-width: 768px) and (max-width: 991px) {
+   /*TODO: 减小字体*/
+}
+/* 手机 */
+@media (min-width: 480px) and (max-width: 767px) {
+   /*TODO: 减小字体*/
+}
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }

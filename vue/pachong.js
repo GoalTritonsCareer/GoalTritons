@@ -13,9 +13,11 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
     res.on('end',function() {
         // console.log(html);
         const $ = cheerio.load(html);
+        const type = "Career";
         let allFairs = [];
         $('.row .panel-body').each(function () {
             // this循环时 指向当前这个career fair
+
             const title = $('h2', this).text();
             const info = $('p', this).text().split(" ");
             const year = info[1];
@@ -31,14 +33,29 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
             const link = "https://career.ucsd.edu/employers-recruiters/career-fairs/"+$('a', this).attr("href");
             // 存成一个json文件 fs
             allFairs.push({
-                title, date, link
+                type, title, date, link
             })
             // console.log(allFairs);
         })
-        fs.writeFile('./career-fairs.json', JSON.stringify(allFairs),function(err){
-            if(!err){
-                console.log('Output complete!');
+        const path = './career-fairs.json';
+        try {
+            if (fs.existsSync(path)) {
+                //file exists
+                // TODO: bug: format error , i.e. 2 lists of dictionaries
+                fs.appendFile(path, JSON.stringify(allFairs), function (err) {
+                    if (!err) {
+                        console.log('Saved!');
+                    }
+                });
+            } else {
+                fs.writeFile(path, JSON.stringify(allFairs),function(err) {
+                    if(!err){
+                        console.log('Output complete!');
+                    }
+                });
             }
-        })
+        } catch(err) {
+            console.error(err);
+        }
     })
 })

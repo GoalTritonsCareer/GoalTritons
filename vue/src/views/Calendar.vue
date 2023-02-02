@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="width:400px; height: 450px">
+    <div style="width:405px; height: 450px">
       <el-calendar>
         <template #dateCell="{ data }">
           <p :class="data.isSelected ? 'is-selected' : ''" :style="hasEvent(data.day)">
@@ -11,7 +11,7 @@
               effect="dark"
               :content="findTitle(data.day)"
           >
-            <el-link :href="findUrl(data.day)" target="_blank" style="font-size: 12px">
+            <el-link :href="findUrl(data.day)" target="_blank" style="font-size: 10px">
               {{ careerFieldMsg(data.day) }}
             </el-link>
           </el-tooltip>
@@ -43,15 +43,27 @@ export default {
       // `this` points to the component instance
       for (let i = 0; i < json.length; i++) {
         if (json[i]["date"] == day) {
-          // let l = document.getElementById("link")
-          // l.onclick = json[i]["link"]
-          return "career fair"
+          if (json[i]["type"] == "Career") {
+
+            return "Career";
+          } else if (json[i]["type"]  == "EDU") {
+            return "Academic";
+          } else {
+            return "Holiday";
+          }
         }
       }
       return ""
     },
     findUrl(day) {
       for (let i = 0; i < json.length; i++) {
+        if(json[i]["type"]=="Holiday"){
+          return ""
+        }
+        if(json[i]["type"]=="EDU"){
+          return ""
+        }
+
         if (json[i]["date"] == day) {
           return json[i]["link"]
         }

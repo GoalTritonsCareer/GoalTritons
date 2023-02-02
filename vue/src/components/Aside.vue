@@ -2,7 +2,7 @@
     <el-col :span="12">
       <h5 class="menu">Path to Approach <br>Your Career</h5>
       <el-menu
-          style="min-height: calc(100vh - 50px); --el-menu-active-color: #5E8090;"
+          style="min-height: calc(100vh - 160px); --el-menu-active-color: #5E8090"
           class="el-menu-vertical-demo"
           default-active="0"
           @open="handleOpen"
@@ -28,47 +28,52 @@
         <el-sub-menu index="2">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/fakeNetworking#fakeNetworkingTop')">Networking</span>
+            <span class="mod" @click="$router.push('/Networking#NetworkingTop')">Networking</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="2-1" class="sub1" @click="$router.push('/fakeNetworking#whyNetworking')">Why Networking</el-menu-item>
+            <el-menu-item index="2-1" class="sub1" @click="$router.push('/Networking#whyNetworking')">Why Networking</el-menu-item>
           </el-menu-item-group>
           <el-sub-menu index="2-2">
-            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>
-            <el-menu-item index="2-2-1" class="sub2" @click="$router.push('/fakeNetworking#whyPlatform')">Why & What</el-menu-item>
-            <el-menu-item index="2-2-2" class="sub2" @click="$router.push('/fakeNetworking#linkedIn')">Linkedin</el-menu-item>
-            <el-menu-item index="2-2-3" class="sub2" @click="$router.push('/fakeNetworking#tritonConnect')">Tritons Connect</el-menu-item>
-            <el-menu-item index="2-2-4" class="sub2" @click="$router.push('/fakeNetworking#otherSocialMedia')">Other Social Media</el-menu-item>
-            <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/fakeNetworking#HowToNetworkOnline')">How to Network Online</el-menu-item>
+            <template #title><span class="sub1" @click="$router.push('/Networking#onlinePlatform')">Online Platforms</span></template>
+            <el-menu-item index="2-2-1" class="sub2" @click="$router.push('/Networking#whyPlatform')">Why & What</el-menu-item>
+            <el-menu-item index="2-2-2" class="sub2" @click="$router.push('/Networking#linkedIn')">Linkedin</el-menu-item>
+            <el-menu-item index="2-2-3" class="sub2" @click="$router.push('/Networking#tritonConnect')">Tritons Connect</el-menu-item>
+            <el-menu-item index="2-2-4" class="sub2" @click="$router.push('/Networking#otherSocialMedia')">Other Social Media</el-menu-item>
+            <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/Networking#HowToNetworkOnline')">How to Network Online</el-menu-item>
           </el-sub-menu>
           <el-sub-menu index="2-3">
-            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</span></template>
-            <el-menu-item index="2-3-1" class="sub2" @click="$router.push('/fakeNetworking#whyNetworkOnCampus')">Why & Where</el-menu-item>
-            <el-menu-item index="2-3-2" class="sub2" @click="$router.push('/fakeNetworking#studentOrganization')">Student Orgs</el-menu-item>
-            <el-menu-item index="2-3-3" class="sub2" @click="$router.push('/fakeNetworking#mentorshipPrograms')">Mentoring Programs</el-menu-item>
-            <el-menu-item index="2-3-4" class="sub2" @click="$router.push('/fakeNetworking#careerFair')">Career Fairs/Events</el-menu-item>
-            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>
+            <template #title><span class="sub1" @click="$router.push('/Networking#networkOnCampus')">Networking on Campus</span></template>
+            <el-menu-item index="2-3-1" class="sub2" @click="$router.push('/Networking#whyNetworkOnCampus')">Why & Where</el-menu-item>
+            <el-menu-item index="2-3-2" class="sub2" @click="$router.push('/Networking#studentOrganization')">Student Orgs</el-menu-item>
+            <el-menu-item index="2-3-3" class="sub2" @click="$router.push('/Networking#mentorshipPrograms')">Mentoring Programs</el-menu-item>
+            <el-menu-item index="2-3-4" class="sub2" @click="$router.push('/Networking#careerFair')">Career Fairs/Events</el-menu-item>
+            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/Networking#labs')">Labs</el-menu-item>
           </el-sub-menu>
           <el-sub-menu index="2-4">
-            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>
-            <el-menu-item index="2-4-1" class="sub2" @click="$router.push('/fakeNetworking#whoToNetworkWith')">Who to Network with</el-menu-item>
-            <el-menu-item index="2-4-2" class="sub2" @click="$router.push('/fakeNetworking#faculty')">Faculty</el-menu-item>
-            <el-menu-item index="2-4-3" class="sub2" @click="$router.push('/fakeNetworking#peers')">Peers</el-menu-item>
+            <template #title><span class="sub1" @click="$router.push('/Networking#everydayRoutine')">Everyday Routine</span></template>
+            <el-menu-item index="2-4-1" class="sub2" @click="$router.push('/Networking#whoToNetworkWith')">Who to Network with</el-menu-item>
+            <el-menu-item index="2-4-2" class="sub2" @click="$router.push('/Networking#faculty')">Faculty</el-menu-item>
+            <el-menu-item index="2-4-3" class="sub2" @click="$router.push('/Networking#peers')">Peers</el-menu-item>
           </el-sub-menu>
           <el-menu-item-group>
-            <el-menu-item index="2-5" class="sub1" @click="$router.push('/fakeNetworking#maintainNetwork')">Maintain Networks</el-menu-item>
+            <el-menu-item index="2-5" class="sub1" @click="$router.push('/Networking#maintainNetwork')">Maintain Networks</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-6" class="sub1" @click="$router.push('/fakeNetworking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
+            <el-menu-item index="2-6" class="sub1" @click="$router.push('/Networking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-7" class="sub1" @click="$router.push('/fakeNetworking#moreResources')">More Resources</el-menu-item>
+            <el-menu-item index="2-7" class="sub1" @click="$router.push('/Networking#moreResources')">More Resources</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
 
-        <el-menu-item index="3">
-          <span class="mod menu-item-3">Internship & Jobs</span>
-        </el-menu-item>
+        <el-sub-menu index="3">
+          <template #title>
+            <span class="mod menu-item-3">Internship & Jobs</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item index="3-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Random</el-menu-item>
+          </el-menu-item-group>
+        </el-sub-menu>
 
         <el-sub-menu index="4">
           <template #title>
@@ -143,6 +148,7 @@ export default {
 .mod {
   font-size: 15px;
   color: #182B49;
+  font-weight: 400;
 }
 .sub1{
   font-size: 13px;
@@ -152,27 +158,35 @@ export default {
   font-size: 12px;
   color: #5E8090;
 }
-/*.el-menu-item{*/
-/*  text-align: left;*/
-/*}*/
-.el-sub-menu__title{
-  text-size: 12px;
+.el-sub-menu ul{
+  height: 35px !important;
 }
+.el-sub-menu .el-menu-item {
+  height: 35px !important;
+}
+
 .el-col {
   max-width: 100%;
   flex: 0 0 50%;
 }
 .menu {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   text-align: center;
   color: #1E4460;
+  line-height: 30px;
+  margin-top: 13%;
 }
 .el-menu-item.is-active {
   background-color: #FFC740 !important;
   font-weight: 500 !important;
 }
+</style>
 
-
+<style>
+.el-sub-menu__title {
+  height: 35px !important;
+  text-size: 12px;
+}
 </style>
