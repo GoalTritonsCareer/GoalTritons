@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
-import InterviewAside from "../views/Interview/InterviewAside.vue"
+import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
