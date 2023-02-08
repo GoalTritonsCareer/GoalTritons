@@ -23,15 +23,13 @@
 </template>
 
 <script>
-import Aside from "../components/Aside.vue";
 import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 export default {
   name: "Layout",
   components: {
     Header,
-    Footer,
-    Aside
+    Footer
   },
   data() {
     return {}

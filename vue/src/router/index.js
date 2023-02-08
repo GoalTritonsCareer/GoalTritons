@@ -8,7 +8,6 @@ import WhyInterview from "../views/Interview/WhyInterview.vue"
 
 
 
-
 const routes = [
   {
     path: '/',
@@ -16,8 +15,18 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
+    path: '/resume',
+    name: 'resume-page',
+    component: Layout,
+    children: [
+      { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
+      { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
+    ],
+  },
+  //  TODO: apply the layout above to the pages below
+  {
     path: '/',
-    name: 'Layout',
+    name: 'Other',
     component: Layout,
     children: [
       // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
@@ -35,6 +44,7 @@ const routes = [
       { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
+
     ]
   }
   // {
