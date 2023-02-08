@@ -17,12 +17,12 @@
           <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
           <span class="dot220"></span><span class="dot221"></span>
           <div>
-            <h1 style="font-size: 50px; color: #1E4460; margin-top: 18vh; line-height: 116%;margin-left: calc((100vw - 988px) / 2);">Your
+            <h1>Your
               <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
               professional future is <br>what we strive for.
             </h1>
 
-            <div style="display: flex; flex-direction: row; margin-left: calc((100vw - 988px) / 2);">
+            <div id="top">
               <p class="opening">It's the beginning of the quarter. You stop in front of Geisel, excited and eager to
                 explore your future. But wait, as you look into the long, crowded Library Walk, you suddenly feel lost.
                 Where should I go? Where can I find help to figure out my dream career? How should I be prepared for my
@@ -171,11 +171,23 @@ export default {
     width: 1440px !important;
     margin-left: calc((100vw - 1440px)/2) !important;
   }
+  h1 {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  #top {
+    margin-left: calc((100vw - 988px) / 2);
+  }
 }
 /* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
 @media (min-width: 1280px) and (max-width: 1439px) {
   .footer {
     width: 100%;
+  }
+  h1 {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  #top {
+    margin-left: calc((100vw - 988px) / 2);
   }
 }
 /* 小电脑及大Pad */
@@ -185,9 +197,13 @@ export default {
   }
 }
 @media (min-width: 480px) and (max-width: 991px) {
+  h1 {
+    font-size: 40px !important;
+  }
   .footer {
     width: 100%;
   }
+
 }
 /*@media (min-width: 992px) and (max-width: 1279px) {*/
 /*  .wrapper__body {*/
@@ -231,6 +247,12 @@ h1{
   font-family: work-sans-semi;
   font-style: normal;
   font-weight: 700;
+
+  font-size: 50px;
+  color: #1E4460;
+  margin-top: 18vh;
+  line-height: 116%;
+
 }
 h2 {
   font-family: work-sans-semi;
@@ -238,6 +260,10 @@ h2 {
   /*font-weight: 800;*/
   line-height: 141%;
   color: #1e4460;
+}
+#top {
+  display: flex;
+  flex-direction: row;
 }
 .dot192 {
   position: absolute;

@@ -72,13 +72,13 @@ export default {
   }
 }
 /* 多数Pad */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .header {
     width: 100%;
   }
 }
 /* 手机 */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 479px) {
   .header {
     width: 100%;
   }
