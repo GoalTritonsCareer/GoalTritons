@@ -19,21 +19,21 @@ const routes = [
     name: 'resume-page',
     component: Layout,
     children: [
-      { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
-      { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
+      // { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
+      // { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
     ],
   },
   //  TODO: apply the layout above to the pages below
-  {
-    path: '/',
-    name: 'Other',
-    component: Layout,
-    children: [
-      // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
-      { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
-      { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
-    ],
-  },
+  // {
+  //   path: '/',
+  //   name: 'Other',
+  //   component: Layout,
+  //   children: [
+  //     // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
+  //     { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
+  //     { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
+  //   ],
+  // },
   {
     path: '/interview',
     name: 'interview-page',
