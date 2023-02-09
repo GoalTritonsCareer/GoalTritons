@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
+import InterviewAside from "../components/InterviewAside.vue"
+import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
+import InterviewSteps from "../views/Interview/InterviewSteps.vue"
+import MasterInterview from "../views/Interview/MasterInterview.vue"
+import WhyInterview from "../views/Interview/WhyInterview.vue"
+
+
 
 const routes = [
   {
@@ -8,15 +15,38 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
-    path: '/',
-    name: 'Layout',
+    path: '/resume',
+    name: 'resume-page',
     component: Layout,
     children: [
-      { path: 'interview', name: 'Interview', component: () => import("../views/Interview.vue") },
-      { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
-      { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
+      // { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
+      // { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
     ],
   },
+  //  TODO: apply the layout above to the pages below
+  // {
+  //   path: '/',
+  //   name: 'Other',
+  //   component: Layout,
+  //   children: [
+  //     // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
+  //     { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
+  //     { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
+  //   ],
+  // },
+  {
+    path: '/interview',
+    name: 'interview-page',
+    component: Layout,
+    children: [
+      { path: 'Opening', name: 'Opening', components: {nav: InterviewAside, con: WhyInterview}},
+      { path: 'WhyInterview', name: 'WhyInterview', components: {nav: InterviewAside, con: WhyInterview}},
+      { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
+      { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
+      { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
+
+    ]
+  }
   // {
   //   path: '/login',
   //   name: 'Login',

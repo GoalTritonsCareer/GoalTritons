@@ -1,9 +1,10 @@
 <template class="el-footer">
-  <div style="color: #1e4460; height: 380px; width: 100%">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <div style="color: #1e4460; height: 380px; display: flex; flex-direction: column">
     <div style="padding-top: 3%; height: 320px; text-align: center">
       <h1 style="font-size: 26px">Your <span style="color: #E2983A">bright</span> and <span style="color: #E2983A">successful</span>
         professional future is what we strive for.</h1>
-      <div>
+      <div style="display: flex; flex-direction: column">
         <h1 style="padding-top: 30px; font-size: 20px">Stay updated on more career information</h1>
         <div class="flex">
           <el-form ref="form" :model="form" style="width: 300px; align-items: center">
@@ -19,9 +20,9 @@
         <p style="font-weight: 700; margin-top: 20px; font-size: 15px; line-height: 141%">Copyright:
           2022 by Goal Tritons</p>
       </div>
-
     </div>
-    <div style="height: 75px; border-top: 1px solid #ccc;">
+
+    <div id="bot2" style="border-top: 1px solid #ccc;">
       <div style="display: flex">
         <div style="display: flex; flex: 2; flex-direction: row; text-align: left; padding-top: 24px; margin-left: 4%">
           <h2>About Us</h2>
@@ -29,7 +30,7 @@
         </div>
         <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2%">
           <a href="http://goaltritonscareer.com" style="text-decoration: none">
-            <h1 style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
+            <h1 id="bot-right" style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
           </a>
           <a href="http://goaltritonscareer.com" >
             <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
@@ -87,6 +88,44 @@ export default {
 </script>
 
 <style scoped>
+/* 大屏幕 ( > 13 in. ) */
+@media (min-width: 1440px) {
+  .header {
+    width: 1440px;
+    margin-left: calc((100vw - 1440px)/2);
+  }
+}
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+}
+/* 小电脑及大Pad */
+@media (min-width: 992px) and (max-width: 1279px) {
+
+}
+/* 多数Pad */
+@media (min-width: 768px) and (max-width: 991px) {
+   /*TODO: 减小字体*/
+}
+/* 手机 */
+@media (max-width: 479px) {
+  #bot2 {
+    margin-top: 8rem;
+  }
+  #bot2 img {
+    padding-top: 10px !important;
+  }
+  #bot-right {
+    padding-top: 12px !important;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-size: 15px !important;
+  }
+}
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
