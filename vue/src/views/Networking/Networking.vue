@@ -5,12 +5,12 @@
         <h1>NETWORKING</h1>
         <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
       </section>
-      <img src="public/networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <img src="networking/nwBG.svg" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
     <div id="body">
-      <img id="whyNetworkingImg" src="/networking/whyNetworking.svg" alt="Why Networking">
+      <img id="whyNetworkingImg" src="networking/whyNetworking.svg" alt="Why Networking">
 
       <a id="networking-routes"></a>
       <h2>NETWORKING ROUTES</h2>
