@@ -1,6 +1,7 @@
 <template class="el-footer">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div style="color: #1e4460; height: 380px; display: flex; flex-direction: column">
+    <span style="width: 100%; height: 8%; background: linear-gradient(360deg, rgba(217, 217, 217, 0.58) -74.29%, rgba(217, 217, 217, 0) 88.57%);"></span>
     <div style="padding: 3% 2% 0 2%; height: 320px; text-align: center">
       <h1 style="font-size: 24px">Your <span style="color: #E2983A">bright</span> and <span style="color: #E2983A">successful</span>
         professional future is what we strive for.</h1>

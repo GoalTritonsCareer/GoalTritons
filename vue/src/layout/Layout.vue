@@ -52,7 +52,7 @@ export default {
   margin-left: 10px;
   margin-top: 60px;
   overflow-y: auto;
-  border-right: 1px solid #dcdfe6;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
   height: calc(100vh - 60px);
   /*max-height: 100%;*/
   background-color: white;
@@ -67,11 +67,10 @@ export default {
   /*padding-left: 26px;*/
   /*max-width: 77%;*/
   padding-top: 60px;
-  margin-bottom: 12%;
+  margin-bottom: 8%;
 }
 .wrapper__footer {
   margin-left: 260px;
-  border-top: 1px solid #ccc;
 }
 /* 大屏幕 ( > 13 in. ) */
 @media (min-width: 1440px) {

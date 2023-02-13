@@ -18,9 +18,9 @@
         <div class="container">
           <div class="cover">
             <p>Online Platforms</p>
-            <img src="/smallCover.svg" alt="Cover" loading="lazy">
+            <img src="/smallCover.svg" alt="Cover" loading="lazy" style="opacity: 75%">
           </div>
-          <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy">
+          <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy" style="filter: brightness(1.75)">
         </div>
         <div class="container">
           <div class="cover">
@@ -91,12 +91,11 @@
           </li>
         </ul>
 
-        <p class="moreResTitle" style="margin-top: 20px">Maintain Networks:</p >
-        <ul>
-          <li><a href="https://www.themuse.com/advice/finally-5-email-templates-that-make-following-up-with-anyone-way-less-awkward" target="_blank">
-            <p class="moreRes" style="display: inline">Networking Follow-Up Email Templates</p ></a>
-          </li>
-        </ul>
+        <p class="moreResTitle" style="margin-top: 20px">Maintain Networks:
+        <a href="https://www.themuse.com/advice/finally-5-email-templates-that-make-following-up-with-anyone-way-less-awkward" target="_blank">
+          <span class="moreRes" style="display: inline">Networking Follow-Up Email Templates</span >
+        </a>
+        </p>
 
         <p class="moreResTitle" style="margin-top: 20px">More articles for successful networking:</p >
         <ul>
