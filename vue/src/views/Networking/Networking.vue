@@ -5,12 +5,12 @@
         <h1>NETWORKING</h1>
         <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
       </section>
-      <img src="networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
     <div id="body">
-      <img id="whyNetworkingImg" src="networking/whyNetworking.svg" alt="Why Networking">
+      <img id="whyNetworkingImg" src="/networking/whyNetworking.svg" alt="Why Networking">
 
       <a id="networking-routes"></a>
       <h2>NETWORKING ROUTES</h2>
@@ -18,23 +18,23 @@
         <div class="container">
           <div class="cover">
             <p>Online Platforms</p>
-            <img src="smallCover.svg" alt="Cover" loading="lazy">
+            <img src="/smallCover.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy">
+          <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>On Campus</p>
-            <img src="smallCover.svg" alt="Cover" loading="lazy">
+            <img src="/smallCover.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="networking/OnCampus.svg" alt="On Campus Module" loading="lazy">
+          <img class="bg" src="/networking/OnCampus.svg" alt="On Campus Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>Everyday Routine</p>
-            <img src="smallCover.svg" alt="Cover" loading="lazy">
+            <img src="/smallCover.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="networking/EverydayRoutine.svg" alt="Everyday Routine Module" loading="lazy">
+          <img class="bg" src="/networking/EverydayRoutine.svg" alt="Everyday Routine Module" loading="lazy">
         </div>
         <p>Learn how to network through different online platforms.</p>
         <p>Learn how to network on campus.</p>
@@ -47,16 +47,16 @@
         <div class="container">
           <div class="cover">
             <p>How to Network<br>Online</p>
-            <img src="bigCover.svg" alt="Cover" loading="lazy">
+            <img src="/bigCover.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="networking/HTNO.svg" class="bg" alt="How to Network Online Module" loading="lazy">
+          <img src="/networking/HTNO.svg" class="bg" alt="How to Network Online Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>How to Maintain<br>Network</p>
-            <img src="bigCover.svg" alt="Cover" loading="lazy">
+            <img src="/bigCover.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="networking/HTMN.svg" class="bg" alt="How to Maintain Network Module" loading="lazy">
+          <img src="/networking/HTMN.svg" class="bg" alt="How to Maintain Network Module" loading="lazy">
         </div>
 
         <p>Learn about how to network online step-by-step.</p>
