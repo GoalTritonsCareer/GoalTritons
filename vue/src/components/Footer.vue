@@ -1,11 +1,11 @@
 <template class="el-footer">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div style="color: #1e4460; height: 380px; display: flex; flex-direction: column">
-    <div style="padding-top: 3%; height: 320px; text-align: center">
-      <h1 style="font-size: 26px">Your <span style="color: #E2983A">bright</span> and <span style="color: #E2983A">successful</span>
+    <div style="padding: 3% 2% 0 2%; height: 320px; text-align: center">
+      <h1 style="font-size: 24px">Your <span style="color: #E2983A">bright</span> and <span style="color: #E2983A">successful</span>
         professional future is what we strive for.</h1>
       <div style="display: flex; flex-direction: column">
-        <h1 style="padding-top: 30px; font-size: 20px">Stay updated on more career information</h1>
+        <h1 style="padding-top: 2%; font-size: 18px;">Stay updated on more career information</h1>
         <div class="flex">
           <el-form ref="form" :model="form" style="width: 300px; align-items: center">
             <el-form-item prop="email">
@@ -22,20 +22,18 @@
       </div>
     </div>
 
-    <div id="bot2" style="border-top: 1px solid #ccc;">
-      <div style="display: flex">
-        <div style="display: flex; flex: 2; flex-direction: row; text-align: left; padding-top: 24px; margin-left: 4%">
-          <h2>About Us</h2>
-          <h2 style="margin-left: 36px">Contact Us</h2>
-        </div>
-        <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2%">
-          <a href="http://goaltritonscareer.com" style="text-decoration: none">
-            <h1 id="bot-right" style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
-          </a>
-          <a href="http://goaltritonscareer.com" >
-            <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
-          </a>
-        </div>
+    <div id="bot2" style="display: flex">
+      <div style="display: flex; flex: 2; flex-direction: row; text-align: left; padding-top: 24px; margin-left: 4%">
+        <h2>About Us</h2>
+        <h2 style="margin-left: 36px">Contact Us</h2>
+      </div>
+      <div style="display: flex; flex-direction: row; text-align: right; margin-right: 2%">
+        <a href="http://goaltritonscareer.com" style="text-decoration: none">
+          <h1 id="bot-right" style="margin-right: 15px; padding-top: 20px"> Go<span style="opacity: 50%">al</span> Tritons</h1>
+        </a>
+        <a href="http://goaltritonscareer.com" >
+          <img src="/logo.svg" width="40px" alt="logo" style="padding-top: 15px">
+        </a>
       </div>
     </div>
   </div>
@@ -110,7 +108,7 @@ export default {
 /* 手机 */
 @media (max-width: 479px) {
   #bot2 {
-    margin-top: 8rem;
+    margin-top: 3rem;
   }
   #bot2 img {
     padding-top: 10px !important;
@@ -121,9 +119,12 @@ export default {
 
   h1 {
     font-size: 20px !important;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
   h2 {
     font-size: 15px !important;
+    line-height: 1.2;
   }
 }
 @font-face { font-family: work-sans;
@@ -135,7 +136,7 @@ export default {
 .flex {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 10px;
   justify-content: center;
 }
 .container {
