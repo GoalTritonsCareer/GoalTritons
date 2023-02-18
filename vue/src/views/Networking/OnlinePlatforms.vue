@@ -1,17 +1,17 @@
 <template>
   <div id="NetworkingTop">
-    <h1>Networking</h1>
-
-    <p class="normal">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</p>
-
-    <a id="onlinePlatform"></a>
-    <h2>Why Networking?</h2>
-
-    <div>
-      <img class="whyNetworkingImg" src="/networking/whyNetworking.svg" alt="Why Networking">
+    <div id="heading" style="position: relative">
+      <section class="title">
+        <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
+        <h1>NETWORKING</h1>
+      </section>
+      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <a id="why-networking"></a>
     </div>
 
-    <div>
+    <div id="body">
+      <img id="whyNetworkingImg" src="/networking/whyNetworking.svg" alt="Why Networking">
+
       <div>
         <h2 style="display: block">Route One: Networking through Online Platforms <a id="whyPlatform" style="display: inline"></a></h2>
 
@@ -492,84 +492,10 @@ export default {
 
 
 <style scoped>
+@import "../../assets/content.css";
+
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
-}
-a {
-  text-decoration: none;
-}
-div{
-  text-align: center;
-}
-.medium {
-  font-weight: 500;
-}
-.semi {
-  font-weight: 600;
-}
-h1, h2, h3, h4{
-  text-align: left;
-}
-h3{
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-  padding-top: 30px;
-}
-h1{
-  margin-bottom: 2rem;
-  color: #1E4460;
-  font-weight: 700;
-  font-size: 26px;
-  font-family: work-sans;
-}
-h2{
-  font-family: work-sans;
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 700;
-  color: #182B49;
-  margin-bottom: 42px;
-  margin-top: 95px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-h4{
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-.whyNetworkingImg{
-  width: 60vw;
-}
-#opening{
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  padding: 40px 35px 0px 35px;
-}
-#Maintain{
-  width:300px;
-  border-radius: 20px;
-  background-color: cadetblue;
-  text-align: center;
-}
-p.normal{
-  border-radius: 2rem;
-  text-align: center;
-  padding: 2rem;
-  background-color: #D9EAEF;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1E4460;
-  width: 65%;
-  margin: auto;
 }
 p.online{
   background-color: #D9EAEF;
@@ -699,14 +625,7 @@ p.online{
   height: 28px;
   padding-top: 2px;
 }
-ul{
-  text-align: left;
-  margin-left: 2rem;
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
-}
+
 .step2Img{
   width: 60%;
 }
@@ -781,40 +700,7 @@ ul{
   display: inline-block;
   margin-left: 0.5rem;
 }
-.intextLink {
-  color: #0467B0;
-  text-decoration: none;
-  font-weight: 500;
-}
-.intextLink:hover {
-  text-decoration: underline;
-  font-weight: 600;
-}
-.link {
-  display: inline;
-  text-decoration: none;
-  color: #1e4460;
-  font-weight: 500;
-}
-.link:hover {
-  text-decoration: underline;
-  font-weight: 600;
-}
-#more-resources{
-  text-align: left;
-}
-#more-resources > ul{
-  text-align: left;
-  margin-right: 12vw;
-  margin-left: 11.5vw;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 141%;
-}
-#more-resources a{
-  text-decoration: none;
-}
+
 .middleP{
   font-size: 15px;
   font-style: normal;
@@ -840,27 +726,12 @@ ul{
   font-weight: 600;
   font-size: 15px;
 }
-.NOstep {
-  background-color: #F8EFDA;
-  border-radius: 45px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  height: 35px;
-  margin-right: 5px;
-  padding-top: 5px;
-}
+
 .step1Color {
   background-color: #F8EFDA;
 }
 .step2Color {
   background-color: #FEECC0;
-}
-.step3Color {
-  background-color: #FADC92;
-}
-.step4Color {
-  background-color: #F4CE71;
 }
 .wrapper {
   margin-top: 50px;

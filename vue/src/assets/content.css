@@ -113,7 +113,12 @@ li li {
     width: 100%;
     height: 100%;
 }
-
+.medium {
+    font-weight: 500;
+}
+.semi {
+    font-weight: 600;
+}
 /*Resource related*/
 #more-resources > ul{
     text-align: left;
@@ -132,6 +137,25 @@ li li {
     padding: 2%;
     width: fit-content;
     margin: auto;
+}
+.intextLink {
+    color: #0467B0;
+    text-decoration: none;
+    font-weight: 500;
+}
+.intextLink:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.link {
+    display: inline;
+    text-decoration: none;
+    color: #1e4460;
+    font-weight: 500;
+}
+.link:hover {
+    text-decoration: underline;
+    font-weight: 600;
 }
 .moreRes{
     background-image: linear-gradient(
