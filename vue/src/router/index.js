@@ -5,6 +5,9 @@ import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
 import WhyInterview from "../views/Interview/WhyInterview.vue"
+import ResumeAside from "../components/ResumeAside.vue";
+import Resume from "../views/Resume.vue";
+import ResumeVsCV from "../views/ResumeVsCV.vue";
 
 
 

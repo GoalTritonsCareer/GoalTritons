@@ -1,14 +1,12 @@
 <template>
   <div id="opening">
-    <h1>Interview Prep</h1>
-    <p id="openingPara">In this page, Goal Tritons will walk you through how
-      to prepare for the interview—the most
-      nerve-racking part of job application. You will learn various interview questions, answer structures, and the
-      entire interview process. You will also receive a wealth of advices and materials on how to master an interview.
-      Let’s get started!</p>
-
-
-
+        <div id="heading" style="position: relative; padding-left: 0% !important">
+          <section class="title">
+            <h1>Interview Prep</h1>
+          </section>
+          <img src="../../../public/interview/InterviewPrep.svg" alt="networking background" style="width: 100%" >
+          <a id="why-networking"></a>
+        </div>
 
     <a id="whyInterview"></a>
     <div>
@@ -35,13 +33,12 @@ export default {
 </script>
 
 <style scoped lang="less">
+@import "../../assets/content.css";
+
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
 
-a{
-  text-decoration: none;
-}
 
 .link {
   display: inline;
@@ -54,11 +51,6 @@ a{
   font-weight: 600;
 }
 
-
-
-div{
-  text-align: center;
-}
 #more-resources{
   text-align: left;
 }
@@ -86,27 +78,6 @@ h3{
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
-}
-h1{
-  margin-bottom: 100px;
-  color: #1E4460;
-  font-weight: 700;
-  font-size: 26px;
-
-}
-
-h2{
-
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 700;
-  color: #182B49;
-  margin-bottom: 82px;
-  margin-top: 95px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 #sample-resumes a{

@@ -102,12 +102,12 @@ export default {
 }
 .wrapper__body {
   flex: 1;
-  margin-left: 19%;
-  padding-left: 2%;
+  margin-left: 260px;
+  /*padding-left: 2%;*/
   width: auto;
   /*margin-left: 275px;*/
   /*padding-left: 26px;*/
-  max-width: 77%;
+  /*max-width: 77%;*/
   padding-top: 6.3%;
   margin-bottom: 12%;
 }
