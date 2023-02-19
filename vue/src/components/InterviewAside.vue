@@ -1,4 +1,4 @@
-git<template>
+<template>
   <el-col :span="12">
     <h5 class="menu">Interview Prep</h5>
     <el-menu
