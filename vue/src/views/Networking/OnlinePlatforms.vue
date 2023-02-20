@@ -2,7 +2,7 @@
   <div id="NetworkingTop">
     <div id="heading" style="position: relative">
       <section class="title">
-        <h3 class="back">&lt; <span style="text-decoration: underline">Networking</span></h3>
+        <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
         <h1>Online Platforms</h1>
       </section>
       <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
