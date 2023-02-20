@@ -325,26 +325,5 @@ ul{
   max-width: 900px;
 }
 
-.step {
-  border-radius: 45px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  height: 35px;
-  margin-right: 5px;
-  padding-top: 5px;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
 
-.step1Color {
-  background-color: #F8EFDA;
-}
-
-.step2Color {
-  background-color: #FEECC0;
-}
 </style>
