@@ -1,13 +1,13 @@
 <template>
   <div id="opening">
-<!--    <div id="heading" style="position: relative">-->
-<!--      <section class="title">-->
-<!--        <h1>Interview Prep</h1>-->
-<!--        <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>-->
-<!--      </section>-->
-<!--      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >-->
-<!--      <a id="why-networking"></a>-->
-<!--    </div>-->
+    <div id="heading" style="position: relative">
+      <section class="title">
+        <h1>Interview Prep</h1>
+        <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
+      </section>
+      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <a id="why-networking"></a>
+    </div>
 
     <p id="openingPara">In this page, Goal Tritons will walk you through how
       to prepare for the interview—the most

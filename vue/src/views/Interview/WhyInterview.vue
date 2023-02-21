@@ -1,414 +1,127 @@
 <template>
-  <div id="opening">
-        <div id="heading" style="position: relative; padding-left: 0% !important">
-          <section class="title">
-            <h1>Interview Prep</h1>
-          </section>
-          <img src="../../../public/interview/InterviewPrep.svg" alt="networking background" style="width: 100%" >
-          <a id="why-networking"></a>
+  <div id="home">
+    <div id="heading" style="position: relative">
+      <section class="title">
+        <h1>Interview Prep</h1>
+      </section>
+      <img src="/interview/InterviewPrep.svg" alt="interview background" style="width: 100%" >
+      <a id="why-networking"></a>
+    </div>
+
+    <div id="body">
+      <img id="whyInterviewImg" src="/interview/whyInterview.svg" alt="Why Interview">
+
+      <a id="interview-breakdown"></a>
+      <h2>INTERVIEW BREAKDOWN</h2>
+      <section id="routes">
+        <div class="container">
+          <div class="cover">
+            <p>Interview Questions Types</p>
+            <img src="/cover4.svg" alt="Cover" loading="lazy" style="opacity: 75%">
+          </div>
+          <img class="bg" src="/interview/HomeInterviewQT.svg" alt="Interview Questions Types Module" loading="lazy" style="filter: brightness(1.75)">
         </div>
+        <div class="container">
+          <div class="cover">
+            <p>Interview Steps</p>
+            <img src="/cover4.svg" alt="Cover" loading="lazy">
+          </div>
+          <img class="bg" src="/interview/HomeInterviewSteps.svg" alt="Interview Steps Module" loading="lazy">
+        </div>
+        <div class="container">
+          <div class="cover">
+            <p>Master An Interview</p>
+            <img src="/cover4.svg" alt="Cover" loading="lazy">
+          </div>
+          <img class="bg" src="/interview/HomeInterviewMaster.svg" alt="Master An Interview Module" loading="lazy">
+        </div>
+        <p>Learn common interview question types.</p>
+        <p>Learn the flow of interviews.</p>
+        <p>Learn how to network in everyday routine.</p>
+      </section>
 
-    <a id="whyInterview"></a>
-    <div>
-      <h2>Why Interview?</h2>
+      <a id="more-resources"></a>
+      <h2>MORE RESOURCES</h2>
+      <section class="resource">
+        <p class="moreResTitle">LinkedIn:</p >
+        <ul>
+          <li>Summary Examples: <a href="https://blog.hubspot.com/sales/linkedin-summary-examples" target="_blank">
+            <p class="moreRes" style="display: inline">17 Best LinkedIn Summary & Bio Examples</p></a>
+          </li>
+          <li>“Branding” yourself:
+            <ul>
+              <li><a href="https://www.linkedin.com/business/marketing/blog/content-marketing/5-free-ways-to-build-your-personal-brand-on-linkedin" target="_blank"><p class="moreRes">
+                How to Build Your Personal Brand on LinkedIn</p></a></li>
+              <li><a href="https://www.forbes.com/sites/robinryan/2021/09/14/how-to-create-an-impressive-linkedin-personal-brand/?sh=545765ed73e5" target="_blank"><p class="moreRes">
+                How To Create An Impressive LinkedIn Personal Brand</p ></a></li>
+            </ul>
+          </li>
+          <li>Connect Template: <a href="https://www.themuse.com/advice/want-people-to-accept-your-linkedin-requests-use-these-10-templates" target="_blank">
+            <p class="moreRes" style="display: inline">LinkedIn Connect Template</p></a>
+          </li>
+        </ul>
+
+        <p class="moreResTitle" style="margin-top: 20px">Networking Online:</p>
+        <ul>
+          <li>Info. Interview: <a href="https://career.berkeley.edu/Info/InfoQuestions" target="_blank">
+            <p class="moreRes" style="display: inline">Qs to Ask through Info Interview</p ></a>
+          </li>
+        </ul>
+
+        <p class="moreResTitle" style="margin-top: 20px">Maintain Networks:</p>
+        <ul>
+          <li>Info. Interview: <a href="https://www.themuse.com/advice/finally-5-email-templates-that-make-following-up-with-anyone-way-less-awkward" target="_blank">
+            <p class="moreRes" style="display: inline">Networking Follow-Up Email Templates</p></a>
+          </li>
+        </ul>
 
 
-
-      <img src="/interview/whyInterview.svg" alt="Why Interview?">
-
-      <a id="interviewQuestions"></a>
-
+        <p class="moreResTitle" style="margin-top: 20px">More articles for successful networking:</p >
+        <ul>
+          <li><a href="https://hbr.org/2016/05/learn-to-love-networking" target="_blank">
+            <p class="moreRes" style="display: inline">Learn to Love Networking </p></a>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <script>
 export default {
-  name: "WhyInterview"
+  name: "WhyInterview",
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 }
 </script>
 
-<style scoped lang="less">
+
+
+<style scoped>
 @import "../../assets/content.css";
 
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
-
-
-.link {
-  display: inline;
-  text-decoration: none;
-  color: #1E4460;
-  font-weight: 500;
+#whyInterviewImg {
+  margin-top: 9.5vh;
+  width: 90%;
 }
-.link:hover {
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-#more-resources{
-  text-align: left;
-}
-#more-resources p{
-  margin-left: 13vw;
-
-}
-h1, h2, h3{
-  font-family: work-sans;
-  text-align: left;
-}
-
-
-.resumecomp > p{
-  padding-top: 1rem;
-}
-
-.resumecomp > pre{
-  padding-top: 1rem;
-}
-
-h3{
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-}
-
-#sample-resumes a{
-  margin-right: 50px;
-}
-
-
-ul{
-  text-align: left;
-  margin-right: 12vw;
-  margin-left: 15vw;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 141%;    /* list里的行间宽度为141%，其他为default */
-}
-
-#openingPara{
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  margin-right: 11vw;
-  margin-left: 11vw;
-
-}
-
-#BQp, #TQp{
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  margin-right: 4vw;
-  margin-left: 4vw;
-}
-
-#TQp{
-  margin-bottom: 2rem;
-}
-
-#BQp{
-  margin-bottom: 2rem;
-}
-
-#question-type{
-  text-align: center;
-}
-
-#questionType{
-  background-color: #1E4460;;
-
-  text-align: center;
-  color: #F4CE71;;
-  padding-top: 13px;
-  padding-bottom: 13px;
-
-  font-family: work-sans;
-  font-size: 20px;
-  font-weight: 700;
-  font-style: normal;
-  border-radius: 30px;
-  border: 1px solid black;
-  width: 12vw;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#QTdiv{
-  text-align: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#QTspan1{
-  display: inline-block;
-  text-align: center;
-  border-radius: 20px;
-  color: #1E4460;
-  border: 2px solid #1E4460;
-  padding: 2px 30px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-#QTspan2{
-  display: inline-block;
-  text-align: center;
-  border-radius: 20px;
-  color: #1E4460;
-  border: 2px solid #1E4460;
-  padding: 2px 30px;
-  width: 200px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
-#QTspan3{
-  display: inline-block;
-  text-align: center;
-  border-radius: 20px;
-  color: #1E4460;
-  border: 2px solid #1E4460;
-  padding: 2px 30px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-
-
-.DYp{
-  display: inline;
-  border-radius: 30px;
-  background-color: #F4CE71;
-  color: black;
-  margin-right: 10px;
-  padding: 3px 10px;
-  font-weight: 600;
-
-}
-
-.DYimg{
-  width: 10vw;
-  margin-right: 4rem;
-  margin-left: 7rem;
-}
-
-.DYdiv{
-  display: flex;
-  margin: 20px 10vw;
-}
-
-.DYulTitle{
-
-  text-align: left;
-  font-style: italic;
-
-}
-.DYul{
-  margin-right: auto;
-  margin-left: 2rem;
-}
-
-#TQtipsTitle{
-  margin-left: 8vw;
-  margin-bottom: 20px;
-}
-
-#TQtips{
-  text-align: left;
-
-  margin-left: 10vw;
-
-}
-
-#TQtips ul{
-  text-align: left;
-  margin: 0;
-  margin-left: 7rem;
-}
-
-.ITimg{
-  width: 7vw;
-}
-
-#ITSimg{
-  width: 70vw;
-  margin-top: 3rem;
-}
-
-#ITdiv{
+#routes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+#routes p, #practice p {
+  text-align: center;
+  width: 85%;
+  overflow: hidden;
 }
 
-#ITdiv *{
-  margin: 0;
-}
-
-#ITdiv ul{
-  border: 4px dotted #1E4460;
-  padding: 20px;
-  border-radius: 10px;
-  border-left: hidden;
-
-
-}
-
-#ITimg{
-  width: auto;
-  max-width: 70vw;
-}
-
-#ITstep1{
-  background-color: #F8EFDA;
-  border-radius: 10px;
-  margin: auto;
-  width: 5rem;
-}
-
-
-#ITstep2{
-  background-color: #F6E0AA;
-  border-radius: 10px;
-  margin: auto;
-  width: 5rem;
-}
-
-#ITstep3{
-  background-color: #F4CE71;
-  border-radius: 10px;
-  margin: auto;
-  width: 5rem;
-}
-
-
-
-#HTMAIdiv{
+#practice {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-
-
-#HTMAIdiv *{
-  margin: 0;
-
-}
-
-.HTMAIsubdiv{
-  border-right: 1px solid rgba(30, 68, 96, .35);
-
-  height: 90%;
-
-}
-
-.HTMAIimg{
-  display: block;
-  margin-bottom: 20px;
-}
-
-#HTMAIdiv div{
-  text-align: left;
-
-}
-
-#HTMAIdiv ul{
-  margin-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
-  color: #1E4460;
-  font-weight: 499;
-
-}
-
-#HTMAIdiv p{
-  display: inline;
-  color: #1E4460;
-  font-weight: 500;
-
-
-}
-
-.HTMAIemoji{
-  vertical-align: middle;
-  margin-right: 3.5rem;
-}
-
-
-.moreResLink {
-  color: #B27224;
-  font-weight: 500;
-}
-.moreResLink:hover {
-  font-weight: 600;
-  text-decoration: underline;
-}
-.moreRes{
-  background-image: linear-gradient(
-      to right,
-      #0467B0,
-      #0467B0
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 2px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-  font-weight: 500;
-}
-.moreRes::before {
-  content: '';
-  background: #0467B0;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  transition: all 0.3s ease-in-out;
-}
-.moreRes:hover {
-  background-position: 0;
-  font-weight: 600;
-}
-.moreRes:hover::before {
-  width: 100%;
-}
-
-#longMoreRes{
-  display: inline;
-}
-
-.intextLink {
-  color: #0467B0;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.intextLink:hover {
-  text-decoration: underline;
-  font-weight: 600;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 </style>
