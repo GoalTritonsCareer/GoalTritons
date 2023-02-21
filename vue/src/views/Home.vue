@@ -8,7 +8,7 @@
     <el-container style="display: flex" class="wrapper">
       <!--      内容区域-->
       <el-main class="wrapper__body">
-        <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 10vh">
+        <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 5vh">
           <b> For best user experience, please browse this website using a laptop or desktop! </b>
         </div>
         <div>
@@ -17,9 +17,13 @@
           <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
           <span class="dot220"></span><span class="dot221"></span>
           <div>
-            <h1>Your
+            <h1 v-if="isGoodBrowser === true" >Your
               <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
               professional future is <br>what we strive for.
+            </h1>
+            <h1 v-if="isGoodBrowser === false" >Your
+              <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span>
+              professional future is what we strive for.
             </h1>
 
             <div id="top">
@@ -32,16 +36,17 @@
                 asked the same questions. But, with professional help, we now found and built solutions to all your
                 confusions.
               </p>
-              <div style="position: relative; display: inline-block">
-                <span class="sun"></span>
-                <img src="/home/mountain.svg" alt="mountain" style="width: 95%; margin-top: -40px;">
-                <img id="student" src="/home/student.svg" alt="student">
-              </div>
+              <img id="bg" src="/home_bg.svg" alt="bg: sun, mountain, and a Triton">
+<!--              <div style="position: relative; display: inline-block">-->
+<!--                <span id="sun"></span>-->
+<!--                <img id="mountain" src="/home/mountain.svg" alt="mountain">-->
+<!--                <img id="student" src="/home/student.svg" alt="student">-->
+<!--              </div>-->
             </div>
           </div>
 
 
-          <div style="display: flex; flex-direction: row; margin-top: 180px; margin-left: calc((100vw - 976px) / 2); z-index: 3">
+          <div id="mid">
             <el-popover
                 placement="right"
                 offset="50"
@@ -49,48 +54,48 @@
                 width="432px"
             >
               <template #reference>
-                <img src="/home/homeCalendar.svg" alt="calendar" width="420">
+                <img id="calendar" src="/home/homeCalendar.svg" alt="calendar">
               </template>
               <template #default>
                 <span style="font-weight: 600; color: #1e4460">UCSD Career and Networking Fairs</span>
                 <Calendar />
               </template>
             </el-popover>
-            <h2 style="margin-left: 125px; width: 400px; margin-top:72px">Check out our calendar
+            <h2>Check out our calendar
               <i style="color: #5F99B6">(in the header)</i>
-              to &nbsp;&nbsp;&nbsp;&nbsp; see updated career events.</h2>
+              to see updated career events.</h2>
           </div>
 
-          <div style="margin-top: 150px">
-            <h2 style="margin-left: calc((100vw - 1000px) / 2);">Enjoy this road map to your brand new future...</h2>
+          <div id='bottom'>
+            <h2>Enjoy this road map to your brand new future...</h2>
 
             <div class="timeline">
               <div class="one1">
-                <div style="position: relative; display: inline-block">
+                <section style="position: relative; display: inline-block">
                   <img src="/home/exploreCareer.svg" alt="frame">
                   <button style="position: absolute; top: 180px; left: 112px; z-index: 2; display: inline">
                     In Progress
                   </button>
-                </div>
+                </section>
               </div>
 
               <div class="one3">
-                <div style="position: relative; display: inline-block">
+                <section style="position: relative; display: inline-block">
                   <img src="/home/startApplying.svg" alt="frame">
                   <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline">
                     In Progress
                   </button>
-                </div>
+                </section>
               </div>
 
               <div class="one5">
-                <div style="position: relative; display: inline-block">
+                <section style="position: relative; display: inline-block">
                   <img src="/home/startPreparing.svg" alt="frame" >
                   <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
                           @click="$router.push('/interview#opening')">
                     Start Preparing
                   </button>
-                </div>
+                </section>
               </div>
 
               <div class="two">
@@ -98,23 +103,23 @@
               </div>
 
               <div class="three2">
-                <div style="position: relative; display: inline-block">
+                <section style="position: relative; display: inline-block">
                   <img src="/home/startNetworking.svg" alt="frame">
                   <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
                           @click="$router.push('/Networking#NetworkingTop')">
                     Start Networking
                   </button>
-                </div>
+                </section>
 
               </div>
               <div class="three4">
-                <div style="position: relative; display: inline-block">
+                <section style="position: relative; display: inline-block">
                   <img src="/home/startWriting.svg" alt="frame" >
                   <button style="position: absolute; top: 180px; left: 110px; z-index: 2; display: inline"
                           @click="$router.push('/resume#resumeTop')">
                     Start Writing
                   </button>
-                </div>
+                </section>
               </div>
             </div>
           </div>
@@ -165,46 +170,6 @@ export default {
 </script>
 
 <style scoped>
-/* 大屏幕 ( > 13 in. ) */
-@media (min-width: 1440px) {
-  .footer {
-    width: 1440px !important;
-    margin-left: calc((100vw - 1440px)/2) !important;
-  }
-  h1 {
-    margin-left: calc((100vw - 988px) / 2);
-  }
-  #top {
-    margin-left: calc((100vw - 988px) / 2);
-  }
-}
-/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .footer {
-    width: 100%;
-  }
-  h1 {
-    margin-left: calc((100vw - 988px) / 2);
-  }
-  #top {
-    margin-left: calc((100vw - 988px) / 2);
-  }
-}
-/* 小电脑及大Pad */
-@media (min-width: 992px) and (max-width: 1279px) {
-  .footer {
-    width: 100%;
-  }
-}
-@media (min-width: 480px) and (max-width: 991px) {
-  h1 {
-    font-size: 40px !important;
-  }
-  .footer {
-    width: 100%;
-  }
-
-}
 /*@media (min-width: 992px) and (max-width: 1279px) {*/
 /*  .wrapper__body {*/
 /*    width: 70vw;*/
@@ -264,6 +229,33 @@ h2 {
 #top {
   display: flex;
   flex-direction: row;
+}
+#mid {
+  display: flex;
+  flex-direction: row;
+  margin-top: 180px;
+  /*margin-left: 14rem;*/
+  margin-left: calc((100vw - 976px) / 2);
+  z-index: 3;
+}
+#mid h2 {
+  margin-left: 9rem;
+  width: 35%;
+  margin-top: 5rem;
+}
+#bottom {
+  margin-top: 12%;
+}
+#bottom h2 {
+  /*margin-left: 14rem;*/
+  margin-left: calc((100vw - 1000px) / 2);
+}
+#bg {
+  margin: -45px 0 0 10px;
+  width: 45%
+}
+#calendar {
+  width: 35%;
 }
 .dot192 {
   position: absolute;
@@ -405,29 +397,32 @@ h2 {
   background: #F4CE71;
   filter: blur(150px);
 }
-.sun {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 100px;
-  top: -32px;
-  transition: 2s;
-  background:
-      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F4CE71 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%),
-      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F8CE67 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%);
-}
-.sun:hover {
-  filter: brightness(112%);
-  left: 85px;
-  top: -47px;
-  width: 90px;
-  height: 90px;
-}
+/*#mountain {*/
+/*  width: 95%;*/
+/*  margin-top: -40px;*/
+/*}*/
+/*#sun {*/
+/*  position: absolute;*/
+/*  width: 60px;*/
+/*  height: 60px;*/
+/*  left: 100px;*/
+/*  top: -32px;*/
+/*  transition: 2s;*/
+/*  background:*/
+/*      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F4CE71 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%),*/
+/*      radial-gradient(48.01% 48.01% at 49.46% 51.99%, #F8CE67 20%, rgba(244, 206, 113, 0) 100%, rgba(244, 206, 113, 0) 100%);*/
+/*}*/
+/*#sun:hover {*/
+/*  filter: brightness(112%);*/
+/*  left: 85px;*/
+/*  top: -47px;*/
+/*  width: 90px;*/
+/*  height: 90px;*/
+/*}*/
 .opening {
   font-size: 16px;
   font-weight: 400;
   line-height: 141%;
-  width: 555px;
   margin-top: 62px;
 }
 .wrapper {
@@ -443,19 +438,19 @@ h2 {
   /*margin-bottom: 12%;*/
   z-index: 2;
 }
-#student {
-  position: absolute;
-  top: 100px;
-  left: 280px;
-  z-index: 1;
-  border: 100px;
-  display: inline;
-  width: 200px;
-  /*transition: 4s;*/
-}
+/*#student {*/
+/*  position: absolute;*/
+/*  top: 100px;*/
+/*  left: 280px;*/
+/*  z-index: 1;*/
+/*  border: 100px;*/
+/*  display: inline;*/
+/*  width: 200px;*/
+/*  !*transition: 4s;*!*/
+/*}*/
 .timeline {
   margin-left: calc((100vw - 988px) / 2);
-  margin-top: 80px;
+  margin-top: 7%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
@@ -501,5 +496,152 @@ h2 {
   grid-row: 4;
   height: min-content;
   margin-top: -60px;
+}
+
+/* 大屏幕 ( > 13 in. ) */
+@media (min-width: 1440px) {
+  .footer {
+    width: 1440px !important;
+    margin-left: calc((100vw - 1440px)/2) !important;
+  }
+  h1 {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  #top {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  .opening {
+    width: 55ch;
+  }
+}
+/* 多数电脑 ( 11 in. ≤ size ≤ 13 in. ) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .footer {
+    width: 100%;
+  }
+  h1 {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  #top {
+    margin-left: calc((100vw - 988px) / 2);
+  }
+  .opening {
+    width: 55ch;
+  }
+}
+/* 小电脑及大Pad */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .footer {
+    width: 100%;
+  }
+  .opening {
+    width: 50ch;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  h1 {
+    margin-left: 1rem;
+    font-size: 40px !important;
+  }
+  .footer {
+    width: 100%;
+  }
+  .opening {
+    width: 70ch;
+  }
+  #top {
+    flex-direction: column !important;
+    margin: 0 1rem
+  }
+  #bg {
+    margin-top: 2rem !important;
+    width: 80% !important;
+  }
+
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    width: 95% !important;
+    margin-left: 0 !important;
+  }
+  .opening {
+    max-width: 80%;
+  }
+  #top, #mid{
+    flex-direction: column;
+    margin: 0 1rem !important;
+  }
+  #mid {
+    margin-top: 180px;
+  }
+  template > img {
+    width: 95%;
+    margin-left: 10px;
+  }
+  #bg {
+    margin-top: 5%;
+    width: 90%;
+  }
+  #calendar {
+    width: 95% !important;
+    margin-top: 20%;
+  }
+  #bottom {
+    margin-top: 25%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .timeline {
+    grid-template-columns: 1fr !important;
+    margin-left: 0;
+  }
+  .two {
+    margin-left: -17.5rem;
+    z-index: -1;
+  }
+  .one1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    height: min-content;
+  }
+  .one3 {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+    margin-top: -60px;
+    padding-top: 18px;
+    height: min-content;
+  }
+  .one5 {
+    grid-column: 1;
+    grid-row: 5;
+    height: min-content;
+    margin-top: -52px;
+  }
+  /*.two {*/
+  /*  grid-column: 2;*/
+  /*  grid-row: 1/6;*/
+  /*  padding-top: 122px;*/
+  /*  margin-left: -2px;*/
+  /*  margin-right: -25px;*/
+  /*}*/
+  .three2 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -60px;
+    height: min-content;
+    padding-top: 18px;
+  }
+  .three4 {
+    grid-column: 1;
+    grid-row: 4;
+    height: min-content;
+    margin-top: -60px;
+  }
 }
 </style>
