@@ -19,7 +19,7 @@
           <section class="onlinePlatformDiv">
             <div class="box">
               <a href="https://www.linkedin.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn">
+                <img class="onlinePlatformImg" src="/networking/linkedIn.svg" alt="linkedIn" loading="lazy">
               </a>
             </div>
 
@@ -39,14 +39,14 @@
 
           <section class="step1 headerWithLink">
             <div style="display: flex; flex-direction: row; text-align: left;">
-              <p class="step step1Color" style="width:65px">Step 1</p>
+              <p class="step step1Color">Step 1</p>
               <p class="stepTitle">Build a Professional & Attracting Profile</p>
             </div>
             <div style="text-align: right">
               <a href="//ucsd.joinhandshake.com/stu/appointments/new" target="_blank" style="text-decoration: none; color: #1E4460">
                 <p class ="link" style="display: inline; opacity: 80%">Schedule LinkedIn Profile Review Appointment</p>
                 &nbsp;
-                <img src="/arrow.png" alt="arrow" style="vertical-align: middle; margin-top: -4px; width: 28px">
+                <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; margin-top: -4px; width: 28px">
               </a>
             </div>
           </section>
@@ -77,8 +77,8 @@
               </div>
             </div>
             <div class="one2">
-              <img src="/networking/profileInfo.svg" alt="profile_info" style="padding-left: 50px">
-              <img src="/networking/profileStatus.svg" alt="profile_status">
+              <img src="/networking/profileInfo.svg" alt="profile_info" loading="lazy" style="padding-left: 50px">
+              <img src="/networking/profileStatus.svg" alt="profile_status" loading="lazy">
             </div>
             <div class="one3">
               <p class="profileHeader" style="width:240px">
@@ -115,8 +115,8 @@
               </div>
             </div>
             <div class="two2">
-              <img src="/networking/profileAbout.svg" alt="profile_about" style="padding-left: 50px">
-              <br> <img src="/networking/profileExperience.svg" alt="profile_experience">
+              <img src="/networking/profileAbout.svg" alt="profile_about" loading="lazy" style="padding-left: 50px">
+              <br> <img src="/networking/profileExperience.svg" alt="profile_experience" loading="lazy">
             </div>
             <div class="two3">
               <p class="profileHeader" style="width:260px">
@@ -135,14 +135,14 @@
                 </ul>
                 <div style="text-align: left; padding-left: 12px">
                   <i>See LinkedIn summary examples under </i>
-                  <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>.
+                  <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i>.
                 </div>
 
               </div>
             </div>
 
             <div class="three2">
-              <img src="/networking/profileEducation.svg" alt="profile_others" style="padding-left: 50px">
+              <img src="/networking/profileEducation.svg" alt="profile_others" loading="lazy" style="padding-left: 50px">
             </div>
             <div class="three3">
               <p class="profileHeader" style="width:130px;">
@@ -198,7 +198,7 @@
           </section>
 
           <section style="text-align: right; margin-bottom: 42px; margin-top: 42px">
-            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i></p>
+            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i></p>
           </section>
 
           <section>
@@ -210,7 +210,7 @@
                         border-radius: 20px; padding: 24px 24px 0 24px">
               <p style="width: 22ch; text-align: left; padding-top: 2em">This number matters when hunting for jobs—having more connection gives you
                 credibility and increases your exposure on the market.</p>
-              <img class="step2Img" src="/networking/step2P1.svg" alt="expandNetwork" style="margin-bottom: 30px">
+              <img class="step2Img" src="/networking/step2P1.svg" alt="expandNetwork" loading="lazy" style="margin-bottom: 30px">
             </div>
 
             <p class="middleP">
@@ -218,14 +218,14 @@
               your focus when expanding your network should be on the people that can <span class="semi">add to your
           professional value</span>.
             </p>
-            <img class="step2Img" alt="connectWith" src="/networking/connectWith.svg" style=" margin-top: 20px">
+            <img class="step2Img" alt="connectWith" src="/networking/connectWith.svg" loading="lazy" style=" margin-top: 20px">
           </section>
 
           <section style="text-align: right; margin-top: 40px; margin-bottom: 30px">
             <a href="https://www.linkedin.com/groups/42184/" target="_blank" style="text-decoration: none; color: #1E4460">
               <p class ="link" style="display: inline; opacity: 80%">Join LinkedIn UCSD Alumni Community</p>
               &nbsp;
-              <img src="/arrow.png" alt="arrow" style="vertical-align: middle; margin-top: -4px; width: 28px">
+              <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; margin-top: -4px; width: 28px">
             </a>
           </section>
 
@@ -246,7 +246,7 @@
               <ul>
                 <li>Search for people by keywords and filters, <em>e.g. Human Resources in San Diego, PhD in UCSD</em></li>
               </ul>
-              <img id="s2t2img" src="/networking/step2P3.jpg">
+              <img id="s2t2img" src="/networking/step2P3.jpg" alt="step 2 Point 3" oading="lazy">
             </div>
 
             <div class="s2Tips">
@@ -259,192 +259,163 @@
             </div>
 
             <div style="text-align: right; margin-bottom: 50px; margin-top: 40px">
-              <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/Networking#moreResources')">More Resources</i>
+              <i>See More LinkedIn Connect Templates under</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i>
               <a id="tritonConnect"></a>
             </div>
 
 
           </section>
         </el-tab-pane>
-        <el-tab-pane label="Tritons Connect" name="second">Config</el-tab-pane>
-        <el-tab-pane label="Other Platforms" name="third">Role</el-tab-pane>
-      </el-tabs>
-
-      <div>
-
-        <h3>Tritons Connect</h3>
-
-        <div class="onlinePlatformDiv">
-          <div class="box">
-            <a href="https://tritonsconnect.com/" target="_blank">
-              <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect">
-            </a>
-          </div>
-          <div class="onlinePlatformDescription">
-            <p>Tritons Connect is UCSD's equivalent of LinkedIn, but it offers a <span class="medium">smaller and more
+        <el-tab-pane label="Tritons Connect" name="second" >
+          <section class="onlinePlatformDiv">
+            <div class="box">
+              <a href="https://tritonsconnect.com/" target="_blank">
+                <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect" loading="lazy">
+              </a>
+            </div>
+            <div class="onlinePlatformDescription">
+              <p>Tritons Connect is UCSD's equivalent of LinkedIn, but it offers a <span class="medium">smaller and more
               concentrated</span> network from which you could benefit directly as a UCSD student.  </p>
-            <br>
-            <p>On Tritons Connect, you can:</p>
-            <ul>
-              <li>Write a post on “Feed” to interact within the UCSD Network
-                <i>(e.g. ask for referrals)</i>.</li>
-              <li>Connect with UCSD classmates, professors, staff, and <span class="medium">alumni</span>. </li>
-              <li>Find mentors <i class="medium">(e.g. alumni, faculty)</i> in various job functions and industries. </li>
-              <li>Check out events that might interest you. You can also post an event.</li>
-            </ul>
-
-          </div>
-
-        </div>
-        <p id="highlight">Highlight</p>
-        <img src="/networking/tritonsConnect2.svg" alt="tritonsConnectHighlight" width="900" style="padding-left: 5%">
-        <img src="/networking/mentoringOption.svg" alt="mentoringOptions" style="margin-top: 50px">
-
-
-        <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
-          <a href="https://www.youtube.com/watch?v=5hbQZhav7Q4" target="_blank" style="text-decoration: none; color: #1E4460">
-            <p class ="link" style="display: inline; opacity: 80%">See Tritons Connect Video Tour</p>
-            &nbsp;
-            <img src="/arrow.png" width=22px style="vertical-align: middle">
-          </a>
-          <a id="otherSocialMedia"></a>
-        </div>
-
-      </div>
-
-      <div>
-        <h3>Other Social Media</h3>
-        <p class="middleP">
-          In addition to LinkedIn and Tritons Connect, Goal Triton Career
-          recommends using some other social media
-          platforms to network with people. There are a handful of useful ones, such as
-          <span class="semi">WeChat, Discord, Facebook, and Reddit,</span> each with its ways to network.
-        </p>
-
-
-
-
-        <div class="onlinePlatformDiv">
-          <div class="otherMediaIcon">
-            <p class="otherMediaTitle">WeChat</p>
-
-            <div class="box">
-              <a href="https://www.wechat.com/" target="_blank">
-                <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat">
-              </a>
+              <br>
+              <p>On Tritons Connect, you can:</p>
+              <ul>
+                <li>Write a post on “Feed” to interact within the UCSD Network
+                  <i>(e.g. ask for referrals)</i>.</li>
+                <li>Connect with UCSD classmates, professors, staff, and <span class="medium">alumni</span>. </li>
+                <li>Find mentors <i class="medium">(e.g. alumni, faculty)</i> in various job functions and industries. </li>
+                <li>Check out events that might interest you. You can also post an event.</li>
+              </ul>
             </div>
-          </div>
+          </section>
+
+          <section style="margin-top: 6%; padding: 0 4%">
+            <p id="highlight">Highlight</p>
+            <img src="/networking/tritonsConnect2.svg" alt="tritonsConnectHighlight" loading="lazy" style="width: 100%">
+            <img src="/networking/mentoringOption.svg" alt="mentoringOptions" loading="lazy" style="margin-top: 50px">
 
 
-          <div class="onlinePlatformDescription">
-            <p>WeChat is a free messaging App for both casual and business uses, which is widely used amongst
-              <span class="medium">Chinese International Students</span>. </p>
-            <br>
-            <p>On WeChat, you could network by:</p>
-            <ul>
-              <li>Adding classmates and chatting with them.</li>
-              <li>Joining classmate/major/social group chats. </li>
-              <li>Following public official accounts of organizations to join groups & receive updates
-                <i>(e.g. UCSD CSSA, CU UCSD, UCSD
-                  TritonTalk)</i>.
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <div class="onlinePlatformDiv">
-
-          <div class="otherMediaIcon">
-            <p class="otherMediaTitle">Discord</p>
-            <div class="box">
-              <a href="https://discord.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord">
+            <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
+              <a href="https://www.youtube.com/watch?v=5hbQZhav7Q4" target="_blank" style="text-decoration: none; color: #1E4460">
+                <p class ="link" style="display: inline; opacity: 80%">See Tritons Connect Video Tour</p> &nbsp;
+                <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; width: 28px">
               </a>
+              <a id="otherSocialMedia"></a>
             </div>
-          </div>
+          </section>
+        </el-tab-pane>
+        <el-tab-pane label="Other Platforms" name="third">
+          <p class="middleP" style="margin-bottom: 6%; width: 82%">
+            In addition to LinkedIn and Tritons Connect, Goal Triton Career
+            recommends using some other social media
+            platforms to network with people. There are a handful of useful ones, such as
+            <span class="semi">WeChat, Discord, Facebook, and Reddit,</span> each with its ways to network.
+          </p>
+          <section class="onlinePlatformDiv">
+            <div class="otherMediaIcon">
+              <p class="otherMediaTitle">WeChat</p>
 
-
-
-          <div class="onlinePlatformDescription">
-            <p>Discord is a social platform with servers & channels for larger communities to interact.  </p>
-            <br>
-            <p>On Discord, you could network by:</p>
-            <ul>
-              <li>Joining major-specific servers and accessing class channels <i>(e.g. UCSD Communication #comm-10)</i>.</li>
-              <li>Joining organizations’ servers <i>(e.g. CSSA at UCSD, Design Co)</i>.</li>
-              <li>Adding individuals and reaching out through Direct Message.</li>
-              <li>Joining text, voice, and video channels to connect with group members.</li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <div class="onlinePlatformDiv">
-
-          <div class="otherMediaIcon">
-            <p class="otherMediaTitle">Facebook</p>
-            <div class="box">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/facebookIcon.svg" alt="FaceBook">
-              </a>
+              <div class="box">
+                <a href="https://www.wechat.com/" target="_blank">
+                  <img class="onlinePlatformImg svgicon" src="/networking/wechatIcon.svg" alt="WeChat" loading="lazy">
+                </a>
+              </div>
             </div>
-          </div>
 
-
-
-          <div class="onlinePlatformDescription">
-            <p>Facebook, with <a class="intextLink" href="https://investor.fb.com/investor-news/press-release-details/2020/Facebook-Reports-Second-Quarter-2020-Results/default.aspx" target="_blank">
-              2.7 billion monthly active users</a>, hosts your peers, faculty/staffs, and organizations.</p>
-            <br>
-            <p>On Facebook, you could network by:</p>
-            <ul>
-              <li>Searching for and joining interested FB groups <i>(e.g.<a
-                  class="intextLink" href="https://www.facebook.com/groups/461162515080141" target="_blank" style="font-style: italic">
-                UCSD Class of 2025</a>)</i>>.</li>
-              <li>Finding your interested events under the“Events” section of the group you joined.</li>
-              <li>Following people in the group and reaching out through “Messenger”.</li>
-            </ul>
-
-          </div>
-
-        </div>
-
-
-        <div class="onlinePlatformDiv">
-
-          <div class="otherMediaIcon">
-            <p class="otherMediaTitle">Reddit</p>
-            <div class="box">
-              <a href="https://www.reddit.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/redditIcon.svg" alt="Reddit">
-              </a>
+            <div class="onlinePlatformDescription">
+              <p>WeChat is a free messaging App for both casual and business uses, which is widely used amongst
+                <span class="medium">Chinese International Students</span>. </p>
+              <br>
+              <p>On WeChat, you could network by:</p>
+              <ul>
+                <li>Adding classmates and chatting with them.</li>
+                <li>Joining classmate/major/social group chats. </li>
+                <li>Following public official accounts of organizations to join groups & receive updates
+                  <i>(e.g. UCSD CSSA, CU UCSD, UCSD
+                    TritonTalk)</i>.
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
 
+          <section class="onlinePlatformDiv">
+            <div class="otherMediaIcon">
+              <p class="otherMediaTitle">Discord</p>
+              <div class="box">
+                <a href="https://discord.com/" target="_blank">
+                  <img class="onlinePlatformImg" src="/networking/discordIcon.svg" alt="Discord" loading="lazy">
+                </a>
+              </div>
+            </div>
 
+            <div class="onlinePlatformDescription">
+              <p>Discord is a social platform with servers & channels for larger communities to interact.  </p>
+              <br>
+              <p>On Discord, you could network by:</p>
+              <ul>
+                <li>Joining major-specific servers and accessing class channels <i>(e.g. UCSD Communication #comm-10)</i>.</li>
+                <li>Joining organizations’ servers <i>(e.g. CSSA at UCSD, Design Co)</i>.</li>
+                <li>Adding individuals and reaching out through Direct Message.</li>
+                <li>Joining text, voice, and video channels to connect with group members.</li>
+              </ul>
+            </div>
+          </section>
 
-          <div class="onlinePlatformDescription">
-            <p>Reddit serves as a <span class="medium">forum</span> for a wide range of communities.</p>
-            <br>
-            <p>On Reddit, you could network by:</p>
-            <ul>
-              <li>Joining interested communities to ask questions, have discussions, see & send posts
-                <i>(e.g. <a class="intextLink" href="https://www.reddit.com/r/UCSD/" target="_blank">
-                  r/UCSD</a>, <a class="intextLink" href="https://www.reddit.com/r/UCSD/" target="_blank">
-                  r/humanresources</a>)
-                </i>.
-              </li>
-              <li>Following “hot” and “new” posts to receive most updated answers.</li>
-              <li>Filtering by flair <i>(e.g. “Career development”)</i> to
-                receive more relevant posts. <a id="HowToNetworkOnline"></a></li>
-              <li>Following individuals and messaging them.     </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          <section class="onlinePlatformDiv">
+            <div class="otherMediaIcon">
+              <p class="otherMediaTitle">Facebook</p>
+              <div class="box">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img class="onlinePlatformImg" src="/networking/facebookIcon.svg" alt="FaceBook" loading="lazy">
+                </a>
+              </div>
+            </div>
+
+            <div class="onlinePlatformDescription">
+              <p>Facebook, with <a class="intextLink" href="https://investor.fb.com/investor-news/press-release-details/2020/Facebook-Reports-Second-Quarter-2020-Results/default.aspx" target="_blank">
+                2.7 billion monthly active users</a>, hosts your peers, faculty/staffs, and organizations.</p>
+              <br>
+              <p>On Facebook, you could network by:</p>
+              <ul>
+                <li>Searching for and joining interested FB groups <i>(e.g.<a
+                    class="intextLink" href="https://www.facebook.com/groups/461162515080141" target="_blank" style="font-style: italic">
+                  UCSD Class of 2025</a>)</i>>.</li>
+                <li>Finding your interested events under the“Events” section of the group you joined.</li>
+                <li>Following people in the group and reaching out through “Messenger”.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="onlinePlatformDiv">
+            <div class="otherMediaIcon">
+              <p class="otherMediaTitle">Reddit</p>
+              <div class="box">
+                <a href="https://www.reddit.com/" target="_blank">
+                  <img class="onlinePlatformImg" src="/networking/redditIcon.svg" alt="Reddit" loading="lazy">
+                </a>
+              </div>
+            </div>
+
+            <div class="onlinePlatformDescription">
+              <p>Reddit serves as a <span class="medium">forum</span> for a wide range of communities.</p>
+              <br>
+              <p>On Reddit, you could network by:</p>
+              <ul>
+                <li>Joining interested communities to ask questions, have discussions, see & send posts
+                  <i>(e.g. <a class="intextLink" href="https://www.reddit.com/r/UCSD/" target="_blank">
+                    r/UCSD</a>, <a class="intextLink" href="https://www.reddit.com/r/UCSD/" target="_blank">
+                    r/humanresources</a>)
+                  </i>.
+                </li>
+                <li>Following “hot” and “new” posts to receive most updated answers.</li>
+                <li>Filtering by flair <i>(e.g. “Career development”)</i> to
+                  receive more relevant posts. <a id="HowToNetworkOnline"></a></li>
+                <li>Following individuals and messaging them.     </li>
+              </ul>
+            </div>
+          </section>
+
+        </el-tab-pane>
+      </el-tabs>
     </div>
   </div>
 </template>
@@ -455,6 +426,9 @@ import type { TabsPaneContext } from 'element-plus'
 
 export default {
   name: "OnlinePlatforms",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   data() {
     return {
       activeName: 'first'
@@ -501,11 +475,13 @@ p.online{
   align-items: center;
   text-align: center;
   width: 95%;
-  margin: auto;
+  margin: 2% auto;
 
   /*margin-left: 12vw;*/
 }
 .onlinePlatformImg{
+  max-height: 86px;
+  max-width: 86px;
   width: 6vw;
   height: 6vw;
   background-color: #D9EAEF;
@@ -519,6 +495,8 @@ p.online{
   border: none;
   height: 6vw;
   width: 6vw;
+  max-height: 86px;
+  max-width: 86px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -589,8 +567,6 @@ p.online{
   width: 95px;
   padding: 10px;
   font-weight: 600;
-  margin-left: 10vw;
-  margin-top: 7vh;
   margin-bottom: 2vh;
 }
 .otherMediaIcon{
@@ -608,13 +584,6 @@ p.online{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
-
-.headerWithLink{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: right;
-  margin: 50px 0;
 }
 
 .HTNWFsubdiv p{

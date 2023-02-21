@@ -64,13 +64,13 @@ p {
 #body {
     padding: 0 8%;
 }
-.el-tabs__content {
-    padding: 32px;
-    color: #6b778c;
-    font-size: 32px;
-    font-weight: 600;
+.headerWithLink{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    text-align: right;
+    margin: 6% 0;
 }
-
 ul{
     text-align: left;
     margin-left: 2rem;

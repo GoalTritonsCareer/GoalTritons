@@ -66,7 +66,7 @@
           <!--            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-4" class="sub1" @click="$router.push('/networking#moreResources')">More Resources</el-menu-item>
+            <el-menu-item index="2-4" class="sub1" @click="$router.push('/networking#more-resources')">More Resources</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="2-4" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>-->

@@ -24,6 +24,9 @@
 .el-tabs__content {
   padding: 4% 2%;
 }
+.el-tab-pane > :first-child {
+  margin-top: 2% !important;
+}
 .el-footer {
   --el-footer-padding: 0 0px;
 }
