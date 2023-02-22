@@ -38,13 +38,13 @@
         <el-sub-menu index="2" popper-offset="13">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/Networking#fakeNetworkingTop')">Networking</span>
+            <span class="mod" @click="$router.push('/networking#home')">Networking</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="2-1" class="sub1" @click="$router.push('/Networking#whyNetworking')">Why Networking</el-menu-item>
+            <el-menu-item index="2-1" class="sub1" @click="$router.push('/networking#why-networking')">Why Networking</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-2" class="sub1" @click="$router.push('/Networking#onlinePlatform')">Online Platforms</el-menu-item>
+            <el-menu-item index="2-2" class="sub1" @click="$router.push('/networking#networking-routes')">Networking Routes</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="2-2" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>-->
@@ -96,13 +96,13 @@
 
         <el-sub-menu index="4" popper-offset="13">
           <template #title>
-            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume')">Resume</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
+            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume')">Resume vs. CV</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="4-2" class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</el-menu-item>
+            <el-menu-item index="4-2" class="sub1" @click="$router.push('/resume')" disabled>Resume Breakdown</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="4-2" style="margin-top: 0">-->
           <!--            <template #title ><span class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</span></template>-->
@@ -112,13 +112,13 @@
           <!--            <el-menu-item index="4-2-4" class="sub2" @click="$router.push('/resume#polish-resume')">Polish Your Resume</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="4-3" class="sub1" @click="$router.push('/resume#cv-breakdown')">CV Breakdown</el-menu-item>
+            <el-menu-item index="4-3" class="sub1" @click="$router.push('/resume#cv-breakdown')" disabled>CV Breakdown</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="4-4" class="sub1" @click="$router.push('/resume#cover-letter')">Cover Letter</el-menu-item>
+            <el-menu-item index="4-4" class="sub1" @click="$router.push('/resume#cover-letter')" disabled>Cover Letter</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="4-5" class="sub1" @click="$router.push('/resume#more-resources')">More Resources</el-menu-item>
+            <el-menu-item index="4-5" class="sub1" @click="$router.push('/resume')" disabled>More Resources</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
 
