@@ -23,7 +23,7 @@
           <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
           <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy" style="filter: brightness(1.75)">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
             <p>On Campus</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">

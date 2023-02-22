@@ -5,7 +5,7 @@
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
         <h1>Online Platforms</h1>
       </section>
-      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <img src="/networking/opBG.svg" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
