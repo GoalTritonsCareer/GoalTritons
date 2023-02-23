@@ -44,9 +44,9 @@
             </div>
             <div style="text-align: right">
               <a href="//ucsd.joinhandshake.com/stu/appointments/new" target="_blank" style="text-decoration: none; color: #1E4460">
-                <p class ="link" style="display: inline; opacity: 80%">Schedule LinkedIn Profile Review Appointment</p>
+                <p class ="link" style="display: inline; ">Schedule LinkedIn Profile Review Appointment</p>
                 &nbsp;
-                <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; margin-top: -4px; width: 28px">
+                <img src="/ocArrow.svg" alt="arrow" loading="lazy" style="vertical-align: middle; width: 22px">
               </a>
             </div>
           </section>
@@ -198,7 +198,7 @@
           </section>
 
           <section style="text-align: right; margin-bottom: 42px; margin-top: 42px">
-            <p style="display: inline; opacity: 80%"><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i></p>
+            <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i></p>
           </section>
 
           <section>
@@ -223,9 +223,9 @@
 
           <section style="text-align: right; margin-top: 40px; margin-bottom: 30px">
             <a href="https://www.linkedin.com/groups/42184/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; opacity: 80%">Join LinkedIn UCSD Alumni Community</p>
+              <p class ="link" style="display: inline; ">Join LinkedIn UCSD Alumni Community</p>
               &nbsp;
-              <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; margin-top: -4px; width: 28px">
+              <img src="/ocArrow.svg" alt="arrow" loading="lazy" style="vertical-align: middle; width: 22px">
             </a>
           </section>
 
@@ -296,8 +296,8 @@
 
             <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
               <a href="https://www.youtube.com/watch?v=5hbQZhav7Q4" target="_blank" style="text-decoration: none; color: #1E4460">
-                <p class ="link" style="display: inline; opacity: 80%">See Tritons Connect Video Tour</p> &nbsp;
-                <img src="/arrow.png" alt="arrow" loading="lazy" style="vertical-align: middle; width: 28px">
+                <p class ="link" style="display: inline; ">See Tritons Connect Video Tour</p> &nbsp;
+                <img src="/ocArrow.svg" alt="arrow" loading="lazy" style="vertical-align: middle; width: 22px">
               </a>
               <a id="otherSocialMedia"></a>
             </div>

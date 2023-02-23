@@ -10,7 +10,6 @@
     </div>
 
     <div id="body">
-      <h2>Why Networking on Campus?</h2>
       <img id="whyOnlinePlatformsImg" src="/networking/whyOnCampus.svg" alt="Why On Campus?">
 
       <h2 style="margin-bottom: 0px">Where to Network on Campus?</h2>
@@ -35,9 +34,9 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; opacity: 80%">See Full List of Student Orgs</p>
+              <p class ="link" style="display: inline; ">See Full List of Student Orgs</p>
               &nbsp;
-              <img src="/networking/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
+              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
           </div>
@@ -69,9 +68,9 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://vcsa.ucsd.edu/_files/Mentorship-Programs-Guide-20211014.pdf" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; opacity: 80%">See All Mentorship Programs at UCSD</p>
+              <p class ="link" style="display: inline">See All Mentorship Programs at UCSD</p>
               &nbsp;
-              <img src="/networking/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
+              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
           </div>
@@ -116,9 +115,9 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; opacity: 80%">See Full List of Career Fairs/Events</p>
+              <p class ="link" style="display: inline; ">See Full List of Career Fairs/Events</p>
               &nbsp;
-              <img src="/networking/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
+              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
           </div>
@@ -148,9 +147,9 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; opacity: 80%">See Full List of Labs</p>
+              <p class ="link" style="display: inline; ">See Full List of Labs</p>
               &nbsp;
-              <img src="/networking/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
+              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
           </div>
