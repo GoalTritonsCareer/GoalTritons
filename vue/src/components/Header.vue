@@ -3,7 +3,7 @@
   <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
     <div class="top-left">
       <a href="http://goaltritonscareer.com" style="margin-top: -8px">
-        <img src="../../public/logo.svg" alt="logo" class="top-left-logo" style="vertical-align: middle;"/>
+        <img src="/logo.svg" alt="logo" class="top-left-logo" style="vertical-align: middle;"/>
       </a>
       <a href="http://goaltritonscareer.com" style="text-decoration: none;">
         <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1>
@@ -38,13 +38,13 @@
         <el-sub-menu index="2" popper-offset="13">
           <template #title>
             <!--            <el-icon><location /></el-icon>-->
-            <span class="mod" @click="$router.push('/Networking#fakeNetworkingTop')">Networking</span>
+            <span class="mod" @click="$router.push('/networking#home')">Networking</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="2-1" class="sub1" @click="$router.push('/Networking#whyNetworking')">Why Networking</el-menu-item>
+            <el-menu-item index="2-1" class="sub1" @click="$router.push('/networking#why-networking')">Why Networking</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="2-2" class="sub1" @click="$router.push('/Networking#onlinePlatform')">Online Platforms</el-menu-item>
+            <el-menu-item index="2-2" class="sub1" @click="$router.push('/networking#networking-routes')">Networking Routes</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="2-2" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#onlinePlatform')">Online Platforms</span></template>-->
@@ -55,7 +55,7 @@
           <!--            <el-menu-item index="2-2-5" class="sub2" @click="$router.push('/fakeNetworking#HowToNetworkOnline')">How to Network Online</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-3" class="sub1" @click="$router.push('/Networking#networkOnCampus')">Networking on Campus</el-menu-item>
+            <el-menu-item index="2-3" class="sub1" @click="$router.push('/networking#networking-in-practice')">Networking in Practice</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="2-3" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#networkOnCampus')">Networking on Campus</span></template>-->
@@ -66,7 +66,7 @@
           <!--            <el-menu-item index="2-3-5" class="sub2" @click="$router.push('/fakeNetworking#labs')">Labs</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="2-4" class="sub1" @click="$router.push('/Networking#everydayRoutine')">Everyday Routine</el-menu-item>
+            <el-menu-item index="2-4" class="sub1" @click="$router.push('/networking#more-resources')">More Resources</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="2-4" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/fakeNetworking#everydayRoutine')">Everyday Routine</span></template>-->
@@ -74,15 +74,6 @@
           <!--            <el-menu-item index="2-4-2" class="sub2" @click="$router.push('/fakeNetworking#faculty')">Faculty</el-menu-item>-->
           <!--            <el-menu-item index="2-4-3" class="sub2" @click="$router.push('/fakeNetworking#peers')">Peers</el-menu-item>-->
           <!--          </el-sub-menu>-->
-          <el-menu-item-group>
-            <el-menu-item index="2-5" class="sub1" @click="$router.push('/Networking#maintainNetwork')">Maintain Networks</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group>
-            <el-menu-item index="2-6" class="sub1" @click="$router.push('/Networking#networkingRouteSummary')">Networking Routes Summary</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group>
-            <el-menu-item index="2-7" class="sub1" @click="$router.push('/Networking#moreResources')">More Resources</el-menu-item>
-          </el-menu-item-group>
         </el-sub-menu>
 
         <el-sub-menu index="3" popper-offset="13">
@@ -96,10 +87,10 @@
 
         <el-sub-menu index="4" popper-offset="13">
           <template #title>
-            <span class="mod menu-item-4" @click="$router.push('/resume#resumeTop')">Resume</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume')">Resume</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
+            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume/resume-vs-cv')">Resume vs. CV</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
             <el-menu-item index="4-2" class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</el-menu-item>
@@ -124,13 +115,13 @@
 
         <el-sub-menu index="5" popper-offset="13">
           <template #title>
-            <span class="mod" @click="$router.push('/interview#opening')">Interview Prep</span>
+            <span class="mod" @click="$router.push('/interview/Opening')">Interview Prep</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview#whyInterview')">Why Interview</el-menu-item>
+            <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview/WhyInterview')">Why Interview</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5-2" class="sub1" @click="$router.push('/interview#interviewQuestions')">Interview Questions</el-menu-item>
+            <el-menu-item index="5-2" class="sub1" @click="$router.push('/interview/InterviewQuestions')">Interview Questions</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="5-2" style="margin-top: 0">-->
           <!--            <template #title><span class="sub1" @click="$router.push('/interview#interviewQuestions')">Interview Questions</span></template>-->
@@ -139,10 +130,10 @@
           <!--            <el-menu-item index="5-2-3" class="sub2" @click="$router.push('/interview#TechnicalQuestions')">Technical</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview#interviewSteps')">Interview Steps</el-menu-item>
+            <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview/InterviewSteps')">Interview Steps</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview#howToMasterAnInterview')">How to Master Interview</el-menu-item>
+            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview/MasterInterview')">How to Master Interview</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
       </el-menu>
@@ -162,13 +153,13 @@
       >
         <template #reference>
           <div class="top-calendar">
-            <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 7px; padding-top: 5px">
+            <p style="font-size: 16px; font-weight: 600; color: #1e4460; z-index: 2; position: relative; margin-left: 5.5px; padding-top: 5px">
               {{ getDay() }}
             </p>
             <!--            <el-avatar :size="30" style="position: absolute; top: 10px; left: 10px; z-index: 1; display: inline;-->
             <!--              background-color: transparent; margin-right: 17px" shape="square">-->
             <img class="top-calendar-logo" src="/calendar.svg" alt="calendar">
-            <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -10px; left: 8.2px">
+            <p style="font-size: 7px; font-weight: 600; color: #1e4460; z-index: 2; position: absolute; top: -10px; left: 9.2px">
               {{ getMonth() }}
             </p>
             <!--            </el-avatar>-->
@@ -446,7 +437,7 @@ export default {
 }
 /* 多数Pad */
 /* TODO: 完善对iPad屏幕的styling */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .top-left {
     width: 16vw;
   }
@@ -476,8 +467,41 @@ export default {
 
 }
 /* 手机 */
-@media (min-width: 480px) and (max-width: 767px) {
-
+@media (max-width: 479px) {
+  .top-left {
+    width: 36vw;
+  }
+  .top-left-logo {
+    width: 31px;
+  }
+  .top-mid {
+    display: none;
+  }
+  .top-right {
+    width: 64vw;
+    padding-left: 2rem;
+  }
+  .top-calendar {
+    margin-left: -2rem;
+    margin-right: 0.8rem;
+  }
+  .inline-input {
+    width: 75%;
+  }
+  h1{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: work-sans;
+    line-height: 200%;
+  }
+  h2 {
+    color: #1e4460;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: work-sans;
+    line-height: 141%;
+  }
 }
 /*.mod {*/
 /*  font-size: 1vw;*/
