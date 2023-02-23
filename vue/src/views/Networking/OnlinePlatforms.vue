@@ -459,6 +459,7 @@ p.online{
   margin: 2rem auto;
   /*margin-top: 4rem;*/
   /*margin-bottom: 2rem;*/
+
   color: #1e4460;
   font-size: 15px;
   line-height: 141%;
@@ -538,7 +539,6 @@ p.online{
   height: 28px;
   padding-top: 2px;
 }
-
 #s2t2img {
   width: 60%;
   margin: 0 20% 20px 20%;
@@ -590,7 +590,6 @@ p.online{
   display: inline-block;
   margin-left: 0.5rem;
 }
-
 .middleP{
   font-size: 15px;
   font-style: normal;

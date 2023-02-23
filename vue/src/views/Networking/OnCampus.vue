@@ -163,7 +163,7 @@
 
 <script lang="ts">
 import type { TabsPaneContext } from 'element-plus'
-
+import Calendar from "../Calendar.vue"
 
 export default {
   name: "OnlinePlatforms",
@@ -347,14 +347,6 @@ p.online{
   max-width: 773px;
   margin: 30px auto;
 }
-.moreResLink {
-  color: #B27224;
-  font-weight: 500;
-}
-.moreResLink:hover {
-  font-weight: 600;
-  text-decoration: underline;
-}
 
 .step {
   border-radius: 45px;
@@ -392,14 +384,5 @@ p.online{
 }
 .step2Color {
   background-color: #FEECC0;
-}
-.intextLink {
-  color: #0467B0;
-  text-decoration: none;
-  font-weight: 500;
-}
-.intextLink:hover {
-  text-decoration: underline;
-  font-weight: 600;
 }
 </style>

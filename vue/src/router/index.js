@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
+
 import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
 import Interview from "../views/Interview/Interview.vue"
 
-import ResumeAside from "../components/ResumeAside.vue";
-import Resume from "../views/Resume.vue";
-import ResumeVsCV from "../views/ResumeVsCV.vue";
+import Resume from "../views/Resume/Resume.vue"
+import ResumeAside from "../views/Resume/ResumeAside.vue"
+import Resume_vs_CV from "../views/Resume/Resume_vs_CV.vue"
+import Resume_Breakdown from "../views/Resume/Resume_Breakdown.vue"
 
 import NetworkingAside from "../components/NetworkingAside.vue"
 import Networking from "../views/Networking/Networking.vue"
@@ -17,23 +19,11 @@ import MaintainNetwork from "../views/Networking/MaintainNetwork.vue"
 import NetworkingOnline from "../views/Networking/NetworkingOnline.vue"
 import OnCampus from "../views/Networking/OnCampus.vue"
 import OnlinePlatforms from "../views/Networking/OnlinePlatforms.vue"
-
-
-
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue')
-  },
-  {
-    path: '/resume',
-    name: 'resume-page',
-    component: Layout,
-    children: [
-      // { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
-      // { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
-    ],
   },
   //  TODO: apply the layout above to the pages below
   // {
@@ -55,6 +45,18 @@ const routes = [
       { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
+    ]
+  },
+  {
+    path: '/resume',
+    name: 'resume-page',
+    component: Layout,
+    children: [
+      { path: '', name: 'ResumevsCV', components: {nav: ResumeAside, con: Resume_vs_CV}},
+      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: InterviewAside, con: Resume_Breakdown}},
+      //{ path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
+      //{ path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
+      //{ path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
     ]
   },
   {

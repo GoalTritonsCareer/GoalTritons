@@ -17,7 +17,7 @@
 
             <img src="/interview/sampleQ1.svg">
 
-            <h3 style="margin-top: 3rem; margin-left: 0.5vw; margin-bottom: 1.5vh; font-size: 30px">Tips:</h3>
+            <h3 style="margin-top: 3rem; margin-left: 0.5vw; margin-bottom: 2vh; font-size: 26px">Tips:</h3>
             <div>
               <div>
                 <div style="text-align: left; margin-left: 2vw;">
@@ -111,7 +111,7 @@
               potential to contribute to this specific position. </p>
             <img  src="/interview/sampleQ2.svg">
             <div>
-              <h3 id="TQtipsTitle" style="margin-top: 3rem; margin-left: 0.5vw; margin-bottom: 1.5vh; font-size: 30px">Tips:</h3>
+              <h3 id="TQtipsTitle" style="margin-top: 3rem; margin-left: 0.5vw; margin-bottom: 2vh; font-size: 26px">Tips:</h3>
               <div id="TQtips" style="text-align: left; margin-left: 2vw">
                 <p class="DYp">Point 1</p>
 

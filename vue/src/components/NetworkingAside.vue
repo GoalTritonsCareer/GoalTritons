@@ -22,7 +22,7 @@
           <el-menu-item index="2-2" class="sub1" @click="$router.push('/networking/OnCampus')">On Campus</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="2-3" class="sub1" @click="$router.push('/networking/EverydayRoutine')">Everyday Routine</el-menu-item>
+          <el-menu-item index="2-3" class="sub1" @click="$router.push('/networking/EverydayRoutine')" disabled>Everyday Routine</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
 
@@ -31,10 +31,10 @@
           <span class="mod menu-item-3" @click="$router.push('/networking#networking-in-practice')">Networking in Practice</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="3-1" class="sub1" @click="$router.push('/networking/NetworkingOnline')">How to Network Online</el-menu-item>
+          <el-menu-item index="3-1" class="sub1" @click="$router.push('/networking/NetworkingOnline')" disabled>How to Network Online</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="3-2" class="sub1" @click="$router.push('/networking/MaintainNetwork')">How to Maintain Network</el-menu-item>
+          <el-menu-item index="3-2" class="sub1" @click="$router.push('/networking/MaintainNetwork')" disabled>How to Maintain Network</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
 
