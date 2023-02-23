@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
-import InterviewAside from "../views/Interview/InterviewAside.vue"
+import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
-import WhyInterview from "../views/Interview/WhyInterview.vue"
+import Interview from "../views/Interview/Interview.vue"
+import ResumeAside from "../components/ResumeAside.vue";
+import Resume from "../views/Resume.vue";
+import ResumeVsCV from "../views/ResumeVsCV.vue";
 
+import NetworkingAside from "../components/NetworkingAside.vue"
+import Networking from "../views/Networking/Networking.vue"
+import EverydayRoutine from "../views/Networking/EverydayRoutine.vue"
+import MaintainNetwork from "../views/Networking/MaintainNetwork.vue"
+import NetworkingOnline from "../views/Networking/NetworkingOnline.vue"
+import OnCampus from "../views/Networking/OnCampus.vue"
+import OnlinePlatforms from "../views/Networking/OnlinePlatforms.vue"
 
 import Resume from "../views/Resume/Resume.vue"
 import ResumeAside from "../views/Resume/ResumeAside.vue"
@@ -26,29 +36,28 @@ const routes = [
     name: 'Home',
     component: () => import('../views/Home.vue')
   },
-  {
-    path: '/',
-    name: 'Layout',
-    component: Layout,
-    children: [
-      // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
-      //{ path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
-      //{ path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
-    ],
-  },
+  //  TODO: apply the layout above to the pages below
+  // {
+  //   path: '/',
+  //   name: 'Other',
+  //   component: Layout,
+  //   children: [
+  //     // { path: 'interview', name: 'Interview', component: () => import("../views/Interview/Interview.vue") },
+  //     { path: 'networking', name: 'Networking', component: () => import("../views/Networking.vue") },
+  //     { path: 'resume', name: 'Resume', component: () => import("../views/Resume.vue") }
+  //   ],
+  // },
   {
     path: '/interview',
     name: 'interview-page',
     component: Layout,
     children: [
-      { path: 'Opening', name: 'Opening', components: {nav: InterviewAside, con: WhyInterview}},
-      { path: 'WhyInterview', name: 'WhyInterview', components: {nav: InterviewAside, con: WhyInterview}},
+      { path: '', name: 'interview', components: {nav: InterviewAside, con: Interview}},
       { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
     ]
   },
-
   {
     path: '/resume',
     name: 'resume-page',

@@ -14,7 +14,7 @@
         <!--      内容区域-->
         <el-container>
           <router-view name="con" class="wrapper__body"/>
-          <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
+          <el-footer class="wrapper__footer">
             <Footer/>
           </el-footer>
         </el-container>
@@ -23,15 +23,13 @@
 </template>
 
 <script>
-import Aside from "../components/Aside.vue";
 import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 export default {
   name: "Layout",
   components: {
     Header,
-    Footer,
-    Aside
+    Footer
   },
   data() {
     return {}

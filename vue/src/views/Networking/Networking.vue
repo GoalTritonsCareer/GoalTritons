@@ -15,14 +15,15 @@
       <a id="networking-routes"></a>
       <h2>NETWORKING ROUTES</h2>
       <section id="routes">
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/OnlinePlatforms')">
           <div class="cover">
             <p>Online Platforms</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 75%">
           </div>
+          <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
           <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy" style="filter: brightness(1.75)">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
             <p>On Campus</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
@@ -113,6 +114,9 @@
 <script>
 export default {
   name: "Networking",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 }
 </script>
 
