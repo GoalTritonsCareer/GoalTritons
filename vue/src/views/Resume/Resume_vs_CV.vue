@@ -6,7 +6,7 @@
 
       </section>
       <img src="/resume/newBG.svg" alt="resume background" style="width: 100%" >
-      <a id="why-networking"></a>
+      <a id="resume-vs-cv"></a>
     </div>
 
 
@@ -16,7 +16,7 @@
       <img src="/resume/resumeVScv.svg" alt="resume VS. CV">
 
 
-      <a id="networking-routes"></a>
+      <a id="build-your-profile"></a>
       <h2>BUILD YOUR PROFILE</h2>
       <section id="routes">
         <div class="container">
@@ -40,12 +40,10 @@
           </div>
           <img class="bg" src="/resume/coverLetterImg.svg" alt="Everyday Routine Module" loading="lazy">
         </div>
-
       </section>
+      <a id="more-resources"></a>
       <h2>More Resources</h2>
       <section class="resource">
-
-
         <p class="moreResTitle">Resume:</p>
         <ul>
           <li> Free Online Resume Builder:
@@ -91,51 +89,6 @@
           </li>
           <li><a href="//www.themuse.com/advice/4-ways-to-make-sure-your-resume-is-selling-you-as-the-one-for-the-job" target="_blank">
             <p class="moreRes">4 Ways to Make Sure Your Resume Is Selling You as the One for the Job</p></a>
-          </li>
-        </ul>
-      </section>
-      <a id="more-resources"></a>
-
-
-
-      <section class="resource">
-        <p class="moreResTitle">LinkedIn:</p >
-        <ul>
-          <li>Summary Examples: <a href="https://blog.hubspot.com/sales/linkedin-summary-examples" target="_blank">
-            <p class="moreRes" style="display: inline">17 Best LinkedIn Summary & Bio Examples</p></a>
-          </li>
-          <li>“Branding” yourself:
-            <ul>
-              <li><a href="https://www.linkedin.com/business/marketing/blog/content-marketing/5-free-ways-to-build-your-personal-brand-on-linkedin" target="_blank"><p class="moreRes">
-                How to Build Your Personal Brand on LinkedIn</p></a></li>
-              <li><a href="https://www.forbes.com/sites/robinryan/2021/09/14/how-to-create-an-impressive-linkedin-personal-brand/?sh=545765ed73e5" target="_blank"><p class="moreRes">
-                How To Create An Impressive LinkedIn Personal Brand</p ></a></li>
-            </ul>
-          </li>
-          <li>Connect Template: <a href="https://www.themuse.com/advice/want-people-to-accept-your-linkedin-requests-use-these-10-templates" target="_blank">
-            <p class="moreRes" style="display: inline">LinkedIn Connect Template</p></a>
-          </li>
-        </ul>
-
-        <p class="moreResTitle" style="margin-top: 20px">Networking Online:</p>
-        <ul>
-          <li>Info. Interview: <a href="https://career.berkeley.edu/Info/InfoQuestions" target="_blank">
-            <p class="moreRes" style="display: inline">Qs to Ask through Info Interview</p ></a>
-          </li>
-        </ul>
-
-        <p class="moreResTitle" style="margin-top: 20px">Maintain Networks:</p>
-        <ul>
-          <li>Info. Interview: <a href="https://www.themuse.com/advice/finally-5-email-templates-that-make-following-up-with-anyone-way-less-awkward" target="_blank">
-            <p class="moreRes" style="display: inline">Networking Follow-Up Email Templates</p></a>
-          </li>
-        </ul>
-
-
-        <p class="moreResTitle" style="margin-top: 20px">More articles for successful networking:</p >
-        <ul>
-          <li><a href="https://hbr.org/2016/05/learn-to-love-networking" target="_blank">
-            <p class="moreRes" style="display: inline">Learn to Love Networking </p></a>
           </li>
         </ul>
       </section>
