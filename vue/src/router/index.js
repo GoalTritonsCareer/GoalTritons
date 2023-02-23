@@ -4,7 +4,7 @@ import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
-import WhyInterview from "../views/Interview/WhyInterview.vue"
+import Interview from "../views/Interview/Interview.vue"
 import ResumeAside from "../components/ResumeAside.vue";
 import Resume from "../views/Resume.vue";
 import ResumeVsCV from "../views/ResumeVsCV.vue";
@@ -50,8 +50,7 @@ const routes = [
     name: 'interview-page',
     component: Layout,
     children: [
-      { path: 'Opening', name: 'Opening', components: {nav: InterviewAside, con: WhyInterview}},
-      { path: 'WhyInterview', name: 'WhyInterview', components: {nav: InterviewAside, con: WhyInterview}},
+      { path: '', name: 'interview', components: {nav: InterviewAside, con: Interview}},
       { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},

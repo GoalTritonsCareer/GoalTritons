@@ -2,7 +2,7 @@
   <div id="NetworkingTop">
     <div id="heading" style="position: relative">
       <section class="title">
-        <h3 class="back" >&lt; <span @click="$router.push('/interview/WhyInterview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
+        <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
         <h1>InterviewQuestions</h1>
       </section>
       <img src="/interview/InterviewQuestionTypes.svg" alt="networking background" style="width: 100%" >
