@@ -14,14 +14,14 @@
       <a id="interview-breakdown"></a>
       <h2>INTERVIEW BREAKDOWN</h2>
       <section id="routes">
-        <div class="container">
+        <div class="container" @click="$router.push('/interview/InterviewQuestions')">
           <div class="cover">
             <p>Interview Questions Types</p>
             <img src="/cover4.svg" alt="Cover" loading="lazy">
           </div>
           <img class="bg" src="/interview/HomeInterviewQT.svg" alt="Interview Questions Types Module" loading="lazy">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/interview/InterviewSteps')">
           <div class="cover">
             <p>Interview Steps</p>
             <img src="/cover4.svg" alt="Cover" loading="lazy">

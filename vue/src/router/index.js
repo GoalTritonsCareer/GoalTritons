@@ -1,24 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
+
 import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
 import Interview from "../views/Interview/Interview.vue"
 
-import NetworkingAside from "../components/NetworkingAside.vue"
-import Networking from "../views/Networking/Networking.vue"
-import EverydayRoutine from "../views/Networking/EverydayRoutine.vue"
-import MaintainNetwork from "../views/Networking/MaintainNetwork.vue"
-import NetworkingOnline from "../views/Networking/NetworkingOnline.vue"
-import OnCampus from "../views/Networking/OnCampus.vue"
-import OnlinePlatforms from "../views/Networking/OnlinePlatforms.vue"
-
 import Resume from "../views/Resume/Resume.vue"
 import ResumeAside from "../views/Resume/ResumeAside.vue"
 import Resume_vs_CV from "../views/Resume/Resume_vs_CV.vue"
 import Resume_Breakdown from "../views/Resume/Resume_Breakdown.vue"
-//import newResume_vs_CV from "../views/Resume/NewResume_vs_CV"
 
 import NetworkingAside from "../components/NetworkingAside.vue"
 import Networking from "../views/Networking/Networking.vue"

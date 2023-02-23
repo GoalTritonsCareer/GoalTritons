@@ -27,6 +27,10 @@ h2{
     position: relative;
     font-size: 28px;
     font-weight: 700;
+    line-height: 30px;
+    color: #182b49;
+    margin: 9.5% 0 3% 0;
+}
 #heading h3{
     position: relative;
     font-size: 26px;
