@@ -1,13 +1,14 @@
 <template>
-  <div id="home">
+  <div>
     <div id="heading" style="position: relative;">
-      <section class="title">
+      <section class="title" style="z-index: 10">
+        <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
         <h1>Interview Steps</h1>
       </section>
       <div class="cover">
-        <img src="/interview/InterviewStepsCover.svg" alt="Cover" loading="lazy" style="opacity: 75%; width: 100%;">
+        <img src="/interview/InterviewStepsCover.svg" alt="Cover" style="opacity: 75%; width: 100%;">
       </div>
-      <img class="bg" src="/interview/InterviewStepsTop.svg" alt="interview background" loading="lazy" style="width: 100%">
+      <img class="bg" src="/interview/InterviewStepsTop.svg" alt="interview background" style="width: 100%">
     </div>
 
     <div id="body" style="margin-top: 9.5vh;">
@@ -24,7 +25,7 @@
         <div>
           <p id="ITstep2" style="font-weight: 650">Step 2</p>
           <p style="font-weight: 650;margin-top: 5px; margin-bottom: 5px">Official Interview</p>
-          <img class="ITimg" src="/interview/officialInterview.png">
+          <img class="ITimg" src="/interview/officialInterview.png" alt="official Interview Process">
 
 
         </div>
@@ -90,10 +91,6 @@ export default {
   width: 7vw;
 }
 
-#ITimg{
-  width: auto;
-  max-width: 70vw;
-}
 
 #ITstep2{
   background-color: #F6E0AA;
@@ -109,15 +106,8 @@ export default {
   width: 5rem;
 }
 
-#routes p, #practice p {
-  text-align: center;
-  width: 85%;
-  overflow: hidden;
+#ITSimg {
+  max-width: 100%
 }
 
-#practice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-}
 </style>

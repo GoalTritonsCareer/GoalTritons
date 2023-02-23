@@ -17,9 +17,9 @@
         <div class="container">
           <div class="cover">
             <p>Interview Questions Types</p>
-            <img src="/cover4.svg" alt="Cover" loading="lazy" style="opacity: 75%">
+            <img src="/cover4.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/interview/HomeInterviewQT.svg" alt="Interview Questions Types Module" loading="lazy" style="filter: brightness(1.75)">
+          <img class="bg" src="/interview/HomeInterviewQT.svg" alt="Interview Questions Types Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
