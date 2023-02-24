@@ -10,11 +10,11 @@
       <!--    主体-->
       <el-container class="wrapper">
         <!--      侧边栏-->
-        <Aside class="wrapper__aside"/>
+        <router-view name="nav" class="wrapper__aside"/>
         <!--      内容区域-->
         <el-container>
-          <router-view class="wrapper__body"/>
-          <el-footer class="wrapper__footer" style="margin-left: 240px; border-top: 1px solid #ccc">
+          <router-view name="con" class="wrapper__body"/>
+          <el-footer class="wrapper__footer">
             <Footer/>
           </el-footer>
         </el-container>
@@ -23,15 +23,13 @@
 </template>
 
 <script>
-import Aside from "../components/Aside.vue";
 import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 export default {
   name: "Layout",
   components: {
     Header,
-    Footer,
-    Aside
+    Footer
   },
   data() {
     return {}
@@ -40,11 +38,45 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  position: fixed;
+  z-index: 20;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+}
+.wrapper__aside {
+  position: fixed;
+  width: 260px;
+  padding: 0 10px;
+  /*margin-left: 10px;*/
+  margin-top: 60px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: calc(100vh - 60px);
+  /*max-height: 100%;*/
+  background-color: white;
+  overflow-x: hidden;
+}
+.wrapper__body {
+  flex: 1;
+  margin-left: 260px;
+  /*padding-left: 2%;*/
+  width: auto;
+  /*margin-left: 275px;*/
+  /*padding-left: 26px;*/
+  /*max-width: 77%;*/
+  padding-top: 60px;
+  margin-bottom: 8%;
+}
+.wrapper__footer {
+  margin-left: 260px;
+}
 /* 大屏幕 ( > 13 in. ) */
 @media (min-width: 1440px) {
   .header {
     width: 1440px;
-    margin-left: calc((100vw - 1440px)/2);
   }
   .common-layout {
     width: 1440px;
@@ -62,55 +94,32 @@ export default {
   .header {
     width: 100vw;
   }
-
   .wrapper__body{
-    margin-left: calc(0.5vw + 250px) !important;
+    /*margin-left: calc(0.5vw + 250px) !important;*/
   }
-
   .wrapper__footer{
-    margin-left: calc(0.5vw + 250px) !important;
+    /*margin-left: calc(0.5vw + 250px) !important;*/
   }
 }
 /* 多数Pad */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .header {
     width: 100%;
   }
 }
 /* 手机 */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 479px) {
   .header {
     width: 100%;
   }
-}
-.header {
-  position: fixed;
-  z-index: 20;
-}
-.wrapper {
-  position: relative;
-  display: flex;
-}
-.wrapper__aside {
-  position: fixed;
-  width: 250px;
-  margin-left: 0.5%;
-  margin-top: 4%;
-  overflow-y: auto;
-  height: auto;
-  max-height: 92%;
-  background-color: white;
-  overflow-x: hidden;
-}
-.wrapper__body {
-  flex: 1;
-  margin-left: 19%;
-  padding-left: 2%;
-  width: auto;
-  /*margin-left: 275px;*/
-  /*padding-left: 26px;*/
-  max-width: 77%;
-  padding-top: 6.3%;
-  margin-bottom: 12%;
+  .wrapper__aside {
+    width: 25vw;
+  }
+  .wrapper__footer {
+    margin-left: 25vw;
+  }
+  .wrapper__body {
+    margin-left: 25vw;
+  }
 }
 </style>

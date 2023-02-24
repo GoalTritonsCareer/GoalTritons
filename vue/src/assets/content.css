@@ -1,0 +1,219 @@
+template {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+div{
+    text-align: center;
+}
+h1, h2, h3 {
+    text-align: left;
+    font-family: work-sans;
+}
+h1{
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 8%;
+}
+#home h1{
+    padding-top: 12%;
+}
+h2{
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #182b49;
+    margin: 9.5% 0 3% 0;
+}
+#heading h3{
+    position: relative;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+    /*margin: 9.5% 0 3% 0;*/
+}
+p {
+    font-size: 15px;
+}
+.title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.subtitle {
+    font-size: 22px;
+    color: #F9F9F9;
+    padding: 2% 0 2% 8%;
+    margin: 2.2% 0 0 0;
+    background: rgba(24, 43, 73, 0.65);
+}
+.back {
+    padding: 8% 0 1% 8%;
+    margin: 2.2% 0 0 0;
+}
+#heading {
+    height: auto;
+}
+#body {
+    padding: 0 8%;
+}
+.headerWithLink{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    text-align: right;
+    margin: 6% 0;
+}
+ul{
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 141%;    /* list里的行间宽度为141%，其他为default */
+}
+li li {
+    color: #0467B0;
+}
+.container {
+    width: 90%;
+    max-width: 90%;
+    height: 98%;
+    max-height: 98%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.container .bg{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+.container:hover .bg{
+    transform: scale(1.2, 1.2);
+    z-index: 5;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+.container:hover .cover{
+    display: none;
+}
+.cover p {
+    text-align: center;
+    z-index: 9;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: work-sans;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /* shift left and top by half of the line's width and height*/
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.cover img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.medium {
+    font-weight: 500;
+}
+.semi {
+    font-weight: 600;
+}
+/*Resource related*/
+#more-resources > ul{
+    text-align: left;
+    margin-right: 12vw;
+    margin-left: 11.5vw;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 141%;
+}
+#more-resources a{
+    text-decoration: none;
+}
+
+.resource {
+    padding: 2%;
+    width: fit-content;
+    margin: auto;
+}
+.intextLink {
+    color: #0467B0;
+    text-decoration: none;
+    font-weight: 500;
+}
+.intextLink:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.link {
+    display: inline;
+    text-decoration: none;
+    color: #1e4460;
+    font-weight: 700;
+}
+.link:hover {
+    border-bottom: 2px solid #ffc740;
+}
+.moreRes{
+    background-image: linear-gradient(
+            to right,
+            #0467B0,
+            #0467B0
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 2px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+.moreRes::before {
+    content: '';
+    background: #0467B0;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.moreRes:hover {
+    background-position: 0;
+    font-weight: 600;
+}
+.moreRes:hover::before {
+    width: 100%;
+}
+.moreResTitle{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 0;
+}
