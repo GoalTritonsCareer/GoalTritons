@@ -23,11 +23,12 @@
 
 <script>
 import json from '../../career-fairs.json'
+import json2 from '../../Holidays.json'
 export default {
   name: "Calendar",
   data() {
     return {
-      info: json
+      info: json,json2
     }
   },
   methods: {
@@ -37,6 +38,13 @@ export default {
         if (json[i]["date"] == day) {
           return "color: red"
         }
+      }
+      for (let i = 0; i < json2.length; i++) {
+
+        if(json2[i]["date"]==day){
+          return "color: red"
+        }
+
       }
     },
     careerFieldMsg(day) {
@@ -48,25 +56,32 @@ export default {
             return "Career";
           } else if (json[i]["type"]  == "EDU") {
             return "Academic";
-          } else {
-            return "Holiday";
           }
         }
+      }
+
+      for (let i = 0; i < json2.length; i++) {
+
+        if(json2[i]["date"]==day){
+          return "Holiday";
+        }
+
       }
       return ""
     },
     findUrl(day) {
       for (let i = 0; i < json.length; i++) {
-        if(json[i]["type"]=="Holiday"){
-          return ""
-        }
-        if(json[i]["type"]=="EDU"){
-          return ""
-        }
+
+    //    if(json[i]["type"]=="EDU"){
+     //     return ""
+     //   }
 
         if (json[i]["date"] == day) {
-          return json[i]["link"]
+          if(json[i]["type"]=="Career"){
+            return json[i]["link"]
+          }
         }
+
       }
     },
     findTitle(day) {
@@ -74,6 +89,14 @@ export default {
         if (json[i]["date"] == day) {
           return json[i]["title"]
         }
+
+      }
+      for (let i = 0; i < json2.length; i++) {
+
+        if(json2[i]["date"]==day){
+          return json2[i]["title"]
+        }
+
       }
     }
   }
