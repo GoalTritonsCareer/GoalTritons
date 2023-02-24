@@ -37,23 +37,45 @@ https.get('https://career.ucsd.edu/employers-recruiters/career-fairs/',function(
             })
             // console.log(allFairs);
         })
+        all={"type":"abc","title":"engineer ","date":"09-09-2001"}
+
         const path = './career-fairs.json';
+
         try {
             if (fs.existsSync(path)) {
                 //file exists
                 // TODO: bug: format error , i.e. 2 lists of dictionaries
-                fs.appendFile(path, JSON.stringify(allFairs), function (err) {
-                    if (!err) {
-                        console.log('Saved!');
-                    }
-                });
-            } else {
-                fs.writeFile(path, JSON.stringify(allFairs),function(err) {
-                    if(!err){
-                        console.log('Output complete!');
-                    }
-                });
-            }
+                let data = fs.readFileSync(path);
+                let json = JSON.parse(data);
+                let new_obj = allFairs
+                json.push(new_obj);
+                try {
+                    fs.writeFileSync(path, JSON.stringify(json));
+                    console.log('Updated data written to file');
+                } catch (err) {
+                    console.error('Error writing data to file:', err);
+                }
+                //  fs.appendFile(path, JSON.stringify(allFairs), function (err) {
+              //     if (!err) {
+              //         console.log('Saved!');
+              //      }
+             //   });
+           } else {
+                let data = fs.readFileSync(path);
+                let json = JSON.parse(data);
+                let new_obj = all
+                json.push(new_obj);
+                try {
+                    fs.writeFileSync(path, JSON.stringify(json));
+                    console.log('Updated data written to file');
+                } catch (err) {
+                    console.error('Error writing data to file:', err);
+                }   //      fs.writeFile(path, JSON.stringify(allFairs),function(err) {
+           //       if(!err){
+           //          console.log('Output complete!');
+           //    }
+           //  });
+           }
         } catch(err) {
             console.error(err);
         }
