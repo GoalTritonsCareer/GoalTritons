@@ -4,7 +4,7 @@
       <section class="title">
         <h1>Interview Prep</h1>
       </section>
-      <img src="/interview/InterviewPrep.svg" alt="interview background" style="width: 100%" >
+      <img src="/interview/interviewPrep.avif" alt="interview background" style="width: 100%" >
     </div>
 
     <a id="why-interview"></a>

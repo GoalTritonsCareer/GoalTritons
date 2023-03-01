@@ -27,7 +27,7 @@
 
                 <div class="DYdiv">
                   <div>
-                    <img class="DYimg" src="/interview/researchEmoji.svg">
+                    <img class="DYimg" src="/interview/researchEmoji.png">
                   </div>
 
                   <div >
@@ -282,160 +282,22 @@ p.online{
   margin-left: 2.5vw;
 }
 
-/*#BQp{*/
-/*  width: 40vw;*/
-/*  text-align: left;*/
-/*  margin-left: 5vw;*/
-/*}*/
-
-.s2Tips{
-  text-align: left;
-  padding: 0 2%;
-}
 .s2Tips ul{
   margin-left: 7em;
   margin-bottom: 20px;
-}
-#highlight{
-  background-color: #F4CE71;
-  border-radius: 2rem;
-  width: 95px;
-  padding: 10px;
-  font-weight: 600;
-  margin-bottom: 2vh;
-}
-.otherMediaIcon{
-  height: 100%;
-  text-align: center;
-  margin: auto;
-  margin-left: 0;
-  margin-right: 0;
-}
-.otherMediaTitle{
-  width: 6vw;
-  color: #1E4460;
-  font-weight: 640;
 }
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-
 .HTNWFsubdiv p{
   display: inline-block;
   margin-left: 0.5rem;
 }
-
-.middleP{
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  width: 78%;
-  max-width: 773px;
-  margin: 30px auto;
-}
-.moreResLink {
-  color: #B27224;
-  font-weight: 500;
-}
-.moreResLink:hover {
-  font-weight: 600;
-  text-decoration: underline;
+.DYimg{
+  width: 10vw;
+  margin-right: 4rem;
+  margin-left: 7rem;
 }
 
-.step {
-  border-radius: 45px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  margin-right: 10px;
-  margin-top: 2px;
-  padding: 3px 10px 5px 10px;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.step1Color {
-  background-color: #F8EFDA;
-}
-
-.step2Color {
-  background-color: #FEECC0;
-}
-.step2Img {
-  width: 68%;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.step1Color {
-  background-color: #F8EFDA;
-}
-.step2Color {
-  background-color: #FEECC0;
-}
-.wrapper {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  height: fit-content;
-  width: min-content;
-  margin-left: -65px;
-  /*margin-right: 3vw;*/
-}
-.one1 {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: right;
-  align-self: flex-end;
-  margin-right: -25px;
-  padding-left: 60px;
-}
-.one2 {
-  grid-column: 2;
-  grid-row: 1;
-}
-.one3 {
-  grid-column: 3;
-  grid-row: 1;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
-}
-.two1 {
-  grid-column: 1;
-  grid-row: 2;
-  text-align: right;
-  align-self: flex-end;
-  margin-right: -25px;
-  padding-left: 60px;
-}
-.two2 {
-  grid-column: 2;
-  grid-row: 2;
-}
-.two3 {
-  grid-column: 3;
-  grid-row: 2;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
-}
-.three2 {
-  grid-column: 2;
-  grid-row: 3;
-}
-.three3 {
-  grid-column: 3;
-  grid-row: 3;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
-}
 </style>

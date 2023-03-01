@@ -5,7 +5,7 @@
         <h1>RESUME / CV & COVER LETTER</h1>
 
       </section>
-      <img src="/resume/newBG.svg" alt="resume background" style="width: 100%" >
+      <img src="/resume/newBG.avif" alt="resume background" style="width: 100%" >
       <a id="resume-vs-cv"></a>
     </div>
 
