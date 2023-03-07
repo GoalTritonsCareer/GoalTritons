@@ -5,9 +5,9 @@
         <h1>Interview Prep</h1>
       </section>
       <img src="/interview/interviewPrep.avif" alt="interview background" style="width: 100%" >
+      <a id="why-interview"></a>
     </div>
 
-    <a id="why-interview"></a>
     <div id="body">
       <img id="whyInterviewImg" src="/interview/whyInterview.svg" alt="Why Interview">
 
