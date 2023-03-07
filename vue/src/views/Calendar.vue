@@ -57,17 +57,11 @@ export default {
     },
     findUrl(day) {
       for (let i = 0; i < json.length; i++) {
-        if(json[i]["type"]=="Holiday"){
-          return ""
-        }
-        if(json[i]["type"]=="EDU"){
-          return ""
-        }
-
-        if (json[i]["date"] == day) {
+        if (json[i]["date"] == day && json[i]["type"] == "Career") {
           return json[i]["link"]
         }
       }
+      return ""
     },
     findTitle(day) {
       for (let i = 0; i < json.length; i++) {
