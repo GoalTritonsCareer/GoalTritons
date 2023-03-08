@@ -1,4 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
+  <!--
   <div id="resumeTop">
     <h1>Resume / CV & Cover Letter</h1>
     <p id="opening">In this page, Goal Tritons will walk you through an
@@ -724,6 +725,7 @@
     </div>
 
   </div>
+  -->
 </template>
 <style>
 </style>
