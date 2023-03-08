@@ -53,7 +53,7 @@ const routes = [
     component: Layout,
     children: [
       { path: '', name: 'ResumevsCV', components: {nav: ResumeAside, con: Resume_vs_CV}},
-      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: InterviewAside, con: Resume_Breakdown}},
+      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: ResumeAside, con: Resume_Breakdown}},
       //{ path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       //{ path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       //{ path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},

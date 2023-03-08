@@ -1,12 +1,11 @@
 <template>
-  <div id="NetworkingTop">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
         <h1>InterviewQuestions</h1>
       </section>
       <img src="/interview/InterviewQuestionTypes.svg" alt="networking background" style="width: 100%" >
-      <a id="why-networking"></a>
     </div>
 
     <div id="body">
@@ -161,98 +160,6 @@ export default {
 
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
-}
-p.online{
-  background-color: #D9EAEF;
-  border-radius: 2rem;
-  padding: 20px;
-  width: fit-content;
-  margin: 2rem auto;
-  /*margin-top: 4rem;*/
-  /*margin-bottom: 2rem;*/
-  color: #1e4460;
-  font-size: 15px;
-  line-height: 141%;
-}
-#whyOnlinePlatformsImg {
-  margin-top: 9.5vh;
-  width: 90%;
-}
-
-.onlinePlatformDiv{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 95%;
-  margin: 2% auto;
-
-  /*margin-left: 12vw;*/
-}
-.onlinePlatformImg{
-  max-height: 86px;
-  max-width: 86px;
-  width: 6vw;
-  height: 6vw;
-  background-color: #D9EAEF;
-  margin-right: 4vw;
-  border-radius: 10px;
-}
-.box {
-  text-align: center;
-  background-color: #D9EAEF;
-  border-radius: 10px;
-  border: none;
-  height: 6vw;
-  width: 6vw;
-  max-height: 86px;
-  max-width: 86px;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.box:hover {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  animation-name: example;
-  animation-duration: 0.25s;
-  border-left: 8px solid #5F99B6;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.onlinePlatformDescription{
-  display: inline-block;
-  border-radius: 2rem;
-  border: 2px dashed #5F99B6;
-  text-align: left;
-  width: 66%;
-  padding: 1rem;
-  line-height: 141%;
-}
-.profileFooter {
-  margin: 50px auto;
-  padding: 10px 20px;
-  text-align: left;
-  width: 70%;
-  max-width: 800px;
-  background: rgba(244, 206, 113, 0.21);
-  border: 3px dashed #F4CE71;
-  color: #1e4460;
-  border-radius: 20px;
-  font-size: 15px;
-}
-.profileHeader {
-  background-color: #D9EAEF;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  height: 28px;
-  padding-top: 2px;
-}
-
-#s2t2img {
-  width: 60%;
-  margin: 0 20% 20px 20%;
 }
 
 .DYp{

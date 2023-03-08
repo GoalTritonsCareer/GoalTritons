@@ -9,36 +9,32 @@
       <a id="resume-vs-cv"></a>
     </div>
 
-
     <div id="body">
-
-      <h2>RESUME VS. CV</h2>
-      <img src="/resume/resumeVScv.svg" alt="resume VS. CV">
-
+      <img src="/resume/resumeVScv.svg" alt="resume VS. CV" id="resumeVsCV">
 
       <a id="build-your-profile"></a>
       <h2>BUILD YOUR PROFILE</h2>
       <section id="routes">
-        <div class="container">
+        <div class="container" @click="$router.push('/resume/ResumeBreakdown')"  >
           <div class="cover">
             <p>Resume</p>
-            <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 75%">
+            <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/resume/resumeImg.svg" alt="Online Platforms Module" loading="lazy">
+          <img class="bg" src="/resume/resumeImg.avif" alt="Resume Breakdown Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>CV</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/resume/CVImg.svg" alt="On Campus Module" loading="lazy">
+          <img class="bg" src="/resume/CVImg.svg" alt="CV Breakdown Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>Cover Letter</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/resume/coverLetterImg.svg" alt="Everyday Routine Module" loading="lazy">
+          <img class="bg" src="/resume/coverLetterImg.svg" alt="Cover Letter Breakdown Module" loading="lazy">
         </div>
       </section>
       <a id="more-resources"></a>
@@ -110,7 +106,7 @@ export default {
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
-#whyNetworkingImg {
+#resumeVsCV {
   margin-top: 9.5vh;
   width: 90%;
 }
@@ -125,9 +121,4 @@ export default {
   overflow: hidden;
 }
 
-#practice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-}
 </style>
