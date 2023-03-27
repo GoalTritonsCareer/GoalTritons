@@ -35,7 +35,7 @@
             <p>Everyday Routine</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/EverydayRoutine.svg" alt="Everyday Routine Module" loading="lazy">
+          <img class="bg" src="/networking/EverydayRoutine.avif" alt="Everyday Routine Module" loading="lazy">
         </div>
         <p>Learn how to network through different online platforms.</p>
         <p>Learn how to network on campus.</p>
@@ -50,14 +50,14 @@
             <p>How to Network<br>Online</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="/networking/HTNO.svg" class="bg" alt="How to Network Online Module" loading="lazy">
+          <img src="/networking/HTNO.avif" class="bg" alt="How to Network Online Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">
             <p>How to Maintain<br>Network</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="/networking/HTMN.svg" class="bg" alt="How to Maintain Network Module" loading="lazy">
+          <img src="/networking/HTMN.png" class="bg" alt="How to Maintain Network Module" loading="lazy">
         </div>
 
         <p>Learn about how to network online step-by-step.</p>

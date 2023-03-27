@@ -246,7 +246,7 @@
               <ul>
                 <li>Search for people by keywords and filters, <em>e.g. Human Resources in San Diego, PhD in UCSD</em></li>
               </ul>
-              <img id="s2t2img" src="/networking/step2P3.jpg" alt="step 2 Point 3" oading="lazy">
+              <img id="s2t2img" src="/networking/directSearch.svg" alt="step 2 Point 2" loading="lazy">
             </div>
 
             <div class="s2Tips">
@@ -541,8 +541,7 @@ p.online{
 }
 
 #s2t2img {
-  width: 60%;
-  margin: 0 20% 20px 20%;
+  margin: 0 15% 20px 15%;
 }
 
 .DYp{
