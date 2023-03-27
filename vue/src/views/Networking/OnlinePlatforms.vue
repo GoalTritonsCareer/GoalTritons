@@ -5,7 +5,7 @@
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
         <h1>Online Platforms</h1>
       </section>
-      <img src="/networking/opBG.svg" alt="networking background" style="width: 100%" >
+      <img src="/networking/opBG.avif" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
@@ -270,7 +270,8 @@
           <section class="onlinePlatformDiv">
             <div class="box">
               <a href="https://tritonsconnect.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/tritonConnect1.svg" alt="TritonConnect" loading="lazy">
+                <img class="onlinePlatformImg" src="/networking/tritonsConnect1.avif" alt="Tritons Connect Logo" loading="lazy"
+                     style="border-radius: 15.5px; background-color: #D9EAEF">
               </a>
             </div>
             <div class="onlinePlatformDescription">
@@ -290,7 +291,7 @@
 
           <section style="margin-top: 6%; padding: 0 4%">
             <p id="highlight">Highlight</p>
-            <img src="/networking/tritonsConnect2.svg" alt="tritonsConnectHighlight" loading="lazy" style="width: 100%">
+            <img src="/networking/tritonsConnect2.avif" alt="tritonsConnectHighlight" loading="lazy" style="width: 100%">
             <img src="/networking/mentoringOption.svg" alt="mentoringOptions" loading="lazy" style="margin-top: 50px">
 
 

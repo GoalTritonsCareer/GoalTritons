@@ -5,7 +5,7 @@
         <h1>NETWORKING</h1>
         <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
       </section>
-      <img src="/networking/nwBG.svg" alt="networking background" style="width: 100%" >
+      <img src="/networking/nwBG.avif" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
@@ -18,17 +18,17 @@
         <div class="container" @click="$router.push('/networking/OnlinePlatforms')">
           <div class="cover">
             <p>Online Platforms</p>
-            <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 75%">
+            <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 95%">
           </div>
           <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
-          <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy" style="filter: brightness(1.75)">
+          <img class="bg" src="/networking/OnlinePlatform.avif" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
         </div>
         <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
             <p>On Campus</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/OnCampus.svg" alt="On Campus Module" loading="lazy">
+          <img class="bg" src="/networking/OnCampus.avif" alt="On Campus Module" loading="lazy">
         </div>
         <div class="container">
           <div class="cover">

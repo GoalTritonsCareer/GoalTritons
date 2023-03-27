@@ -5,7 +5,7 @@
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
         <h1>On Campus</h1>
       </section>
-      <img src="/networking/ocBG.svg" alt="networking background" style="width: 100%" >
+      <img src="/networking/ocBG.avif" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
     </div>
 
@@ -45,7 +45,7 @@
 
         <el-tab-pane label="Mentorships" name="second" >
           <section class="onlinePlatformDiv">
-            <img src="/networking/newMentorship.svg">
+            <img src="/networking/newMentorship.avif" alt="mentorship example" width="300" height="200">
 
             <div class="onlinePlatformDescription">
               <p>Having a mentor is essential for your career development because they can help you clarify concerns
