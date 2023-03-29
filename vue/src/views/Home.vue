@@ -2,20 +2,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div class="common-layout">
     <!--    头部-->
-    <Header class="header"/>
+    <el-header class="header" style="padding: 0">
+      <Header/>
+    </el-header>
+
 
     <!--    主体-->
     <el-container style="display: flex" class="wrapper">
+      <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
+      <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
+      <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
+      <span class="dot220"></span><span class="dot221"></span>
       <!--      内容区域-->
       <el-main class="wrapper__body">
         <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 5vh">
           <b> For best user experience, please browse this website using a laptop or desktop! </b>
         </div>
         <div>
-          <span class="dot192"></span><span class="dot193"></span><span class="dot195"></span><span class="dot196"></span>
-          <span class="dot208"></span><span class="dot210"></span><span class="dot211"></span><span class="dot212"></span>
-          <span class="dot213"></span><span class="dot214"></span><span class="dot215"></span><span class="dot216"></span>
-          <span class="dot220"></span><span class="dot221"></span>
+
           <div>
             <h1 v-if="isGoodBrowser === true" >Your
               <span style="color: #CA8228">bright</span> and <span style="color: #CA8228">successful</span> <br>
@@ -125,7 +129,7 @@
           </div>
         </div>
       </el-main>
-      <el-footer class="footer">
+      <el-footer class="footer home-footer">
         <Footer/>
       </el-footer>
     </el-container>
@@ -208,6 +212,7 @@ button:hover {
   z-index: 2;
   border-top: 1px solid #ccc;
 }
+
 h1{
   font-family: work-sans-semi;
   font-style: normal;
@@ -427,11 +432,11 @@ h2 {
 }
 .wrapper {
   position: relative;
+  overflow-x: hidden;
 }
 .wrapper__body {
   flex: 1;
   position: relative;
-  overflow-x: hidden;
   overflow-y: clip;
   padding-top: 6.3%;
   padding-bottom: 15%;
@@ -500,6 +505,10 @@ h2 {
 
 /* 大屏幕 ( > 13 in. ) */
 @media (min-width: 1440px) {
+  .header {
+    width: 1440px !important;
+    margin-left: calc((100vw - 1440px)/2) !important;
+  }
   .footer {
     width: 1440px !important;
     margin-left: calc((100vw - 1440px)/2) !important;
@@ -533,6 +542,11 @@ h2 {
 @media (min-width: 992px) and (max-width: 1279px) {
   .footer {
     width: 100%;
+  }
+  .wrapper__body {
+    width: 90vw;
+    margin: auto;
+    overflow-x: scroll;
   }
   .opening {
     width: 50ch;

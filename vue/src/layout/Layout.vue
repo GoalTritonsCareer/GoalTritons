@@ -94,11 +94,9 @@ export default {
   .header {
     width: 100vw;
   }
-
   .wrapper__body{
     /*margin-left: calc(0.5vw + 250px) !important;*/
   }
-
   .wrapper__footer{
     /*margin-left: calc(0.5vw + 250px) !important;*/
   }
