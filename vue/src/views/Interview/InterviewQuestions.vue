@@ -82,9 +82,9 @@
 
             </div>
 
-            <div style="text-align: right; margin-bottom: 82px; margin-top: 2rem">
-              <p style="display: inline;"><i style="color: #1E4460; font-weight: 500">See “Define Yourself” Sample Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
-              <a id="BehavioralQuestions"></a>
+            <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; padding: 0 5%">
+                <p class ="link" style="display: inline; margin-right: 0.5rem;">See More Resources</p>
+                <img src="/interview/arrow.svg" @click="$router.push('/interview#more-resources')" style="vertical-align: middle; width: 22px">
             </div>
 
           </div>
@@ -97,9 +97,9 @@
 
             <img src="/interview/behaviorQuetion.svg" style="margin-top:3vw; margin-bottom: 50px; width: 50vw">
 
-            <div style="text-align: right; margin-bottom: 82px">
-              <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">See More Behavioral Sample Q&A under</i> <i class="moreResLink" @click="$router.push('/interview#moreResources')">More Resources</i></p>
-              <a id="TechnicalQuestions"></a>
+            <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; padding: 0 5%">
+              <p class ="link" style="display: inline; margin-right: 0.5rem;">See More Resources</p>
+              <img src="/interview/arrow.svg" @click="$router.push('/interview#more-resources')" style="vertical-align: middle; width: 22px">
             </div>
           </div>
         </el-tab-pane>
@@ -124,6 +124,12 @@
                 <span>Search for interview tips <span style="font-weight: 500">specific to the company</span> you have applied.</span>
               </div>
             </div>
+
+            <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; padding: 0 5%">
+              <p class ="link" style="display: inline; margin-right: 0.5rem;">See More Resources</p>
+              <img src="/interview/arrow.svg" @click="$router.push('/interview#more-resources')" style="vertical-align: middle; width: 22px">
+            </div>
+
           </div>
         </el-tab-pane>
       </el-tabs>

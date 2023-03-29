@@ -22,7 +22,7 @@
           <el-menu-item index="2-2" class="sub1" @click="$router.push('/interview/InterviewSteps')">Interview Steps</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="2-3" class="sub1" @click="$router.push('/interview/MasterInterview')" disabled>Master an interview</el-menu-item>
+          <el-menu-item index="2-3" class="sub1" @click="$router.push('/interview/MasterInterview')">Master an interview</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
 
