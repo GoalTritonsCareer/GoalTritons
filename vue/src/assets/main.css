@@ -51,6 +51,10 @@
 .prev {
   width: 50px;
 }
+.el-menu--horizontal>.el-sub-menu.is-active .el-sub-menu__title {
+  border-bottom: none;
+  color: transparent;
+}
 /*.el-sub-menu__title {*/
 /*  height: 35px;*/
 /*  line-height: 35px;*/

@@ -3,7 +3,7 @@
     <div id="heading" style="position: relative">
       <section class="title">
         <h1>NETWORKING</h1>
-        <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
+        <h2 class="quote">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
       </section>
       <img src="/networking/nwBG.avif" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
@@ -30,7 +30,7 @@
           </div>
           <img class="bg" src="/networking/OnCampus.avif" alt="On Campus Module" loading="lazy">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/EverydayRoutine')">
           <div class="cover">
             <p>Everyday Routine</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
@@ -45,7 +45,7 @@
       <a id="networking-in-practice"></a>
       <h2>NETWORKING IN PRACTICE</h2>
       <section id="practice">
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/NetworkOnline')">
           <div class="cover">
             <p>How to Network<br>Online</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">

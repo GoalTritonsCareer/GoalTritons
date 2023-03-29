@@ -6,7 +6,6 @@
         <h1>Online Platforms</h1>
       </section>
       <img src="/networking/opBG.avif" alt="networking background" style="width: 100%" >
-      <a id="why-networking"></a>
     </div>
 
     <div id="body">
@@ -600,14 +599,6 @@ p.online{
   width: 78%;
   max-width: 773px;
   margin: 30px auto;
-}
-.moreResLink {
-  color: #B27224;
-  font-weight: 500;
-}
-.moreResLink:hover {
-  font-weight: 600;
-  text-decoration: underline;
 }
 
 .step {

@@ -1,14 +1,74 @@
 <template>
   <div id="NetworkingTop">
 
-      <h1>Networking</h1>
+    <div id="heading" style="position: relative">
+      <section class="title">
+        <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
+        <h1>Everyday Routine</h1>
+      </section>
+      <img src="/networking/ocBG.avif" alt="networking background" style="width: 100%" >
+    </div>
 
-      <p class="normal">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</p>
+    <div id="body">
+      <h2 style="margin-bottom: 0">Who can you network with everyday?</h2>
+      <el-tabs v-model="activeName" class="demo-tabs" stretch="true" @tab-click="handleClick">
+        <el-tab-pane label="Faculty" name="first">
+          <section class="onlinePlatformDiv">
+            <img src="/networking/studentOrg.svg">
+          </section>
+
+          <section>
+            <h2>How to Network with the Faculty?</h2>
+            <div style="text-align: left; margin-left: 50px">
+              <div style="display: flex; flex-direction: row; text-align: left; margin: 50px 0px 20px 30px">
+                <p class="step step1Color" style="width:65px">Step 1</p>
+                <p class="stepTitle">Research & learn about your interested professors</p>
+              </div>
+
+              <p style="margin-left: 7vw; font-weight: 600; margin-bottom: 1vh">Methods:</p>
+              <div class="HTNWFdiv">
+                <div class="HTNWFsubdiv">
+                  <img src="/networking/ptag1.svg" style="vertical-align: middle">
+                  <p>Direct search on your <span class="medium">department’s website</span></p>
+                  <ul style="margin-left: 7rem; padding-left: 2rem"><li>e.g. department >> Faculty >> interested professors </li></ul>
+                </div>
+
+                <div class="HTNWFsubdiv">
+                  <img src="/networking/ptag2.svg" style="vertical-align: middle">
+                  <p>Deep exploration through:</p>
+                  <ul style="padding-left: 4rem">
+                    <li><a class="intextLink" href="https://hwsph.ucsd.edu/people/faculty/faculty-directory.html#A-D" target="_blank">
+                      UCSD’s faculty profile</a></li>
+                    <li>professors’ personal website</li>
+                  </ul>
+                </div>
+
+              </div>
+              <img src="/networking/HTNWTFs11.jpg" alt="Where to find the faculty profile for different department" width="20%" style="margin-left: 14vw; margin-top: 0">
+            </div>
+          </section>
+
+        </el-tab-pane>
+
+        <el-tab-pane label="Mentorships" name="second" >
+          <section class="onlinePlatformDiv">
+
+          </section>
+
+        </el-tab-pane>
+
+        <el-tab-pane label="Career Fairs/Events" name="third">
+
+        </el-tab-pane>
+        <el-tab-pane label="Labs" name="fourth">
+
+        </el-tab-pane>
+
+      </el-tabs>
+    </div>
 
 
-    <a id="everydayRoutine"></a>
     <div>
-      <h2>Route Three: Networking in Everyday Routine <a id="whoToNetworkWith"></a></h2>
       <div>
         <h3>Who can you network with everyday?</h3>
 
@@ -29,41 +89,10 @@
       <div>
         <h3>Faculty</h3>
         <div>
-          <h4>Why Networking with the Faculty?</h4>
           <img src="/networking/whyNetworkWithFaculty.svg" alt="Why Networking with the Faculty">
         </div>
 
         <div>
-          <h4>How to Network with the Faculty?</h4>
-
-
-          <div style="text-align: left; margin-left: 50px">
-            <div style="display: flex; flex-direction: row; text-align: left; margin: 50px 0px 20px 30px">
-              <p class="step step1Color" style="width:65px">Step 1</p>
-              <p class="stepTitle">Research & learn about your interested professors</p>
-            </div>
-
-            <p style="margin-left: 7vw; font-weight: 600; margin-bottom: 1vh">Methods:</p>
-            <div class="HTNWFdiv">
-              <div class="HTNWFsubdiv">
-                <img src="/networking/ptag1.svg" style="vertical-align: middle">
-                <p>Direct search on your <span class="medium">department’s website</span></p>
-                <ul style="margin-left: 7rem; padding-left: 2rem"><li>e.g. department >> Faculty >> interested professors </li></ul>
-              </div>
-
-              <div class="HTNWFsubdiv">
-                <img src="/networking/ptag2.svg" style="vertical-align: middle">
-                <p>Deep exploration through:</p>
-                <ul style="padding-left: 4rem">
-                  <li><a class="intextLink" href="https://hwsph.ucsd.edu/people/faculty/faculty-directory.html#A-D" target="_blank">
-                    UCSD’s faculty profile</a></li>
-                  <li>professors’ personal website</li>
-                </ul>
-              </div>
-
-            </div>
-            <img src="/networking/HTNWTFs11.jpg" width="20%" style="margin-left: 14vw; margin-top: 0">
-          </div>
 
           <div style="text-align: left; margin-left: 50px">
             <div style="display: flex; flex-direction: row; text-align: left; margin: 50px 0px 20px 30px">
@@ -137,78 +166,34 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import {TabsPaneContext} from "element-plus";
+
 export default {
   name: "EverydayRoutine",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+  data() {
+    return {
+      activeName: 'first'
+    }
+  },
+  methods: {
+    handleClick (tab: TabsPaneContext, event: Event) {
+      console.log(tab, event)
+    }
+  }
 }
 </script>
 
 
 
 <style scoped>
+@import "../../assets/content.css";
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
-a {
-  text-decoration: none;
-}
-div{
-  text-align: center;
-}
-.medium {
-  font-weight: 500;
-}
-.semi {
-  font-weight: 600;
-}
-h1, h2, h3, h4{
-  text-align: left;
-}
-
-h3{
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-  padding-top: 30px;
-}
-h1{
-  margin-bottom: 2rem;
-  color: #1E4460;
-  font-weight: 700;
-  font-size: 26px;
-  font-family: work-sans;
-}
-h2{
-  font-family: work-sans;
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 700;
-  color: #182B49;
-  margin-bottom: 42px;
-  margin-top: 95px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-h4{
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-p.normal{
-  border-radius: 2rem;
-  text-align: center;
-  padding: 2rem;
-  background-color: #D9EAEF;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1E4460;
-  width: 65%;
-  margin: auto;
-
-}
-
 #NetworkingOnCampus{
   background-color: #1E4460;;
 
@@ -291,39 +276,4 @@ ul{
   margin-left: 0.5rem;
 
 }
-.intextLink {
-  color: #0467B0;
-  text-decoration: none;
-  font-weight: 500;
-}
-.intextLink:hover {
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-#more-resources > ul{
-  text-align: left;
-  margin-right: 12vw;
-  margin-left: 11.5vw;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 141%;
-}
-#more-resources a{
-  text-decoration: none;
-}
-.middleP{
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  margin-bottom: 30px;
-  max-width: 900px;
-}
-
-
 </style>

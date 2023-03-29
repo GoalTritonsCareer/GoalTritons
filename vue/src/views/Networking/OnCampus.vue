@@ -6,13 +6,12 @@
         <h1>On Campus</h1>
       </section>
       <img src="/networking/ocBG.avif" alt="networking background" style="width: 100%" >
-      <a id="why-networking"></a>
     </div>
 
     <div id="body">
       <img id="whyOnlinePlatformsImg" src="/networking/whyOnCampus.svg" alt="Why On Campus?">
 
-      <h2 style="margin-bottom: 0px">Where to Network on Campus?</h2>
+      <h2 style="margin-bottom: 0">Where to Network on Campus?</h2>
       <el-tabs v-model="activeName" class="demo-tabs" stretch="true" @tab-click="handleClick">
         <el-tab-pane label="Student Orgs" name="first">
           <section class="onlinePlatformDiv">
@@ -192,18 +191,6 @@ export default {
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
-p.online{
-  background-color: #D9EAEF;
-  border-radius: 2rem;
-  padding: 20px;
-  width: fit-content;
-  margin: 2rem auto;
-  /*margin-top: 4rem;*/
-  /*margin-bottom: 2rem;*/
-  color: #1e4460;
-  font-size: 15px;
-  line-height: 141%;
-}
 #whyOnlinePlatformsImg {
   margin-top: 9.5vh;
   width: 90%;
@@ -223,35 +210,6 @@ p.online{
   /*margin-left: 12vw;*/
 }
 
-.onlinePlatformImg{
-  max-height: 86px;
-  max-width: 86px;
-  width: 6vw;
-  height: 6vw;
-  background-color: #D9EAEF;
-  margin-right: 4vw;
-  border-radius: 10px;
-}
-.box {
-  text-align: center;
-  background-color: #D9EAEF;
-  border-radius: 10px;
-  border: none;
-  height: 6vw;
-  width: 6vw;
-  max-height: 86px;
-  max-width: 86px;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.box:hover {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  animation-name: example;
-  animation-duration: 0.25s;
-  border-left: 8px solid #5F99B6;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 .onlinePlatformDescription{
   display: inline-block;
   border-radius: 2rem;
@@ -262,70 +220,9 @@ p.online{
   line-height: 141%;
 }
 
-
-.profileFooter {
-  margin: 50px auto;
-  padding: 10px 20px;
-  text-align: left;
-  width: 70%;
-  max-width: 800px;
-  background: rgba(244, 206, 113, 0.21);
-  border: 3px dashed #F4CE71;
-  color: #1e4460;
-  border-radius: 20px;
-  font-size: 15px;
-}
-.profileHeader {
-  background-color: #D9EAEF;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  height: 28px;
-  padding-top: 2px;
-}
-
-#s2t2img {
-  width: 60%;
-  margin: 0 20% 20px 20%;
-}
-
-.DYp{
-  display: inline;
-  border-radius: 30px;
-  background-color: #D9EAEF;
-  color: black;
-  margin-right: 10px;
-  padding: 3px 10px;
-  font-weight: 600;
-}
-.s2Tips{
-  text-align: left;
-  padding: 0 2%;
-}
 .s2Tips ul{
   margin-left: 7em;
   margin-bottom: 20px;
-}
-#highlight{
-  background-color: #F4CE71;
-  border-radius: 2rem;
-  width: 95px;
-  padding: 10px;
-  font-weight: 600;
-  margin-bottom: 2vh;
-}
-.otherMediaIcon{
-  height: 100%;
-  text-align: center;
-  margin: auto;
-  margin-left: 0;
-  margin-right: 0;
-}
-.otherMediaTitle{
-  width: 6vw;
-  color: #1E4460;
-  font-weight: 640;
 }
 .column img {
   margin-top: 8px;
@@ -337,62 +234,6 @@ p.online{
   margin-left: 0.5rem;
 }
 
-.middleP{
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 141%;
-  text-align: left;
-  width: 78%;
-  max-width: 773px;
-  margin: 30px auto;
-}
-.moreResLink {
-  color: #B27224;
-  font-weight: 500;
-}
-.moreResLink:hover {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.step {
-  border-radius: 45px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  margin-right: 10px;
-  margin-top: 2px;
-  padding: 3px 10px 5px 10px;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.step1Color {
-  background-color: #F8EFDA;
-}
-
-.step2Color {
-  background-color: #FEECC0;
-}
-.step2Img {
-  width: 68%;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.step1Color {
-  background-color: #F8EFDA;
-}
-.step2Color {
-  background-color: #FEECC0;
-}
 .intextLink {
   color: #0467B0;
   text-decoration: none;
