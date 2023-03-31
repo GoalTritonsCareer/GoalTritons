@@ -9,7 +9,7 @@ div{
 }
 h1, h2, h3 {
     text-align: left;
-    font-family: work-sans;
+    font-family: work-sans, serif;
 }
 h1{
     width: 100%;
@@ -81,7 +81,7 @@ ul{
     line-height: 141%;    /* list里的行间宽度为141%，其他为default */
 }
 li li {
-    color: #0467B0;
+    /*color: #0467B0;*/
 }
 .container {
     width: 90%;
@@ -119,9 +119,8 @@ li li {
     z-index: 9;
     font-size: 28px;
     font-weight: 700;
-    font-family: work-sans;
+    font-family: work-sans, serif;
     line-height: 30px;
-    font-weight: bold;
     color: white;
     position: absolute;
     top: 50%;
@@ -224,4 +223,15 @@ li li {
 .moreResLink:hover {
     font-weight: 600;
     text-decoration: underline;
+}
+@media (max-width: 1279px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #heading h3{
+        font-size: 22px;
+    }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="NetworkingTop">
+  <div id="online_platform">
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
@@ -57,53 +57,24 @@
               Goal Tritons will walk you through each part in building an
               attracting LinkedIn Profile.</p>
 
-            <div style="position: relative; display: inline-block; border: 3px solid #D9EAEF; border-radius: 20px; width:65%; padding:12px 24px">
-              <p style="font-size: 16px">
-                <span style="font-weight: 600; color:#1E4460"> Reminder</span>: don’t overwhelm people with a ton of
-                information—focus on <span style="font-weight: 500">what makes you stand out</span> from a huge
-                pool of competitors.
-              </p>
-            </div>
+            <p id="reminder">
+              <span style="font-weight: 600; color:#1E4460"> Reminder</span>: don’t overwhelm people with a ton of
+              information—focus on <span style="font-weight: 500">what makes you stand out</span> from a huge
+              pool of competitors.
+            </p>
           </section>
 
-          <section class="wrapper">
-            <div class="one1">
-              <p class="profileHeader" style="width:240px">Part 2: Customize Your Profile</p>
-              <div style="width: 260px; line-height: 141%">
+          <section id="wrapper">
+            <div id="left">
+              <p id="part2" class="profileHeader">Part 2: Customize Your Profile</p>
+              <div>
                 <ul>
                   <li><span class="medium">Open to work:</span> edit your job preferences for recruiters to see here.</li>
                 </ul>
               </div>
-            </div>
-            <div class="one2">
-              <img src="/networking/profileInfo.svg" alt="profile_info" loading="lazy" style="padding-left: 50px">
-              <img src="/networking/profileStatus.svg" alt="profile_status" loading="lazy">
-            </div>
-            <div class="one3">
-              <p class="profileHeader" style="width:240px">
-                Part 1: Provide Your Basic Info
-              </p>
-              <div style="width: 308px; line-height: 141%">
-                <ul>
-                  <li><span class="medium">Profile Picture:</span> choose a clear front- facing profile picture,
-                    preferably smiling.
-                  </li>
-                  <li><span class="medium">Professional Headline:</span> describe your current roles; specify your
-                    <span class="medium">career goal</span> or focus using “|”.
-                    <ul>
-                      <li>e.g. “Student studying xxx @xxx | Seeking xxx internship”.</li>
-                    </ul>
-                  </li>
-                  <li><span class="medium">Education & Location:</span> provide your desired location since recruiters may
-                    limit their searches by location.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="two1">
-              <p class="profileHeader" style="width:250px">Part 4: Polish Your Experiences</p>
-              <div style="width: 260px; line-height: 141%">
+              <br>
+              <p id="part4" class="profileHeader">Part 4: Polish Your Experiences</p>
+              <div>
                 <ul>
                   <li>Use <span class="moreResLink" @click="$router.push('/resume#impactStatements')">
                 Impact Statements</span> to describe what you did.
@@ -113,22 +84,41 @@
                 </ul>
               </div>
             </div>
-            <div class="two2">
-              <img src="/networking/profileAbout.svg" alt="profile_about" loading="lazy" style="padding-left: 50px">
-              <br> <img src="/networking/profileExperience.svg" alt="profile_experience" loading="lazy">
-            </div>
-            <div class="two3">
-              <p class="profileHeader" style="width:260px">
+
+            <img src="/networking/middle.svg" alt="linkedIn profile example" loading="lazy" id="middle">
+
+            <div id="right">
+              <p id="part1" class="profileHeader">
+                Part 1: Provide Your Basic Info
+              </p>
+              <div>
+                <ul>
+                  <li><span class="medium">Profile Picture:</span> choose a clear front- facing profile picture,
+                    preferably smiling.
+                  </li>
+                  <li><span class="medium">Professional Headline:</span> describe your current roles; specify your
+                    <span class="medium">career goal</span> or focus using “|”.
+                    <ul>
+                      <li>e.g. “Student studying xxx @xxx | Seeking xxx internship”</li>
+                    </ul>
+                  </li>
+                  <li><span class="medium">Education & Location:</span> provide your desired location since recruiters may
+                    limit their searches by location.
+                  </li>
+                </ul>
+              </div>
+              <br>
+              <p id="part3" class="profileHeader">
                 Part 3: Summarize Your highlights
               </p>
-              <div style="width: 308px; line-height: 141%">
+              <div>
                 <ul>
-                  <li><span class="medium">About:</span> Share your background/<br>
-                    mission/ motivation/attributes/key achievements <i>(you can
+                  <li><span class="medium">About:</span> Share
+                    your background, mission, motivation, attributes, and/or key achievements <i>(you can
                       use bullet points)</i>.
                     <ul>
-                      <li>include keywords or phrases related to your desired position to increase the likelihood of your
-                        profile appearing in recruiters' search results.</li>
+                      <li>include <span class="medium">keywords or phrases</span> related to your desired position to
+                        increase the likelihood of your profile appearing in recruiters' search results.</li>
                     </ul>
                   </li>
                 </ul>
@@ -136,18 +126,12 @@
                   <i>See LinkedIn summary examples under </i>
                   <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i>.
                 </div>
-
               </div>
-            </div>
-
-            <div class="three2">
-              <img src="/networking/profileEducation.svg" alt="profile_others" loading="lazy" style="padding-left: 50px">
-            </div>
-            <div class="three3">
-              <p class="profileHeader" style="width:130px;">
+              <br>
+              <p id="part5" class="profileHeader">
                 Part 5: Others
               </p>
-              <div style="width: 308px; line-height: 141%">
+              <div>
                 <ul>
                   <li><span class="medium">Education:</span> include
                     exceptional grades and awards <i>(e.g. Grade: 3.9,
@@ -171,7 +155,6 @@
                     your online personal brand.
                   </li>
                 </ul>
-
               </div>
             </div>
           </section>
@@ -197,7 +180,8 @@
           </section>
 
           <section style="text-align: right; margin-bottom: 42px; margin-top: 42px">
-            <p style="display: inline; "><i style="color: #1E4460; font-weight: 500">Learn “Branding” Yourself on LinkedIn under</i> <i class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</i></p>
+            <p style="display: inline;font-style: italic"><span style="color: #1E4460;">Learn “Branding” Yourself on LinkedIn under </span>
+              <span class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</span></p>
           </section>
 
           <section>
@@ -215,7 +199,7 @@
             <p class="middleP">
               However, since recruiters evaluate your connections based on their <span class="semi">quality & relevancy</span>,
               your focus when expanding your network should be on the people that can <span class="semi">add to your
-          professional value</span>.
+              professional value</span>.
             </p>
             <img class="step2Img" alt="connectWith" src="/networking/connectWith.svg" loading="lazy" style=" margin-top: 20px">
           </section>
@@ -251,7 +235,7 @@
             <div class="s2Tips">
               <p class="DYp">Point 3</p>
               <span>Pay attention to people you should develop further relationships with, learn
-            <span class="moreResLink" @click="$router.push('/Networking#maintainNetwork')">
+            <span class="moreResLink" @click="$router.push('/networking/MaintainNetwork')">
               How to Maintain Networks</span>.
           </span>
 
@@ -535,8 +519,8 @@ p.online{
   font-size: 15px;
   font-weight: 600;
   text-align: center;
-  height: 28px;
-  padding-top: 2px;
+  padding: 3px 10px;
+  width: fit-content;
 }
 
 #s2t2img {
@@ -638,60 +622,75 @@ p.online{
 .step2Color {
   background-color: #FEECC0;
 }
-.wrapper {
-  margin-top: 50px;
+#reminder {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #D9EAEF;
+  border-radius: 20px;
+  width:65%;
+  padding:12px 24px;
+}
+#wrapper {
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 29% 40% 29%;
   gap: 0;
   height: fit-content;
-  width: min-content;
-  margin-left: -65px;
-  /*margin-right: 3vw;*/
+  /*width: min-content;*/
 }
-.one1 {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: right;
-  align-self: flex-end;
-  margin-right: -25px;
-  padding-left: 60px;
+#left, #right {
+  display: flex;
+  flex-direction: column;
 }
-.one2 {
-  grid-column: 2;
-  grid-row: 1;
+#middle {
+  width: 100%;
 }
-.one3 {
-  grid-column: 3;
-  grid-row: 1;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
+#part2 {
+  margin-top: 100%;
 }
-.two1 {
-  grid-column: 1;
-  grid-row: 2;
-  text-align: right;
-  align-self: flex-end;
-  margin-right: -25px;
-  padding-left: 60px;
+#part3 {
+  margin-top: 35%;
 }
-.two2 {
-  grid-column: 2;
-  grid-row: 2;
+#part4 {
+  margin-top: 65%;
 }
-.two3 {
-  grid-column: 3;
-  grid-row: 2;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
+#part5 {
+  margin-top: 32%;
 }
-.three2 {
-  grid-column: 2;
-  grid-row: 3;
+/* 多数电脑 ( 11 in. ≤ size < 13 in. ) */
+@media (max-width: 1439px) {
+  #wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 238px 329px 275px;
+    gap: 0;
+    height: fit-content;
+  }
+  .profileHeader {
+    font-size: 14px;
+  }
+  #part3 {
+    margin-top: 2em;
+  }
+  #part4 {
+    margin-top: 8em;
+  }
+  #part5 {
+    margin-top: 3em;
+  }
 }
-.three3 {
-  grid-column: 3;
-  grid-row: 3;
-  padding-left: 10px
-  /*width: calc(77vw - 600px);*/
+/* 小电脑及大Pad */
+@media (max-width: 1279px) {
+  #body {
+    padding: 0 4%;
+  }
+  #wrapper {
+    max-width: 100%;
+    overflow: scroll;
+  }
+  #reminder {
+    width: 70%;
+    line-height: 121%;
+  }
 }
 </style>

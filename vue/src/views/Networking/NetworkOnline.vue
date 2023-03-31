@@ -9,20 +9,20 @@
     </div>
 
     <div id="body">
-      <section style="margin-top: 5vh; position: relative">
-          <h4>Send an Outreach Email</h4>
+      <h4 style="margin-top: 5vh;">Send an Outreach Email</h4>
+      <section id="outreach_mail">
             <p class="email" style="background-size: 100% 8%">
               <span id="c1" class="circle">1</span>
-              <span id="a1" class="annotation al">1. Brief/unique<br>self-intro</span>
+              <span id="a1" class="annotation al">1. Brief/unique self-intro</span>
               <span id="l1" class="line line_1s"></span>
               <span id="c2" class="circle">2</span>
-              <span id="a2" class="annotation ar">2. How you<br>found them</span>
-              <span id="l2" class="line line_2s"></span>
+              <span id="a2" class="annotation ar">2. How you found them</span>
+              <span id="l2" class="line line_2s line_992_1s"></span>
               <span id="c3" class="circle">3</span>
-              <span id="a3" class="annotation al">3. What about them<br>impresses you</span>
-              <span id="l3" class="line line_2s"></span>
+              <span id="a3" class="annotation al">3. What about them impresses you</span>
+              <span id="l3" class="line line_2s line_992_1s"></span>
               <span id="c4" class="circle">4</span>
-              <span id="a4" class="annotation ar">4. Specify what<br>you want</span>
+              <span id="a4" class="annotation ar">4. Specify what you want</span>
               <span id="l4" class="line line_2s"></span>
               <span id="c5" class="circle">5</span>
               <span id="a5" class="annotation al">5. *Link to your bio</span>
@@ -32,7 +32,7 @@
 
               My name is Amy Chen, and I am a junior undergraduate student majoring in Management Science at UC San Diego
               who aspires to be an HR professional. I found your profile on LinkedIn and followed the link to your
-              personal website.Your extensive knowledge in human resources truly inspires me; I am especially impressed
+              personal website. Your extensive knowledge in human resources truly inspires me; I am especially impressed
               by your published article on insights about customer service, recruitment, and training. Would you be
               interested in a 20-minute chat with me? I will be glad to learn more about your history, experience, and
               professional insights.<br>
@@ -54,8 +54,9 @@
           as career path, industry, or a specific firm, by <span class="medium">speaking directly</span> with an
           experienced individual who has <span class="medium">expertise and knowledge in your desired field</span>.
         </p>
-        <img src="/networking/howToNetworkOnlineS21.svg" alt="sampleQs" style="margin-bottom: 3%" loading="lazy" draggable="false"><br>
-        <i>See More Qs to Ask through Info Interview under <span class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</span></i>
+        <img src="/networking/howToNetworkOnlineS21.svg" alt="sampleQs" style="margin-bottom: 3%; width: 80%" loading="lazy"><br>
+        <p style="text-align: right; padding-right: 8%; font-style: italic">See More Qs to Ask through Info Interview under
+          <span class="moreResLink" @click="$router.push('/networking#more-resources')">More Resources</span></p>
       </section>
 
       <section>
@@ -88,10 +89,10 @@
         <p class="middleP">If you don't keep in touch with the person you asked for help online, you may lose this
           connection. Therefore, it is critical to maintain contact in order to forge a stable relationship that can
           <span class="medium">lead to more opportunities</span>.</p>
-        <p style="padding: 10px 20px; border-radius: 20px; border: 3px solid #D9EAEF; width: 50%; margin: auto">
+        <p id="reminder">
           <span class="medium" style="color: #1e4460">Reminder:</span> each time you follow up, think about how you
           can possibly help this person. <span>Try to avoid a one-sided relationship</span>.</p>
-        <p style="text-align: right; padding: 3% 12% 0 0; font-style: italic">See
+        <p style="text-align: right; padding: 3% 8% 0 0; font-style: italic">See
           <span class="moreResLink" @click="$router.push('/networking/MaintainNetwork')">How to Maintain Networks</span></p>
       </section>
     </div>
@@ -153,13 +154,23 @@ h4 {
   display: inline-block;
   margin-left: 0.5rem;
 }
+#outreach_mail {
+  position: relative;
+}
+#reminder {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 3px solid #D9EAEF;
+  width: 50%;
+  margin: auto
+}
 .email {
   text-align: left;
   background-image: linear-gradient(#d9eaef, #d9eaef), linear-gradient(white, white);
   background-position: top left, bottom left;
   background-repeat: no-repeat;
   border-radius: 20px;
-  width: 52%;
+  width: 515.4px;
   margin: 0.5% auto 1% auto;
   padding: 10px 2rem 2rem 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -225,7 +236,6 @@ h4 {
 .annotation {
   position: absolute;
   transform: translate(-100%, -50%);
-  width: max-content;
   display: block;
   padding: 5px 12px;
   background: #F4CE71;
@@ -250,6 +260,7 @@ h4 {
 #a1 {
   top: 95px;
   left: -30px;
+  width: 127px;
 }
 #l1 {
   top: 98px;
@@ -262,7 +273,8 @@ h4 {
 }
 #a2 {
   top: 140px;
-  left: 645px;
+  left: 648px;
+  width: 108px;
 }
 #l2 {
   top: 140px;
@@ -276,6 +288,7 @@ h4 {
 #a3 {
   top: 160px;
   left: -30px;
+  width: 166px;
 }
 #l3 {
   top: 158px;
@@ -288,7 +301,8 @@ h4 {
 }
 #a4 {
   top: 225px;
-  left: 675px;
+  left: 669px;
+  width: 128px;
 }
 #l4 {
   top: 222px;
@@ -307,5 +321,79 @@ h4 {
   top: 287px;
   right: 498px;
   --line-length: 38px
+}
+@media (max-width: 1279px) {
+  #outreach_mail {
+    overflow: scroll;
+    padding-left: calc(100vw - 460px - 280px - 100vw * 0.16) ;
+  }
+  #reminder {
+    width: 65%;
+  }
+  .email {
+    width: 460px;
+  }
+  #l1 {
+    top: 98px;
+    right: 442px;
+  }
+  #c2 {
+    top: 132px;
+    left: 326px;
+  }
+  #a2 {
+    left: 610px;
+  }
+  #l2 {
+    top: 140px;
+    left: 345px;
+    --line-length: 145px;
+  }
+  #c3 {
+    top: 175px;
+    left: 82px;
+  }
+  #a3 {
+    top: 181px;
+    left: -30px;
+    width: 138px;
+  }
+  #l3 {
+    top: 182px;
+    right: 380px;
+    --line-length: 100px;
+  }
+  #c4 {
+    top: 238px;
+    left: 200px;
+  }
+  #a4 {
+    top: 245px;
+    left: 603px;
+    width: 100px;
+  }
+  #l4 {
+    top: 244px;
+    left: 218px;
+    --line-length: 270px;
+  }
+  #c5 {
+    top: 304px;
+  }
+  #a5 {
+    top: 310px;
+    left: -30px;
+    width: 100px;
+  }
+  #l5 {
+    top: 310px;
+    right: 440px;
+  }
+  .circle:hover + .annotation + .line_992_1s {
+    animation: draw 1s infinite;
+  }
+  #body {
+    overflow: hidden;
+  }
 }
 </style>

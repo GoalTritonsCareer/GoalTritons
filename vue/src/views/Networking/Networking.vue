@@ -3,7 +3,7 @@
     <div id="heading" style="position: relative">
       <section class="title">
         <h1>NETWORKING</h1>
-        <h2 class="quote">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
+        <h2 class="quote">“New Survey Reveals 85% of All Jobs are Filled Via Networking - Lou Adler”</h2>
       </section>
       <img src="/networking/nwBG.avif" alt="networking background" style="width: 100%" >
       <a id="why-networking"></a>
@@ -52,7 +52,7 @@
           </div>
           <img src="/networking/HTNO.avif" class="bg" alt="How to Network Online Module" loading="lazy">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/MaintainNetwork')">
           <div class="cover">
             <p>How to Maintain<br>Network</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
@@ -147,5 +147,14 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+}
+/* 小电脑及大Pad */
+@media (max-width: 1279px) {
+  .quote {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 45px;
+  }
 }
 </style>

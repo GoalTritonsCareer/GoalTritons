@@ -31,7 +31,7 @@
           <span class="mod menu-item-3" @click="$router.push('/networking#networking-in-practice')">Networking in Practice</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="3-1" class="sub1" @click="$router.push('/networking/NetworkingOnline')">How to Network Online</el-menu-item>
+          <el-menu-item index="3-1" class="sub1" @click="$router.push('/networking/NetworkOnline')">How to Network Online</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
           <el-menu-item index="3-2" class="sub1" @click="$router.push('/networking/MaintainNetwork')">How to Maintain Network</el-menu-item>
