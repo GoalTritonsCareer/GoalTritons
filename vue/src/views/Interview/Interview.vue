@@ -2,7 +2,7 @@
   <div id="home">
     <div id="heading" style="position: relative">
       <section class="title">
-        <h1>Interview Prep</h1>
+        <h1>INTERVIEW PREP</h1>
       </section>
       <img src="/interview/interviewPrep.avif" alt="interview background" style="width: 100%" >
       <a id="why-interview"></a>

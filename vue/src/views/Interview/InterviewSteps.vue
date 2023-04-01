@@ -3,11 +3,8 @@
     <div id="heading" style="position: relative;">
       <section class="title" style="z-index: 10">
         <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
-        <h1>Interview Steps</h1>
+        <h1>INTERVIEW STEPS</h1>
       </section>
-      <div class="cover">
-        <img src="/interview/InterviewStepsCover.svg" alt="Cover" style="opacity: 75%; width: 100%;">
-      </div>
       <img class="bg" src="/interview/InterviewStepsTop.svg" alt="interview background" style="width: 100%">
     </div>
 

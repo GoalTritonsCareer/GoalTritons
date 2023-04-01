@@ -4,12 +4,9 @@
     <div id="heading" style="position: relative;">
       <section class="title" style="z-index: 10">
         <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
-        <h1>Master an Interview</h1>
+        <h1>MASTER AN INTERVIEW</h1>
       </section>
-      <div class="cover">
-        <img src="/interview/MasterInterviewCover.svg" alt="Cover" style="opacity: 75%; width: 100%;">
-      </div>
-      <img class="bg" src="/interview/MasterInterviewTop.svg" alt="interview background" style="width: 100%">
+      <img class="bg" src="/interview/MasterInterviewTop.avif" alt="interview background" style="width: 100%">
     </div>
 
     <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; margin-right: 8%">
