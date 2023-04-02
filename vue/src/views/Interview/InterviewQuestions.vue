@@ -32,7 +32,7 @@
 
                 <div class="DYdiv">
                   <div>
-                    <img class="DYimg" src="/interview/researchEmoji.svg">
+                    <img class="DYimg" src="/interview/researchEmoji.avif">
                   </div>
 
                   <div>
@@ -64,7 +64,7 @@
 
                 <div class="DYdiv" style="align-items: center">
                   <div>
-                    <img class="DYimg" src="/interview/speechEmoji.svg" style="vertical-align: middle">
+                    <img class="DYimg" src="/interview/speechEmoji.avif" style="vertical-align: middle">
                   </div>
 
                   <div>
@@ -111,7 +111,7 @@
                 skills</strong>
               (<em>e.g. leadership</em>) and <strong>personal attributes</strong> (<em>e.g. persistency</em>).</p>
 
-            <img src="/interview/behaviorQuetion.svg" style="margin-top:3vw; margin-bottom: 50px; width: 50vw">
+            <img src="/interview/behaviorQuetion.png" style="margin-top:3vw; margin-bottom: 50px; width: 50vw">
 
             <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; padding: 0 5%">
               <p class="link" style="display: inline; margin-right: 0.5rem;">See More Resources</p>
