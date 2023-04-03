@@ -5,7 +5,7 @@
         <h1>NETWORKING</h1>
         <h2 class="quote">“New Survey Reveals 85% of All Jobs are Filled Via Networking - Lou Adler”</h2>
       </section>
-      <img src="/networking/nwBG.avif" alt="networking background" style="width: 100%" >
+      <img src="/networking/nwBG.png" alt="networking background" style="width: 100%">
       <a id="why-networking"></a>
     </div>
 
