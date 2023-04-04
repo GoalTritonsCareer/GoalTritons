@@ -10,6 +10,12 @@
 
     <div id="body">
       <h2 style="margin-top: 80px;">COVER LETTER BREAKDOWN</h2>
+      <img src="/resume/cover_letter.svg">
+
+      <div class="buttondiv" style="margin-top: 80px">
+        <a href="/resume/cvTemplate.pdf" download=""><button class="downloadTemplate">Download Template</button></a>
+        <a id="cover-letter"></a>
+      </div>
 
 
 
