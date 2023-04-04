@@ -12,11 +12,19 @@
       </el-menu-item-group>
 
       <el-menu-item-group>
-        <el-menu-item index="2" class="mod menu-item-4" @click="$router.push('/resume#build-your-profile')">Build Your Profile</el-menu-item>
+        <el-menu-item index="2" class="mod menu-item-4" @click="$router.push('/resume/ResumeBreakdown')">Resume Breakdown</el-menu-item>
       </el-menu-item-group>
 
       <el-menu-item-group>
-        <el-menu-item index="3" class="mod menu-item-4" @click="$router.push('/resume#more-resources')">More Resources</el-menu-item>
+        <el-menu-item index="3" class="mod menu-item-4" @click="$router.push('/resume/CVBreakdown')">CV Breakdown</el-menu-item>
+      </el-menu-item-group>
+
+      <el-menu-item-group>
+        <el-menu-item index="4" class="mod menu-item-4" @click="$router.push('/resume/CoverLetterBreakdown')">Cover Letter</el-menu-item>
+      </el-menu-item-group>
+
+      <el-menu-item-group>
+        <el-menu-item index="5" class="mod menu-item-4" @click="$router.push('/resume#more-resources')">More Resources</el-menu-item>
       </el-menu-item-group>
 
     </el-menu>

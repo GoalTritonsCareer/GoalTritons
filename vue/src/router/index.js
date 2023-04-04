@@ -11,6 +11,8 @@ import Resume from "../views/Resume/Resume.vue"
 import ResumeAside from "../views/Resume/ResumeAside.vue"
 import Resume_vs_CV from "../views/Resume/Resume_vs_CV.vue"
 import Resume_Breakdown from "../views/Resume/Resume_Breakdown.vue"
+import CV_Breakdown from "../views/Resume/CV_Breakdown.vue"
+import Cover_Letter_Breakdown from "../views/Resume/Cover_Letter_Breakdown.vue"
 
 import NetworkingAside from "../components/NetworkingAside.vue"
 import Networking from "../views/Networking/Networking.vue"
@@ -54,8 +56,8 @@ const routes = [
     children: [
       { path: '', name: 'ResumevsCV', components: {nav: ResumeAside, con: Resume_vs_CV}},
       { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: ResumeAside, con: Resume_Breakdown}},
-      //{ path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
-      //{ path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
+      { path: 'CVBreakdown', name: 'CVBreakdown', components: {nav: ResumeAside, con: CV_Breakdown}},
+      { path: 'CoverLetterBreakdown', name: 'CoverLetterBreakdown', components: {nav: ResumeAside, con: Cover_Letter_Breakdown}},
       //{ path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
     ]
   },
