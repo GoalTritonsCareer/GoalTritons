@@ -21,7 +21,7 @@
             <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 95%">
           </div>
           <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
-          <img class="bg" src="/networking/OnlinePlatform.avif" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
+          <img class="bg" src="/networking/OnlinePlatform.png" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
         </div>
         <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
