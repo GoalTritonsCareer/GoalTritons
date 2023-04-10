@@ -1,11 +1,15 @@
 <template>
-  <div id="NetworkingTop">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>On Campus</h1>
+        <h1>ON CAMPUS</h1>
       </section>
-      <img src="/networking/ocBG.avif" alt="networking background" style="width: 100%" >
+      <picture>
+        <source srcset="/networking/ocBG.avif" type="image/avif">
+        <source srcset="/networking/ocBG.png" type="image/png">
+        <img src="/networking/ocBG.png" alt="on campus background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">
@@ -40,7 +44,11 @@
 
         <el-tab-pane label="Mentorships" name="second">
           <section class="onlinePlatformDiv">
-            <img src="/networking/mentorshipProgram.avif" alt="mentorship program" id="mentorship_img" loading="lazy" width="300" height="200">
+            <picture>
+              <source srcset="/networking/mentorshipProgram.avif" type="image/avif">
+              <source srcset="/networking/mentorshipProgram.png" type="image/png">
+              <img src="/networking/mentorshipProgram.png" alt="mentorship program" id="mentorship_img" loading="lazy" width="300" height="200">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Having a mentor is essential for your career development because they can help you clarify concerns
@@ -73,7 +81,11 @@
 
         <el-tab-pane label="Career Fairs/Events" name="third">
           <section class="onlinePlatformDiv">
-            <img src="/networking/careerFair.avif" alt="career fair" loading="lazy" width="301" height="213">
+            <picture>
+              <source srcset="/networking/careerFair.avif" type="image/avif">
+              <source srcset="/networking/careerFair.png" type="image/png">
+              <img src="/networking/careerFair.png" alt="career fair" loading="lazy" width="301" height="213">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Interacting with industry professionals and upperclassmen in the same field allows students to broaden
@@ -118,7 +130,11 @@
 
         <el-tab-pane label="Labs" name="fourth">
           <section class="onlinePlatformDiv">
-            <img src="/networking/lab.avif" alt="Lab" width="302" height="214" loading="lazy" style="clip-path: inset(2px 2px 2px 2px)">
+            <picture>
+              <source srcset="/networking/lab.avif" type="image/avif">
+              <source srcset="/networking/lab.png" type="image/png">
+              <img src="/networking/lab.png" alt="lab" loading="lazy" width="302" height="214" style="clip-path: inset(2px 2px 2px 2px)">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Labs allow in-depth exploration of your professional fields by interacting with professors, Ph.D.

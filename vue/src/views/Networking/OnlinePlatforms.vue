@@ -1,11 +1,15 @@
 <template>
-  <div id="online_platform">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>Online Platforms</h1>
+        <h1>ONLINE PLATFORMS</h1>
       </section>
-      <img src="/networking/opBG.avif" alt="networking background" style="width: 100%" >
+      <picture>
+        <source srcset="/networking/opBG.avif" type="image/avif">
+        <source srcset="/networking/opBG.png" type="image/png">
+        <img src="/networking/opBG.png" alt="online platform background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">
@@ -253,8 +257,12 @@
           <section class="onlinePlatformDiv">
             <div class="box">
               <a href="https://tritonsconnect.com/" target="_blank">
-                <img class="onlinePlatformImg" src="/networking/tritonsConnect1.avif" alt="Tritons Connect Logo" loading="lazy"
-                     style="border-radius: 15.5px; background-color: #D9EAEF">
+                <picture>
+                  <source srcset="/networking/tritonsConnectLogo.avif" type="image/avif">
+                  <source srcset="/networking/tritonsConnectLogo.png" type="image/png">
+                  <img class="onlinePlatformImg" src="/networking/tritonsConnectLogo.png" alt="Tritons Connect Logo" loading="lazy"
+                       style="border-radius: 15.5px; background-color: #D9EAEF">
+                </picture>
               </a>
             </div>
             <div class="onlinePlatformDescription">
@@ -274,9 +282,13 @@
 
           <section style="margin-top: 6%; padding: 0 4%">
             <p id="highlight">Highlight</p>
-            <img src="/networking/tritonsConnect2.avif" alt="tritonsConnectHighlight" loading="lazy" style="width: 100%">
+            <picture>
+              <source srcset="/networking/tritonsConnectHighlight.avif" type="image/avif">
+              <source srcset="/networking/tritonsConnectHighlight.png" type="image/png">
+              <img src="/networking/tritonsConnectHighlight.png" alt="Tritons Connect Highlight" loading="lazy"
+                   style="width: 100%">
+            </picture>
             <img src="/networking/mentoringOption.svg" alt="mentoringOptions" loading="lazy" style="margin-top: 50px">
-
 
             <div style="text-align: right; margin-top: 50px; margin-bottom: 50px">
               <a href="https://www.youtube.com/watch?v=5hbQZhav7Q4" target="_blank" style="text-decoration: none; color: #1E4460">

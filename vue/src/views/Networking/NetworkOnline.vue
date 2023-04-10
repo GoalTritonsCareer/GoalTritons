@@ -1,11 +1,15 @@
 <template>
-  <div id="NetworkingTop">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>How to Network Online?</h1>
+        <h1>HOW TO NETWORK ONLINE</h1>
       </section>
-      <img src="/networking/htnoBG.avif" alt="networking background" style="width: 100%" >
+      <picture>
+        <source srcset="/networking/htnoBG.avif" type="image/avif">
+        <source srcset="/networking/htnoBG.png" type="image/png">
+        <img src="/networking/htnoBG.png" alt="how to network online background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">
@@ -260,7 +264,7 @@ h4 {
 #a1 {
   top: 95px;
   left: -30px;
-  width: 127px;
+  width: 13ch;
 }
 #l1 {
   top: 98px;
@@ -274,7 +278,7 @@ h4 {
 #a2 {
   top: 140px;
   left: 648px;
-  width: 108px;
+  width: 11ch;
 }
 #l2 {
   top: 140px;
@@ -288,7 +292,7 @@ h4 {
 #a3 {
   top: 160px;
   left: -30px;
-  width: 166px;
+  width: 17ch;
 }
 #l3 {
   top: 158px;
@@ -302,7 +306,7 @@ h4 {
 #a4 {
   top: 225px;
   left: 669px;
-  width: 128px;
+  width: 13.1ch;
 }
 #l4 {
   top: 222px;

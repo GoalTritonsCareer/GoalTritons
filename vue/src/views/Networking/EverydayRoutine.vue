@@ -1,12 +1,15 @@
 <template>
-  <div id="NetworkingTop">
-
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>Everyday Routine</h1>
+        <h1>EVERYDAY ROUTINE</h1>
       </section>
-      <img src="/networking/erBG.avif" alt="networking background" style="width: 100%" >
+      <picture>
+        <source srcset="/networking/erBG.avif" type="image/avif">
+        <source srcset="/networking/erBG.png" type="image/png">
+        <img src="/networking/erBG.png" alt="everyday routine background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">

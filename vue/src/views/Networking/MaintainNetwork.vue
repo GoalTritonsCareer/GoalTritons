@@ -1,12 +1,15 @@
 <template>
-  <div id="NetworkingTop">
-
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back">&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>Everyday Routine</h1>
+        <h1>HOW TO MAINTAIN NETWORK</h1>
       </section>
-      <img src="/networking/htmnBG.avif" alt="networking background" style="width: 100%" >
+      <picture>
+        <source srcset="/networking/htmnBG.avif" type="image/avif">
+        <source srcset="/networking/htmnBG.png" type="image/png">
+        <img src="/networking/htmnBG.png" alt="how to maintain network background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">

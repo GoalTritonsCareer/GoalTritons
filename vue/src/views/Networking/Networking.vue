@@ -21,21 +21,33 @@
             <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 95%">
           </div>
           <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
-          <img class="bg" src="/networking/OnlinePlatform.png" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
+          <picture>
+            <source srcset="/networking/OnlinePlatform.avif" type="image/avif">
+            <source srcset="/networking/OnlinePlatform.png" type="image/png">
+            <img class="bg" src="/networking/OnCampus.png" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
+          </picture>
         </div>
         <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
             <p>On Campus</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/OnCampus.avif" alt="On Campus Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/OnCampus.avif" type="image/avif">
+            <source srcset="/networking/OnCampus.png" type="image/png">
+            <img class="bg" src="/networking/OnCampus.png" alt="On Campus Module" loading="lazy">
+          </picture>
         </div>
         <div class="container" @click="$router.push('/networking/EverydayRoutine')">
           <div class="cover">
             <p>Everyday Routine</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/EverydayRoutine.avif" alt="Everyday Routine Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/EverydayRoutine.avif" type="image/avif">
+            <source srcset="/networking/EverydayRoutine.png" type="image/png">
+            <img class="bg" src="/networking/EverydayRoutine.png" alt="Everyday Routine Module" loading="lazy">
+          </picture>
         </div>
         <p>Learn how to network through different online platforms.</p>
         <p>Learn how to network on campus.</p>
@@ -50,7 +62,11 @@
             <p>How to Network<br>Online</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="/networking/HTNO.avif" class="bg" alt="How to Network Online Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/HTNO.avif" type="image/avif">
+            <source srcset="/networking/HTNO.png" type="image/png">
+            <img class="bg" src="/networking/HTNO.png" alt="How to Network Online Module" loading="lazy">
+          </picture>
         </div>
         <div class="container" @click="$router.push('/networking/MaintainNetwork')">
           <div class="cover">
