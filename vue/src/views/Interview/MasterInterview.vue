@@ -6,7 +6,11 @@
         <h3 class="back" >&lt; <span @click="$router.push('/interview')" style="text-decoration: underline; cursor: pointer">Interview</span></h3>
         <h1>MASTER AN INTERVIEW</h1>
       </section>
-      <img class="bg" src="/interview/MasterInterviewTop.avif" alt="interview background" style="width: 100%">
+      <picture>
+        <source  srcset="/interview/MasterInterviewTop.avif" type="image/avif">
+        <source srcset="/interview/MasterInterviewTop.png" type="image/png">
+        <img  class="bg" src="/interview/MasterInterviewTop.png" alt="MasterInterviewTop" style="width: 100%">
+      </picture>
     </div>
 
     <div style="text-align: right; margin-top: 82px; margin-bottom: 50px; margin-right: 8%">

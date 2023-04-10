@@ -6,7 +6,11 @@
                                     style="text-decoration: underline; cursor: pointer">Interview</span></h3>
         <h1>INTERVIEW QUESTION TYPES</h1>
       </section>
-      <img src="/interview/InterviewQuestionTypesTop.avif" alt="networking background" style="width: 100%">
+      <picture>
+        <source srcset="/interview/InterviewQuestionTypesTop.avif" type="image/avif">
+        <source srcset="/interview/InterviewQuestionTypesTop.png" type="image/png">
+        <img src="/interview/InterviewQuestionTypesTop.png" alt="Interview background" style="width:100%">
+      </picture>
       <a id="why-networking"></a>
     </div>
 
@@ -18,7 +22,7 @@
               helps the company to evaluate whether you are a <strong>good fit</strong> through learning about <strong>YOU</strong>.
             </p>
 
-            <img src="/interview/sampleQ1.svg">
+            <img src="/interview/sampleQ1.svg" style="width: 100%">
 
             <h3 style="margin-top: 3rem; margin-left: 0.5vw; margin-bottom: 2vh; font-size: 26px">Tips:</h3>
 
@@ -32,7 +36,11 @@
 
                 <div class="DYdiv">
                   <div>
-                    <img class="DYimg" src="/interview/researchEmoji.avif">
+                    <picture>
+                      <source srcset="/interview/researchEmoji.avif" type="image/avif">
+                      <source srcset="/interview/researchEmoji.png" type="image/png">
+                      <img class="DYimg" src="/interview/researchEmoji.avif" alt="researchEmoji" >
+                    </picture>
                   </div>
 
                   <div>
@@ -64,7 +72,11 @@
 
                 <div class="DYdiv" style="align-items: center">
                   <div>
-                    <img class="DYimg" src="/interview/speechEmoji.avif" style="vertical-align: middle">
+                    <picture>
+                      <source  srcset="/interview/speechEmoji.avif" type="image/avif">
+                      <source srcset="/interview/speechEmoji.png" type="image/png">
+                      <img  class="DYimg" src="/interview/speechEmoji.png" alt="speechEmoji" style="vertical-align: middle">
+                    </picture>
                   </div>
 
                   <div>
