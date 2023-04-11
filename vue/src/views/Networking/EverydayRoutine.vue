@@ -1,47 +1,16 @@
 <template>
   <div>
-
-    <h1>Networking</h1>
-
-    <p class="normal">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</p>
-
-
-    <a id="everydayRoutine"></a>
-    <div>
-      <h2>Route Three: Networking in Everyday Routine <a id="whoToNetworkWith"></a></h2>
-      <div>
-        <h3>Who can you network with everyday?</h3>
-
-        <div>
-
-          <p id="NetworkingOnCampus">Everyday Networking</p>
-
-          <div style="margin-bottom: 50px">
-            <p id="NCspan1">Faculty</p>
-            <p id="NCspan2">Peers</p>
-            <a id="faculty"></a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div>
-        <h3>Faculty</h3>
-        <div>
-          <h4>Why Networking with the Faculty?</h4>
-          <img src="/networking/whyNetworkWithFaculty.svg" alt="Why Networking with the Faculty">
-        </div>
-
-        <div>
-          <h4>How to Network with the Faculty?</h4>
-
-
-          <div style="text-align: left; margin-left: 50px">
-            <div style="display: flex; flex-direction: row; text-align: left; margin: 50px 0px 20px 30px">
-              <p class="step step1Color" style="width:65px">Step 1</p>
-              <p class="stepTitle">Research & learn about your interested professors</p>
-            </div>
+    <div id="heading" style="position: relative">
+      <section class="title">
+        <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
+        <h1>EVERYDAY ROUTINE</h1>
+      </section>
+      <picture>
+        <source srcset="/networking/erBG.avif" type="image/avif">
+        <source srcset="/networking/erBG.png" type="image/png">
+        <img src="/networking/erBG.png" alt="everyday routine background" style="width: 100%">
+      </picture>
+    </div>
 
     <div id="body">
       <h2 style="margin-bottom: 0">Who can you network with everyday?</h2>
@@ -157,7 +126,6 @@
 
 <script lang="ts">
 import {TabsPaneContext} from "element-plus";
-
 export default {
   name: "EverydayRoutine",
   mounted() {
@@ -203,22 +171,18 @@ export default {
 .s2Tips p{
   margin-left: 12vw;
 }
-
 .s2Tips ul{
   margin-left: 15vw;
   margin-bottom: 20px;
 }
-
 .s2Tips img{
   margin-left: 20vw;
   margin-bottom: 30px;
 }
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-
 .step {
   border-radius: 45px;
   font-size: 15px;
@@ -288,27 +252,5 @@ export default {
     max-height: 210px;
     transform: translate(30px, -10px);
   }
-}
-.step {
-  border-radius: 45px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  height: 35px;
-  margin-right: 5px;
-  padding-top: 5px;
-}
-.stepTitle {
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.step1Color {
-  background-color: #F8EFDA;
-}
-
-.step2Color {
-  background-color: #FEECC0;
 }
 </style>
