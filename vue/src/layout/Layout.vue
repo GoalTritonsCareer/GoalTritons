@@ -94,11 +94,14 @@ export default {
   .header {
     width: 100vw;
   }
+  .wrapper__aside {
+    width: 19%;
+  }
   .wrapper__body{
-    /*margin-left: calc(0.5vw + 250px) !important;*/
+    margin-left: 19%;
   }
   .wrapper__footer{
-    /*margin-left: calc(0.5vw + 250px) !important;*/
+    margin-left: 19%;
   }
 }
 /* 多数Pad */

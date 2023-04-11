@@ -15,10 +15,10 @@
           </el-form>
           <el-button class="subscribe" type="primary" @click="subscribe">Subscribe</el-button>
         </div>
-        <p style="font-weight: 600; margin-top: 15px; font-size: 15px; line-height: 141%">We aim to provide UCSD
+        <p style="font-weight: 600; margin-top: 15px; font-size: 15px">We aim to provide UCSD
           students a smooth experience in developing their professional paths and approaching their career goal
         </p>
-        <p style="font-weight: 700; margin-top: 20px; font-size: 15px; line-height: 141%">Copyright:
+        <p style="font-weight: 700; margin-top: 20px; font-size: 15px">Copyright:
           2022 by Goal Tritons</p>
       </div>
     </div>

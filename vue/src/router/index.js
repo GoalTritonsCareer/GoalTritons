@@ -7,16 +7,17 @@ import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
 import Interview from "../views/Interview/Interview.vue"
 
-import Resume from "../views/Resume/Resume.vue"
-import ResumeAside from "../views/Resume/ResumeAside.vue"
+import ResumeAside from "../components/ResumeAside.vue"
 import Resume_vs_CV from "../views/Resume/Resume_vs_CV.vue"
 import Resume_Breakdown from "../views/Resume/Resume_Breakdown.vue"
+import CV_Breakdown from "../views/Resume/CV_Breakdown.vue"
+import Cover_Letter_Breakdown from "../views/Resume/Cover_Letter_Breakdown.vue"
 
 import NetworkingAside from "../components/NetworkingAside.vue"
 import Networking from "../views/Networking/Networking.vue"
 import EverydayRoutine from "../views/Networking/EverydayRoutine.vue"
 import MaintainNetwork from "../views/Networking/MaintainNetwork.vue"
-import NetworkingOnline from "../views/Networking/NetworkingOnline.vue"
+import NetworkingOnline from "../views/Networking/NetworkOnline.vue"
 import OnCampus from "../views/Networking/OnCampus.vue"
 import OnlinePlatforms from "../views/Networking/OnlinePlatforms.vue"
 const routes = [
@@ -53,9 +54,9 @@ const routes = [
     component: Layout,
     children: [
       { path: '', name: 'ResumevsCV', components: {nav: ResumeAside, con: Resume_vs_CV}},
-      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: InterviewAside, con: Resume_Breakdown}},
-      //{ path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
-      //{ path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
+      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: ResumeAside, con: Resume_Breakdown}},
+      { path: 'CVBreakdown', name: 'CVBreakdown', components: {nav: ResumeAside, con: CV_Breakdown}},
+      { path: 'CoverLetterBreakdown', name: 'CoverLetterBreakdown', components: {nav: ResumeAside, con: Cover_Letter_Breakdown}},
       //{ path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
     ]
   },
@@ -67,7 +68,7 @@ const routes = [
       { path: '', name: 'networking', components: { nav: NetworkingAside, con: Networking}},
       { path: 'EverydayRoutine', name: 'EverydayRoutine', components: {nav: NetworkingAside, con: EverydayRoutine}},
       { path: 'MaintainNetwork', name: 'MaintainNetwork', components: {nav: NetworkingAside, con: MaintainNetwork}},
-      { path: 'NetworkingOnline', name: 'NetworkingOnline', components: {nav: NetworkingAside, con: NetworkingOnline}},
+      { path: 'NetworkOnline', name: 'NetworkOnline', components: {nav: NetworkingAside, con: NetworkingOnline}},
       { path: 'OnCampus', name: 'OnCampus', components: {nav: NetworkingAside, con: OnCampus}},
       { path: 'OnlinePlatforms', name: 'OnlinePlatforms', components: {nav: NetworkingAside, con: OnlinePlatforms}},
     ]

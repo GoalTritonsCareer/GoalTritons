@@ -1,22 +1,25 @@
 <template>
-  <div id="NetworkingTop">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back" >&lt; <span @click="$router.push('/networking#home')" style="text-decoration: underline; cursor: pointer">Networking</span></h3>
-        <h1>On Campus</h1>
+        <h1>ON CAMPUS</h1>
       </section>
-      <img src="/networking/ocBG.svg" alt="networking background" style="width: 100%" >
-      <a id="why-networking"></a>
+      <picture>
+        <source srcset="/networking/ocBG.avif" type="image/avif">
+        <source srcset="/networking/ocBG.png" type="image/png">
+        <img src="/networking/ocBG.png" alt="on campus background" style="width: 100%">
+      </picture>
     </div>
 
     <div id="body">
       <img id="whyOnlinePlatformsImg" src="/networking/whyOnCampus.svg" alt="Why On Campus?">
 
-      <h2 style="margin-bottom: 0px">Where to Network on Campus?</h2>
+      <h2 style="margin-bottom: 0">Where to Network on Campus?</h2>
       <el-tabs v-model="activeName" class="demo-tabs" stretch="true" @tab-click="handleClick">
         <el-tab-pane label="Student Orgs" name="first">
           <section class="onlinePlatformDiv">
-            <img src="/networking/newStudentOrg.svg">
+            <img src="/networking/studentOrg.svg" alt="student org picture" loading="lazy">
 
             <div class="onlinePlatformDescription">
               <p>UCSD hosts a handful of student orgs where you can not meet peers who share your interests, but also
@@ -28,24 +31,24 @@
                 <li>Pay close attention to posters/pamplets around the campus.</li>
               </ul>
             </div>
-
-
           </section>
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; ">See Full List of Student Orgs</p>
-              &nbsp;
+              <p class ="link" style="display: inline; ">See Full List of Student Orgs</p>&nbsp;
               <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
           </div>
-
         </el-tab-pane>
 
-        <el-tab-pane label="Mentorships" name="second" >
+        <el-tab-pane label="Mentorships" name="second">
           <section class="onlinePlatformDiv">
-            <img src="/networking/newMentorship.svg">
+            <picture>
+              <source srcset="/networking/mentorshipProgram.avif" type="image/avif">
+              <source srcset="/networking/mentorshipProgram.png" type="image/png">
+              <img src="/networking/mentorshipProgram.png" alt="mentorship program" id="mentorship_img" loading="lazy" width="300" height="200">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Having a mentor is essential for your career development because they can help you clarify concerns
@@ -68,18 +71,21 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://vcsa.ucsd.edu/_files/Mentorship-Programs-Guide-20211014.pdf" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline">See All Mentorship Programs at UCSD</p>
-              &nbsp;
+              <p class ="link" style="display: inline">See All Mentorship Programs at UCSD</p>&nbsp;
               <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
-            <a id="mentorshipPrograms"></a>
+            <a id="careerFairs"></a>
           </div>
 
         </el-tab-pane>
 
         <el-tab-pane label="Career Fairs/Events" name="third">
           <section class="onlinePlatformDiv">
-            <img src="/networking/newCareerFair.svg">
+            <picture>
+              <source srcset="/networking/careerFair.avif" type="image/avif">
+              <source srcset="/networking/careerFair.png" type="image/png">
+              <img src="/networking/careerFair.png" alt="career fair" loading="lazy" width="301" height="213">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Interacting with industry professionals and upperclassmen in the same field allows students to broaden
@@ -115,16 +121,19 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; ">See Full List of Career Fairs/Events</p>
-              &nbsp;
-              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
+              <p class ="link" style="display: inline; ">See Full List of Career Fairs/Events</p>&nbsp;
+              <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow" loading="lazy">
             </a>
           </div>
-
         </el-tab-pane>
+
         <el-tab-pane label="Labs" name="fourth">
           <section class="onlinePlatformDiv">
-            <img src="/networking/newLab.svg" alt="lab picture" loading="lazy">
+            <picture>
+              <source srcset="/networking/lab.avif" type="image/avif">
+              <source srcset="/networking/lab.png" type="image/png">
+              <img src="/networking/lab.png" alt="lab" loading="lazy" width="302" height="214" style="clip-path: inset(2px 2px 2px 2px)">
+            </picture>
 
             <div class="onlinePlatformDescription">
               <p>Labs allow in-depth exploration of your professional fields by interacting with professors, Ph.D.
@@ -146,8 +155,7 @@
 
           <div style="text-align: right; margin-top: 15px; margin-bottom: 20px">
             <a href="https://studentorg.ucsd.edu/" target="_blank" style="text-decoration: none; color: #1E4460">
-              <p class ="link" style="display: inline; ">See Full List of Labs</p>
-              &nbsp;
+              <p class ="link" style="display: inline; ">See Full List of Labs</p>&nbsp;
               <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow">
             </a>
             <a id="mentorshipPrograms"></a>
@@ -208,8 +216,10 @@ export default {
   text-align: center;
   width: 95%;
   margin: 2% auto;
-
+  /*margin-left: 12vw;*/
 }
+
+
 .onlinePlatformDescription{
   display: inline-block;
   border-radius: 2rem;
@@ -232,5 +242,32 @@ export default {
 .HTNWFsubdiv p{
   display: inline-block;
   margin-left: 0.5rem;
+}
+
+.intextLink {
+  color: #0467B0;
+  text-decoration: none;
+  font-weight: 500;
+}
+.intextLink:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+@media (max-width: 1279px) {
+  #body {
+    padding: 0 4%;
+  }
+  #mentorship_img {
+    width: 250px;
+    height: 167px;
+  }
+  .onlinePlatformDescription {
+    width: 76%;
+    padding: 0;
+    margin-left: 1rem;
+  }
+  .onlinePlatformDiv {
+    width: 100%;
+  }
 }
 </style>

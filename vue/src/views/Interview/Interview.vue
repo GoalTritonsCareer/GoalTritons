@@ -2,9 +2,13 @@
   <div id="home">
     <div id="heading" style="position: relative">
       <section class="title">
-        <h1>Interview Prep</h1>
+        <h1>INTERVIEW PREP</h1>
       </section>
-      <img src="/interview/interviewPrep.avif" alt="interview background" style="width: 100%" >
+      <picture>
+        <source srcset="/interview/interviewPrep.avif" type="image/avif">
+        <source srcset="/interview/interviewPrep.png" type="image/png">
+        <img src="/interview/interviewPrep.png" alt="Interview background" style="width:100%">
+      </picture>
       <a id="why-interview"></a>
     </div>
 
@@ -28,7 +32,7 @@
           </div>
           <img class="bg" src="/interview/HomeInterviewSteps.svg" alt="Interview Steps Module" loading="lazy">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/interview/MasterInterview')">
           <div class="cover">
             <p>Master An Interview</p>
             <img src="/cover4.svg" alt="Cover" loading="lazy">
