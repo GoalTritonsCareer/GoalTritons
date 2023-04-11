@@ -5,7 +5,12 @@
         <h1>RESUME / CV & COVER LETTER</h1>
 
       </section>
-      <img src="/resume/resumeHomeBG.svg" alt="resume background" style="width: 100%" >
+      <picture>
+
+        <source srcset="/resume/resumeHomeBG.svg" type="image/svg">
+        <img src="/resume/resumeHomeBG.svg" alt="resume background" style="width: 100%" >
+      </picture>
+
       <a id="resume-vs-cv"></a>
     </div>
 
@@ -21,7 +26,12 @@
             <p>Resume</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/resume/resumeImg.avif" alt="Resume Breakdown Module" loading="lazy">
+          <picture>
+            <source srcset="/resume/resumeImg.avif">
+            <source srcset="/resume/resumeImg.svg">
+            <img class="bg" src="/resume/resumeImg.svg" alt="Resume Breakdown Module" loading="lazy">
+          </picture>
+
         </div>
         <div class="container" @click="$router.push('/resume/CVBreakdown')" >
           <div class="cover">

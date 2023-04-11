@@ -5,7 +5,12 @@
         <h3 class="back" >&lt; <span @click="$router.push('/resume')" style="text-decoration: underline; cursor: pointer">Resume/CV/Cover Letter</span></h3>
         <h1>COVER LETTER</h1>
       </section>
-      <img src="/resume/CoverLetterBG.avif" alt="resume breakdown background" style="width: 100%" >
+      <picture>
+        <source srcset="/resume/CoverLetterBG.avif">
+        <source srcset="/resume/CoverLetterBG.svg">
+        <img src="/resume/CoverLetterBG.svg" alt="resume breakdown background" style="width: 100%" >
+      </picture>
+
     </div>
 
     <div id="body">
