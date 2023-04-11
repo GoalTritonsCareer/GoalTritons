@@ -3,9 +3,9 @@
     <div id="heading" style="position: relative">
       <section class="title">
         <h1>NETWORKING</h1>
-        <h2 class="subtitle">“New Survey Reveals 85% of All Jobs are Filled Via Networking”</h2>
+        <h2 class="quote">“New Survey Reveals 85% of All Jobs are Filled Via Networking - Lou Adler”</h2>
       </section>
-      <img src="/networking/nwBG.avif" alt="networking background" style="width: 100%" >
+      <img src="/networking/nwBG.png" alt="networking background" style="width: 100%">
       <a id="why-networking"></a>
     </div>
 
@@ -18,24 +18,36 @@
         <div class="container" @click="$router.push('/networking/OnlinePlatforms')">
           <div class="cover">
             <p>Online Platforms</p>
-            <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 75%">
+            <img src="/cover3.svg" alt="Cover" loading="lazy" style="opacity: 95%">
           </div>
           <!-- 注意：这行的brightness仅仅适用于此图片，因为图片本身较暗的原因-->
-          <img class="bg" src="/networking/OnlinePlatform.svg" alt="Online Platforms Module" loading="lazy" style="filter: brightness(1.75)">
+          <picture>
+            <source srcset="/networking/OnlinePlatform.avif" type="image/avif">
+            <source srcset="/networking/OnlinePlatform.png" type="image/png">
+            <img class="bg" src="/networking/OnCampus.png" alt="Online Platforms Module" loading="lazy" style="filter: brightness(2)">
+          </picture>
         </div>
         <div class="container" @click="$router.push('/networking/OnCampus')">
           <div class="cover">
             <p>On Campus</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/OnCampus.svg" alt="On Campus Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/OnCampus.avif" type="image/avif">
+            <source srcset="/networking/OnCampus.png" type="image/png">
+            <img class="bg" src="/networking/OnCampus.png" alt="On Campus Module" loading="lazy">
+          </picture>
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/EverydayRoutine')">
           <div class="cover">
             <p>Everyday Routine</p>
             <img src="/cover3.svg" alt="Cover" loading="lazy">
           </div>
-          <img class="bg" src="/networking/EverydayRoutine.svg" alt="Everyday Routine Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/EverydayRoutine.avif" type="image/avif">
+            <source srcset="/networking/EverydayRoutine.png" type="image/png">
+            <img class="bg" src="/networking/EverydayRoutine.png" alt="Everyday Routine Module" loading="lazy">
+          </picture>
         </div>
         <p>Learn how to network through different online platforms.</p>
         <p>Learn how to network on campus.</p>
@@ -45,19 +57,23 @@
       <a id="networking-in-practice"></a>
       <h2>NETWORKING IN PRACTICE</h2>
       <section id="practice">
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/NetworkOnline')">
           <div class="cover">
             <p>How to Network<br>Online</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="/networking/HTNO.svg" class="bg" alt="How to Network Online Module" loading="lazy">
+          <picture>
+            <source srcset="/networking/HTNO.avif" type="image/avif">
+            <source srcset="/networking/HTNO.png" type="image/png">
+            <img class="bg" src="/networking/HTNO.png" alt="How to Network Online Module" loading="lazy">
+          </picture>
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/networking/MaintainNetwork')">
           <div class="cover">
             <p>How to Maintain<br>Network</p>
             <img src="/cover2.svg" alt="Cover" loading="lazy">
           </div>
-          <img src="/networking/HTMN.svg" class="bg" alt="How to Maintain Network Module" loading="lazy">
+          <img src="/networking/HTMN.png" class="bg" alt="How to Maintain Network Module" loading="lazy">
         </div>
 
         <p>Learn about how to network online step-by-step.</p>
@@ -145,5 +161,14 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+}
+/* 小电脑及大Pad */
+@media (max-width: 1279px) {
+  .quote {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 45px;
+  }
 }
 </style>
