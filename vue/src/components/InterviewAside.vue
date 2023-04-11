@@ -1,6 +1,6 @@
 <template>
   <el-col :span="12">
-    <h5 class="menu" @click="$router.push('/interview#home')">Interview Prep</h5>
+    <h5 class="menu" @click="$router.push('/interview#home')">INTERVIEW PREP</h5>
     <el-menu
         class="el-menu-vertical-demo"
         default-active="0"
@@ -13,7 +13,7 @@
 
       <el-sub-menu index="2">
         <template #title>
-          <span class="mod" @click="$router.push('/interview#interview-breakdown')">Interview Breakdown</span>
+          <span class="mod menu-item-2" @click="$router.push('/interview#interview-breakdown')">Interview Breakdown</span>
         </template>
         <el-menu-item-group>
           <el-menu-item index="2-1" class="sub1" @click="$router.push('/interview/InterviewQuestions')">Interview Question Types</el-menu-item>
@@ -63,10 +63,6 @@ export default {
 .sub1{
   font-size: 13px;
   color: #636363;
-}
-.sub2{
-  font-size: 12px;
-  color: #5E8090;
 }
 .el-menu-vertical-demo {
   border: none !important;

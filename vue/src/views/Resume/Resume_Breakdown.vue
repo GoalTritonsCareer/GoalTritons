@@ -162,6 +162,7 @@
               <p class="strongActionVerbs">Helping Skills</p>
               <p class="strongActionVerbs">Accomplishments</p>
             </div>
+            <a id="impact-statement"></a>
           </div>
 
 

@@ -80,7 +80,7 @@
               <p id="part4" class="profileHeader">Part 4: Polish Your Experiences</p>
               <div>
                 <ul>
-                  <li>Use <span class="moreResLink" @click="$router.push('/resume#impactStatements')">
+                  <li>Use <span class="moreResLink" @click="$router.push('/resume/ResumeBreakdown#impact-statement')">
                 Impact Statements</span> to describe what you did.
                   </li>
                   <li>Add <span class="medium">featured media</span> to showcase works you are proud of.</li>

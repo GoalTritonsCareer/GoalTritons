@@ -1,6 +1,6 @@
 <template>
   <el-col :span="12">
-    <h5 class="menu" @click="$router.push('/networking#home')">Networking</h5>
+    <h5 class="menu" @click="$router.push('/networking#home')">NETWORKING</h5>
     <el-menu
         class="el-menu-vertical-demo"
         default-active="0"
@@ -22,7 +22,7 @@
           <el-menu-item index="2-2" class="sub1" @click="$router.push('/networking/OnCampus')">On Campus</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="2-3" class="sub1" @click="$router.push('/networking/EverydayRoutine')" disabled>Everyday Routine</el-menu-item>
+          <el-menu-item index="2-3" class="sub1" @click="$router.push('/networking/EverydayRoutine')">Everyday Routine</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
 
@@ -34,7 +34,7 @@
           <el-menu-item index="3-1" class="sub1" @click="$router.push('/networking/NetworkOnline')">How to Network Online</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="3-2" class="sub1" @click="$router.push('/networking/MaintainNetwork')" disabled>How to Maintain Network</el-menu-item>
+          <el-menu-item index="3-2" class="sub1" @click="$router.push('/networking/MaintainNetwork')">How to Maintain Network</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
 
