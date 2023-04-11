@@ -136,8 +136,6 @@ export default {
 }
 </script>
 
-
-
 <style scoped>
 @import "../../assets/content.css";
 

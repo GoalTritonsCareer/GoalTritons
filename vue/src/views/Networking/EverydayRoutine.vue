@@ -126,7 +126,6 @@
 
 <script lang="ts">
 import {TabsPaneContext} from "element-plus";
-
 export default {
   name: "EverydayRoutine",
   mounted() {
@@ -172,22 +171,18 @@ export default {
 .s2Tips p{
   margin-left: 12vw;
 }
-
 .s2Tips ul{
   margin-left: 15vw;
   margin-bottom: 20px;
 }
-
 .s2Tips img{
   margin-left: 20vw;
   margin-bottom: 30px;
 }
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-
 .step {
   border-radius: 45px;
   font-size: 15px;

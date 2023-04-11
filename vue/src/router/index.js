@@ -1,13 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "../layout/Layout.vue";
+
 import InterviewAside from "../components/InterviewAside.vue"
 import InterviewQuestions from "../views/Interview/InterviewQuestions.vue"
 import InterviewSteps from "../views/Interview/InterviewSteps.vue"
 import MasterInterview from "../views/Interview/MasterInterview.vue"
-import WhyInterview from "../views/Interview/WhyInterview.vue"
-import ResumeAside from "../components/ResumeAside.vue";
-import Resume from "../views/Resume.vue";
-import ResumeVsCV from "../views/ResumeVsCV.vue";
+import Interview from "../views/Interview/Interview.vue"
+
+import Resume from "../views/Resume/Resume.vue"
+import ResumeAside from "../views/Resume/ResumeAside.vue"
+import Resume_vs_CV from "../views/Resume/Resume_vs_CV.vue"
+import Resume_Breakdown from "../views/Resume/Resume_Breakdown.vue"
+import CV_Breakdown from "../views/Resume/CV_Breakdown.vue"
+import Cover_Letter_Breakdown from "../views/Resume/Cover_Letter_Breakdown.vue"
 
 import NetworkingAside from "../components/NetworkingAside.vue"
 import Networking from "../views/Networking/Networking.vue"
@@ -16,23 +21,11 @@ import MaintainNetwork from "../views/Networking/MaintainNetwork.vue"
 import NetworkingOnline from "../views/Networking/NetworkOnline.vue"
 import OnCampus from "../views/Networking/OnCampus.vue"
 import OnlinePlatforms from "../views/Networking/OnlinePlatforms.vue"
-
-
-
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue')
-  },
-  {
-    path: '/resume',
-    name: 'resume-page',
-    component: Layout,
-    children: [
-      // { path: '', name: 'resume', components: { nav: ResumeAside, con: Resume} },
-      // { path: 'resume-vs-cv', name: 'ResumeVsCV', components: { nav: ResumeAside, con: ResumeVsCV} },
-    ],
   },
   //  TODO: apply the layout above to the pages below
   // {
@@ -50,11 +43,22 @@ const routes = [
     name: 'interview-page',
     component: Layout,
     children: [
-      { path: 'Opening', name: 'Opening', components: {nav: InterviewAside, con: WhyInterview}},
-      { path: 'WhyInterview', name: 'WhyInterview', components: {nav: InterviewAside, con: WhyInterview}},
+      { path: '', name: 'interview', components: {nav: InterviewAside, con: Interview}},
       { path: 'InterviewQuestions', name: 'InterviewQuestions', components: {nav: InterviewAside, con: InterviewQuestions}},
       { path: 'InterviewSteps', name: 'InterviewSteps', components: {nav: InterviewAside, con: InterviewSteps}},
       { path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
+    ]
+  },
+  {
+    path: '/resume',
+    name: 'resume-page',
+    component: Layout,
+    children: [
+      { path: '', name: 'ResumevsCV', components: {nav: ResumeAside, con: Resume_vs_CV}},
+      { path: 'ResumeBreakdown', name: 'ResumeBreakdown', components: {nav: ResumeAside, con: Resume_Breakdown}},
+      { path: 'CVBreakdown', name: 'CVBreakdown', components: {nav: ResumeAside, con: CV_Breakdown}},
+      { path: 'CoverLetterBreakdown', name: 'CoverLetterBreakdown', components: {nav: ResumeAside, con: Cover_Letter_Breakdown}},
+      //{ path: 'MasterInterview', name: 'MasterInterview', components: {nav: InterviewAside, con: MasterInterview}},
     ]
   },
   {

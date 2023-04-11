@@ -87,13 +87,13 @@
 
         <el-sub-menu index="4" popper-offset="13">
           <template #title>
-            <span class="mod menu-item-4" @click="$router.push('/resume')">Resume</span>
+            <span class="mod menu-item-4" @click="$router.push('/resume#home')">Resume</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume/resume-vs-cv')">Resume vs. CV</el-menu-item>
+            <el-menu-item index="4-1" class="sub1" @click="$router.push('/resume#resume-vs-cv')">Resume vs. CV</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="4-2" class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</el-menu-item>
+            <el-menu-item index="4-2" class="sub1" @click="$router.push('/resume#build-your-profile')">Build Your Profile</el-menu-item>
           </el-menu-item-group>
           <!--          <el-sub-menu index="4-2" style="margin-top: 0">-->
           <!--            <template #title ><span class="sub1" @click="$router.push('/resume#resume-breakdown')">Resume Breakdown</span></template>-->
@@ -103,37 +103,22 @@
           <!--            <el-menu-item index="4-2-4" class="sub2" @click="$router.push('/resume#polish-resume')">Polish Your Resume</el-menu-item>-->
           <!--          </el-sub-menu>-->
           <el-menu-item-group>
-            <el-menu-item index="4-3" class="sub1" @click="$router.push('/resume#cv-breakdown')">CV Breakdown</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group>
-            <el-menu-item index="4-4" class="sub1" @click="$router.push('/resume#cover-letter')">Cover Letter</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group>
-            <el-menu-item index="4-5" class="sub1" @click="$router.push('/resume#more-resources')">More Resources</el-menu-item>
+            <el-menu-item index="4-3" class="sub1" @click="$router.push('/resume#more-resources')">More Resources</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
 
         <el-sub-menu index="5" popper-offset="13">
           <template #title>
-            <span class="mod" @click="$router.push('/interview/Opening')">Interview Prep</span>
+            <span class="mod" @click="$router.push('/interview#home')">Interview Prep</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview/WhyInterview')">Why Interview</el-menu-item>
+            <el-menu-item index="5-1" class="sub1" @click="$router.push('/interview#why-interview')">Why Interview</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5-2" class="sub1" @click="$router.push('/interview/InterviewQuestions')">Interview Questions</el-menu-item>
-          </el-menu-item-group>
-          <!--          <el-sub-menu index="5-2" style="margin-top: 0">-->
-          <!--            <template #title><span class="sub1" @click="$router.push('/interview#interviewQuestions')">Interview Questions</span></template>-->
-          <!--            <el-menu-item index="5-2-1" class="sub2" @click="$router.push('/interview#defineYourself')">Define Yourself</el-menu-item>-->
-          <!--            <el-menu-item index="5-2-2" class="sub2" @click="$router.push('/interview#BehavioralQuestions')">Behavioral</el-menu-item>-->
-          <!--            <el-menu-item index="5-2-3" class="sub2" @click="$router.push('/interview#TechnicalQuestions')">Technical</el-menu-item>-->
-          <!--          </el-sub-menu>-->
-          <el-menu-item-group>
-            <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview/InterviewSteps')">Interview Steps</el-menu-item>
+            <el-menu-item index="5-2" class="sub1" @click="$router.push('/interview#interview-breakdown')">Interview Breakdown</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-            <el-menu-item index="5-4" class="sub1" @click="$router.push('/interview/MasterInterview')">How to Master Interview</el-menu-item>
+            <el-menu-item index="5-3" class="sub1" @click="$router.push('/interview#more-resources')">More Resource</el-menu-item>
           </el-menu-item-group>
         </el-sub-menu>
       </el-menu>

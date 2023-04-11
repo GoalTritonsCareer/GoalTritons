@@ -124,7 +124,6 @@
               <p class ="link" style="display: inline; ">See Full List of Career Fairs/Events</p>&nbsp;
               <img src="/ocArrow.svg" style="vertical-align: middle; width: 22px" alt="arrow" loading="lazy">
             </a>
-            <a id="mentorshipPrograms"></a>
           </div>
         </el-tab-pane>
 
@@ -181,6 +180,7 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
   },
+
   data() {
     return {
       activeName: 'first'
@@ -216,11 +216,9 @@ export default {
   text-align: center;
   width: 95%;
   margin: 2% auto;
-
-
-
   /*margin-left: 12vw;*/
 }
+
 
 .onlinePlatformDescription{
   display: inline-block;
