@@ -1,5 +1,5 @@
 <template>
-  <div id="NetworkingTop">
+  <div>
     <div id="heading" style="position: relative">
       <section class="title">
         <h3 class="back">&lt; <span @click="$router.push('/interview')"
@@ -202,7 +202,6 @@ export default {
   font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
 }
-
 p.online {
   background-color: #D9EAEF;
   border-radius: 2rem;
