@@ -32,7 +32,7 @@
           </div>
           <img class="bg" src="/interview/HomeInterviewSteps.svg" alt="Interview Steps Module" loading="lazy">
         </div>
-        <div class="container">
+        <div class="container" @click="$router.push('/interview/MasterInterview')">
           <div class="cover">
             <p>Master An Interview</p>
             <img src="/cover4.svg" alt="Cover" loading="lazy">
