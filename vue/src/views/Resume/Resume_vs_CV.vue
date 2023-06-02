@@ -2,7 +2,7 @@
   <div id="home">
     <div id="heading" style="position: relative">
       <section class="title">
-        <h1>RESUME / CV & COVER LETTER</h1>
+        <h1>RESUME/CV & COVER LETTER</h1>
 
       </section>
       <picture>
@@ -49,7 +49,7 @@
         </div>
       </section>
       <a id="more-resources"></a>
-      <h2>More Resources</h2>
+      <h2>MORE RESOURCES</h2>
       <section class="resource">
         <p class="moreResTitle">Resume:</p>
         <ul>
