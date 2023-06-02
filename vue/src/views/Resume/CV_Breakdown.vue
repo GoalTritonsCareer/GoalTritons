@@ -315,27 +315,6 @@ a{
   background-color: #1E4460;
   color: #F4CE71;
 }
-.strongActionVerbs{
-
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 350;
-  font-style: normal;
-  border-radius: 1rem;
-  border: 1px solid black;
-
-  margin-right: 10px;
-  padding: 12px;
-  width: 185px;
-  background-color: #1E4460;
-  color: #FFFFFF;
-  white-space: nowrap;
-}
-.strongActionVerbsDiv{
-  white-space: nowrap;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .card {
   position: relative;
   display: inline-block;

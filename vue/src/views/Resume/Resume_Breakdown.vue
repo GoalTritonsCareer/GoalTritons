@@ -75,7 +75,7 @@
 
 
         <el-tab-pane label="Essentials" name="second" >
-          <img src="/resume/resumeEssentials.svg"  alt="resume essentials" style=" height: 320px;margin-bottom: 50px">
+          <img src="/resume/resumeEssentials.svg"  alt="resume essentials" style="width:95%;height: 320px;margin-bottom: 50px">
 
           <div style="position: relative; display: inline-block; margin: auto">
             <div style="background-color: rgba(244,206,113,0.21); border-radius: 1rem;border: 3px dashed #F4CE71; width:625px;
@@ -154,8 +154,8 @@
               <p class="strongActionVerbs">Teaching Skills</p>
               <p class="strongActionVerbs">Creative Skills</p>
               <p class="strongActionVerbs">Administrative Skills</p>
-            </div>
-            <div class="strongActionVerbsDiv">
+<!--            </div>-->
+<!--            <div class="strongActionVerbsDiv">-->
               <p class="strongActionVerbs">Research Skills</p>
               <p class="strongActionVerbs">Technical Skills</p>
               <p class="strongActionVerbs">Financial Skills</p>
@@ -168,7 +168,8 @@
 
           <div>
             <h4 style="text-align: left;margin-bottom: 50px;margin-top: 30px">Use Impact Statement</h4>
-            <img src="/resume/impactStatement.svg" style="margin-left: 2vw">
+            <img src="/resume/impactStatement.svg" alt="Pick an action verb, describe your accomplishment, describe the result of your contribution, quantify if possible"
+                 style="margin-left: 2vw; width: 90%">
             <p class="ulTitle" style="margin-top: 50px">Example:</p>
             <ul>
               <li> <i>Oversaw <strong class="semi" style="color: #1E4460">(verb in past tense)</strong> a team of 10
@@ -364,22 +365,22 @@ a{
 
   display: inline-block;
   font-size: 14px;
-  font-weight: 350;
+  font-weight: 500;
   font-style: normal;
   border-radius: 1rem;
   border: 1px solid black;
 
-  margin-right: 10px;
-  padding: 12px;
-  width: 185px;
+  margin: 10px 0.5%;
+  padding: 10px 12px;
+  width: 180px;
   background-color: #1E4460;
   color: #FFFFFF;
   white-space: nowrap;
 }
 .strongActionVerbsDiv{
-  white-space: nowrap;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .card {
   position: relative;
