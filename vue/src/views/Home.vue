@@ -230,7 +230,7 @@ button:hover {
 }
 
 h1{
-  font-family: work-sans-semi;
+  font-family: work-sans-semi,serif;
   font-style: normal;
   font-weight: 700;
 
@@ -241,7 +241,7 @@ h1{
 
 }
 h2 {
-  font-family: work-sans-semi;
+  font-family: work-sans-semi, serif;
   font-size: 34px;
   /*font-weight: 800;*/
   line-height: 141%;

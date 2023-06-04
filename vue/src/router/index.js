@@ -27,6 +27,11 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
+    path: '/about',
+    name: 'about-us',
+    component: () => import('../views/About.vue'),
+  },
+  {
     path: '/interview',
     name: 'interview-page',
     component: Layout,
