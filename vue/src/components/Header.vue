@@ -156,7 +156,7 @@
       </el-popover>
 
       <div>
-        <h2>About Us</h2>
+        <h2 @click="$router.push('/about')" style="cursor: pointer">About Us</h2>
       </div>
 
 

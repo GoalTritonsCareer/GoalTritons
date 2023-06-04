@@ -10,20 +10,16 @@
         <source srcset="/resume/CoverLetterBG.svg">
         <img src="/resume/CoverLetterBG.svg" alt="resume breakdown background" style="width: 100%" >
       </picture>
-
     </div>
 
     <div id="body">
-      <h2 style="margin-top: 80px;">COVER LETTER BREAKDOWN</h2>
-      <img src="/resume/cover_letter.svg">
+      <h4 style="margin-top: 5vh;">COVER LETTER BREAKDOWN</h4>
+      <img src="/resume/cover_letter.svg" alt="Cover Letter Example" style="width: 100%">
 
-      <div class="buttondiv" style="margin-top: 80px">
+      <div class="buttondiv" style="margin-top: 5vh">
         <a href="/resume/cvTemplate.pdf" download=""><button class="downloadTemplate">Download Template</button></a>
         <a id="cover-letter"></a>
       </div>
-
-
-
     </div>
   </div>
 
@@ -56,6 +52,14 @@ export default {
 
 @font-face { font-family: work-sans;
   src: url('/WorkSans/WorkSans-Bold.woff');
+}
+h4 {
+  font-family: work-sans, serif;
+  text-align: left;
+  font-weight: 700;
+  line-height: 141%;
+  font-size: 24px;
+  padding: 3% 0;
 }
 .downloadTemplate{
   font-style: normal;

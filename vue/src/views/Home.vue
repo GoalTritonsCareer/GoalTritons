@@ -15,9 +15,12 @@
       <span class="dot220"></span><span class="dot221"></span>
       <!--      内容区域-->
       <el-main class="wrapper__body">
-        <div v-if="isGoodBrowser === false" style="text-align: center; font-size: 16px; color: red; margin-top: 5vh">
+        <div v-if="isGoodBrowser === false" style="text-align: center; font-weight: 600; font-size: 16px; color: red; margin-top: 5vh; background-color: yellow">
           <b> For best user experience, please browse this website using a laptop or desktop! </b>
         </div>
+        <div v-if="isSafari16" style="text-align: center; font-weight: 600; font-size: 16px; color: red;
+        margin-top: 5vh; background-color: yellow">AVIF image format is not supported in Safari 16.1-16.3. Please use
+          other browsers or update your Safari for better user expereince!</div>
         <div>
 
           <div>
@@ -140,12 +143,25 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Calendar from "../views/Calendar.vue";
+
 export default {
   name: "Home",
   components: {
     Footer,
     Header,
     Calendar
+  },
+  computed: {
+    isSafari16() {
+      const ua = navigator.userAgent
+      const isSafari = ua.indexOf('Safari') !== -1 && ua.indexOf('Chrome') === -1
+      const versionMatch = ua.match(/Version\/(\d+\.\d+)/)
+      const version = versionMatch ? parseFloat(versionMatch[1]) : 0
+      if (isSafari && version >= 16.1 && version <= 16.3) {
+        return true
+      }
+      return false
+    }
   },
   data() {
     return {
@@ -214,7 +230,7 @@ button:hover {
 }
 
 h1{
-  font-family: work-sans-semi;
+  font-family: work-sans-semi,serif;
   font-style: normal;
   font-weight: 700;
 
@@ -225,7 +241,7 @@ h1{
 
 }
 h2 {
-  font-family: work-sans-semi;
+  font-family: work-sans-semi, serif;
   font-size: 34px;
   /*font-weight: 800;*/
   line-height: 141%;
