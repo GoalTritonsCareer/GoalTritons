@@ -2,10 +2,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <div style="height: 60px; line-height: 70px; border-bottom: 1px solid #ccc; display: flex; background-color: white">
     <div class="top-left">
-      <a href="http://goaltritonscareer.com" style="margin-top: -8px">
+      <a href="https://dynamic-crisp-4efd82.netlify.app/" style="margin-top: -8px">
         <img src="/logo.svg" alt="logo" class="top-left-logo" style="vertical-align: middle;"/>
       </a>
-      <a href="http://goaltritonscareer.com" style="text-decoration: none;">
+      <a href="https://dynamic-crisp-4efd82.netlify.app/" style="text-decoration: none;">
         <h1 style="margin-left: 15px; align-self: center;text-decoration: none;">Go<span style="color: #7c97AB">al</span> Tritons</h1>
       </a>
     </div>
